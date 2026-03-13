@@ -4,4 +4,4 @@ Le Cyclo-Terre est un engin agricole mobile à traction humaine conçu pour les 
 
 ## Site web
 
-[Cyclo-Terre](https://cyclo-terre.ch/)
+cyclo-terre.ch
