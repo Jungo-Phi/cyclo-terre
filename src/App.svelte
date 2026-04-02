@@ -8,7 +8,7 @@
 
 <main>
   <h1>{name}</h1>
-  <p>La machine agricole légère à propulsion humaine conçue pour les petites exploitations.</p>
+  <h2>La machine agricole à propulsion humaine conçue pour les petites exploitations.</h2>
   <div class="image-container">
     <img src={photo_arnaud_youri_url} alt="Arnaud et Youri devant le 1er prototype de Cyclo-Terre" />
   </div>
@@ -24,7 +24,8 @@
 </main>
 
 <footer>
-  <p>Le projet Cyclo-Terre est issu d'une collaboration entre Arnaud Jungo et Youri Vezza.</p>
+  <p>Le Cyclo-Terre est issu d'une collaboration entre Arnaud Jungo et Youri Vezza.</p>
+  <p>Le projet est encore en phase de développement. Un premier prototype a été fabriqué en début 2026.</p>
   <p>Contact : <a href="mailto:contact@cyclo-terre.ch">contact@cyclo-terre.ch</a></p>
 </footer>
 
@@ -48,6 +49,11 @@
     max-width: 80%;
     height: auto;
     border-radius: 8px;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 2em;
   }
 
   h1 {
