@@ -84,7 +84,7 @@
         </article>
         <article class="card">
           <h3>Porte-outil</h3>
-          <p>Sarcoire, semoir, disques butteurs, herse rotative.</p>
+          <p>Sarlcoire, semoir, disques butteurs, herse rotative.</p>
         </article>
       </div>
     </div>
@@ -124,7 +124,7 @@
         <article class="founder">
           <h3>Youri Vezza</h3>
           <p>
-            Jeune ingénieur agronome, j'ai monté ma ferme maraîchère à Genève, <em>La Finca Locale</em>, en 2016, et j'y travaille depuis au quotidien.
+            Jeune ingénieur agronome, j'ai monté ma ferme maraîchère à Genève, <em>La Finca Locale</em>, en 2017, et j'y travaille depuis au quotidien.
             Devenir entrepreneur était pour moi un moyen d'agir concrètement sur le modèle alimentaire, en testant des solutions qui améliorent le quotidien des paysan·nes.
           </p>
         </article>
