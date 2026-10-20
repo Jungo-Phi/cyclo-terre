@@ -28,6 +28,26 @@ modification de `main`, ainsi que chaque nuit (pour retirer les dates passées d
 Une date passée disparaît d'elle-même de l'agenda. Une formation ou une date avec
 `brouillon: true` n'est pas publiée.
 
+## Interface d'administration (Sveltia CMS)
+
+`/admin/` permet de modifier les formations, les dates et les photos sans toucher au code.
+
+- **En ligne** (https://cyclo-terre.ch/admin/) : « Sign In Using Access Token » avec un jeton
+  GitHub *fine-grained* limité à ce dépôt (permission *Contents : Read and write*). Chaque
+  enregistrement crée un commit sur `main` et republie le site.
+- **En local** (http://localhost:5173/admin/ avec `npm run dev`, dans Chrome ou Edge) :
+  « Work with Local Repository », puis choisir le dossier du dépôt. Les modifications sont
+  écrites dans les fichiers ; rien n'est publié avant un commit et un push.
+
+La configuration est dans `static/admin/config.yml`.
+
+## Travailler avant de publier
+
+1. Créer une branche : `git switch -c ma-modification`.
+2. `npm run dev` et modifier (à la main, avec Claude Code ou avec `/admin/` en local).
+3. Vérifier le site final : `npm run build && npm run preview`.
+4. Pousser la branche et ouvrir une pull request ; fusionner dans `main` publie le site.
+
 ## Design
 
 Couleurs, polices et espacements viennent du design system Cyclo-Terre (`src/lib/tokens.css`).

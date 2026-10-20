@@ -1,7 +1,7 @@
 <script>
-  // Photo du dossier src/lib/photos, désignée par son nom de fichier sans extension.
+  // Photo du dossier src/lib/photos, désignée par son nom de fichier (avec ou sans extension ni dossier).
   // Les images sont redimensionnées et converties (avif/webp) au moment du build.
-  const photos = import.meta.glob('$lib/photos/*.{jpg,jpeg,png}', {
+  const photos = import.meta.glob('$lib/photos/*.{jpg,jpeg,png,webp}', {
     eager: true,
     import: 'default',
     query: { enhanced: true }
@@ -11,7 +11,7 @@
   let { nom, alt, ratio = '4 / 3', legende, sizes = '(max-width: 720px) 100vw, 50vw', prioritaire = false, position = 'center' } = $props();
 
   const src = $derived(
-    Object.entries(photos).find(([chemin]) => chemin.split('/').pop()?.replace(/\.[a-z]+$/, '') === nom)?.[1]
+    Object.entries(photos).find(([chemin]) => chemin.split('/').pop()?.replace(/\.[a-z]+$/, '') === nom.split('/').pop()?.replace(/\.[a-z]+$/, ''))?.[1]
   );
 </script>
 
