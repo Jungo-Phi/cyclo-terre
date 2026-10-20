@@ -1,0 +1,45 @@
+/* Cyclo-Terre — jetons du design system (tokens.json). Ne pas modifier ici sans modifier le design system. */
+:root {
+  --paper: #F6F2EA;
+  --paper-2: #EDE6D8;
+  --card: #FBF9F4;
+  --ink: #1F2321;
+  --ink-2: #2E3330;
+  --ink-muted: #4D5350;
+  --rule: #D6CDBB;
+  --rule-strong: #C9BFAA;
+  --trace: #8F887B;
+  --grid-line: #E8E0D0;
+  --hatch: #F2EDE3;
+  --agri: #408438;
+  --agri-dark: #336C2C;
+  --agri-pale: #DCEBD6;
+  --agri-on-ink: #93C98A;
+  --meca: #C63F92;
+  --meca-dark: #A3307A;
+  --meca-pale: #F7DDEB;
+  --meca-on-ink: #E79AC4;
+  --on-volet: #FFFFFF;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 28px;
+  --space-7: 40px;
+  --space-8: 56px;
+  --space-9: 72px;
+  --radius-0: 0;
+  --radius-signe: 21.4%;
+  --radius-rond: 50%;
+  --trait-logo-lettres: 12px;
+  --trait-logo-terre: 10px;
+  --trait-logo-chassis: 8px;
+  --trait-picto: 2.5px;
+  --trait-filet: 1px;
+  --trait-emplacement: 1.5px;
+  --trait-focus: 3px;
+  --font-titre: 'Barlow Semi Condensed', 'Arial Narrow', sans-serif;
+  --font-texte: 'Source Sans 3', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
