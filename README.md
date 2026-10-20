@@ -35,7 +35,7 @@ Une date passée disparaît d'elle-même de l'agenda. Une formation ou une date 
 - **En ligne** (https://cyclo-terre.ch/admin/) : « Sign In Using Access Token » avec un jeton
   GitHub *fine-grained* limité à ce dépôt (permission *Contents : Read and write*). Chaque
   enregistrement crée un commit sur `main` et republie le site.
-- **En local** (http://localhost:5173/admin/ avec `npm run dev`, dans Chrome ou Edge) :
+- **En local** (http://localhost:5173/admin/index.html avec `npm run dev`, dans Chrome ou Edge) :
   « Work with Local Repository », puis choisir le dossier du dépôt. Les modifications sont
   écrites dans les fichiers ; rien n'est publié avant un commit et un push.
 
