@@ -29,7 +29,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 2px solid var(--ink);
   }
   .ligne {
     display: flex;
@@ -40,6 +39,13 @@
     border-bottom: 1px solid var(--rule-strong);
     color: var(--ink);
     text-decoration: none;
+  }
+  li:first-child .ligne {
+    padding-top: 0;
+  }
+  li:last-child .ligne {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
   .ligne:hover .titre {
     text-decoration: underline;
@@ -70,8 +76,6 @@
     color: var(--ink);
   }
   .vide {
-    border-top: 2px solid var(--ink);
-    padding-top: var(--space-5);
     color: var(--ink-muted);
   }
 </style>

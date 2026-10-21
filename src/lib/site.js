@@ -5,13 +5,22 @@ export const site = {
   email: 'contact@cyclo-terre.ch',
   ville: 'Genève',
   description:
-    "Porte-outils maraîcher léger et formations pratiques en agroécologie et en mécanique, à Genève.",
+    'Porte-outils maraîcher léger et formations en agroécologie et mécanique pour les micro-fermes.',
   navigation: [
-    { href: '/machine/', label: 'La machine' },
+    { href: '/outils/', label: 'Outils' },
     { href: '/formations/', label: 'Formations' },
-    { href: '/projet/', label: 'Le projet' },
+    { href: '/projet/', label: 'Notre vision' },
     { href: '/contact/', label: 'Contact' }
   ]
+};
+
+/**
+ * Lettre d'information (Infomaniak Newsletter). Tant que `action` est vide, le formulaire
+ * ouvre un e-mail « Abonnez-moi » ; y mettre l'adresse du formulaire Infomaniak pour l'activer.
+ */
+export const lettre = {
+  action: '',
+  ancre: '/contact/#lettre'
 };
 
 /** Lien mailto avec sujet (et corps) pré-remplis. */

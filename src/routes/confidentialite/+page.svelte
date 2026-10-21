@@ -13,22 +13,28 @@
 
   <h2 class="titre-3">Ce que nous recevons</h2>
   <p>
-    Quand vous nous écrivez ou vous inscrivez à une formation, nous recevons votre e-mail et ce que
-    vous y indiquez : nom, téléphone, remarques. Nous les utilisons uniquement pour vous répondre,
-    organiser la formation et, si vous le demandez, vous prévenir des prochaines dates.
+    Quand vous nous écrivez ou vous vous inscrivez à une formation, nous recevons votre e-mail et
+    ce que vous y indiquez : nom, téléphone, remarques. Nous les utilisons uniquement pour vous
+    répondre, organiser la formation et, si vous vous y abonnez, vous envoyer la lettre
+    d'information. Chaque envoi contient un lien pour vous désabonner.
   </p>
 
   <h2 class="titre-3">Combien de temps</h2>
   <p>
-    Les données d'inscription sont supprimées [DÉLAI, par ex. 12 mois] après la formation, sauf
-    obligation comptable. Nous ne les transmettons à personne.
+    Les données d'inscription sont supprimées 12 mois après la formation, sauf
+    obligation comptable. Nous ne les transmettons à aucun tiers, hormis les prestataires
+    mentionnés ci-dessous.
   </p>
 
   <h2 class="titre-3">Hébergement</h2>
   <p>
     Le site est hébergé par GitHub Pages (GitHub Inc., États-Unis), qui peut enregistrer
-    techniquement l'adresse IP des visiteurs. Les polices de caractères sont servies par le site
-    lui-même, sans appel à un service tiers.
+    techniquement l'adresse IP des personnes qui consultent le site. Les polices de caractères
+    sont servies par le site lui-même, sans appel à un service tiers.
+  </p>
+  <p>
+    La lettre d'information est envoyée avec Infomaniak (Suisse), qui conserve votre adresse
+    jusqu'à votre désabonnement.
   </p>
 
   <h2 class="titre-3">Vos droits</h2>

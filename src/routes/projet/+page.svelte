@@ -4,20 +4,21 @@
 
   const objectifs = [
     "Favoriser l'émergence de micro-fermes à taille humaine, produisant en symbiose avec l'environnement.",
-    "Replacer la mécanisation sur un pied d'égalité avec l'humain.",
-    'Donner au plus grand nombre une notion pratique des fonctionnements et des enjeux agricoles soutenables.',
-    "Constituer une communauté d'utilisatrices et d'utilisateurs engagés dans la conception, la réparation et la création de machines adaptées à leurs besoins."
+    "Remettre la mécanisation au service de l'humain.",
+    'Faire découvrir au plus grand nombre ce que peut être une agriculture soutenable.',
+    "Constituer une communauté d'utilisatrices et d'utilisateurs engagé·es dans la conception, la réparation et la création de machines adaptées à leurs besoins."
   ];
 
   const calendrier = [
-    ['2026', 'Premier prototype ; premières formations agricoles.'],
-    ['2027', 'Second prototype à assistance électrique, essais et mesures sur champ, manuels et supports de formation.'],
-    ['2028', 'Version commerciale du Cyclo-Terre et formations complètes.']
+    ['Février 2026', "Construction du premier prototype, issu du travail de master d'Arnaud Jungo."],
+    ['2026', "Structuration du projet (stratégie de communication, plan d'affaires, recherche de financements) et candidature au concours IDDEA."],
+    ['2027', 'Essais et mesures sur champ à La Finca Locale, développement de la version commerciale et premières formations agricoles.'],
+    ['2028', 'Sortie de la version commerciale du Cyclo-Terre, publication des plans sous licence libre et premières formations mécaniques.']
   ];
 </script>
 
 <svelte:head>
-  <title>Le projet — Cyclo-Terre</title>
+  <title>Notre vision — Cyclo-Terre</title>
   <meta
     name="description"
     content="Pourquoi Cyclo-Terre existe, qui le porte et où il en est : un outillage low-tech et une méthode pour des micro-fermes qui préservent leurs sols."
@@ -25,8 +26,7 @@
 </svelte:head>
 
 <section class="colonne intro pile">
-  <p class="etiquette">Le projet</p>
-  <h1 class="titre-1">Un outil et une méthode pour les micro-fermes</h1>
+  <h1 class="titre-1">Un outillage et une méthode pour les micro-fermes</h1>
   <p class="chapo">
     Cyclo-Terre construit un outillage et transmet une méthode pour que des micro-fermes à taille
     humaine puissent produire en préservant leurs sols.
@@ -39,14 +39,15 @@
     <div class="prose">
       <p>
         L'érosion et le tassement des sols mènent à une perte de fertilité d'année en année, et
-        beaucoup d'agriculteurs s'enferment dans un modèle de fortes dépenses — machines, intrants —
-        sans perspective d'amélioration de leurs conditions de travail. Le travail manuel préserve
+        beaucoup d'agricultrices et d'agriculteurs se retrouvent enfermé·es dans un modèle de fortes
+        dépenses — machines, intrants — sans perspective d'amélioration de leurs conditions de
+        travail. Le travail manuel préserve
         les sols, mais il est trop éprouvant et chronophage.
       </p>
       <p>
-        Le Cyclo-Terre veut rendre au producteur le contrôle de son outil de production, grâce à un
-        outillage low-tech facile à entretenir et à une démarche de co-conception inspirée de
-        L'Atelier Paysan.
+        Cyclo-Terre veut rendre aux agricultrices et aux agriculteurs la maîtrise de leurs outils,
+        grâce à une mécanisation légère, facile à entretenir et pensée pour l'autoconstruction, dans
+        l'esprit de L'Atelier Paysan.
       </p>
     </div>
   </div>
@@ -66,6 +67,12 @@
     <div class="entete-section pile">
       <h2 class="titre-2" id="equipe">L'équipe</h2>
       <p class="chapo">Deux profils liés par une passion commune pour le vélo, l'open source et les enjeux écologiques.</p>
+      <p class="rencontre">
+        Youri et Arnaud se sont rencontrés par hasard lors du concours d'innovation
+        Ecobooster, à Vernier, en 2025. Youri cultivait à la main depuis 2018 à La Finca Locale : le sol
+        s'y améliorait d'année en année, mais le travail était épuisant. Arnaud a consacré son
+        travail de master à la conception du premier prototype du Cyclo-Terre.
+      </p>
     </div>
     <div class="deux">
       <Photo
@@ -107,24 +114,35 @@
 <!-- Partenaires : section à ajouter ici quand il y en aura (fermes d'accueil, institutions, ateliers, soutiens). -->
 
 <Contribuer
-  titre="Le Cyclo-Terre se construit avec vous"
-  texte="Fermes, écoles, ateliers, institutions : nous cherchons des partenaires pour accueillir des formations, mener des essais et faire évoluer l'outil. Écrivez-nous."
+  titre="Cyclo-Terre se construit avec vous"
+  texte="Fermes, écoles, ateliers, institutions : nous cherchons des partenaires pour accueillir des formations, mener des essais et faire évoluer la machine et ses outils. Écrivez-nous."
 />
 
 <style>
   .intro {
-    padding-block: var(--space-8) var(--space-7);
+    padding-block: var(--space-7);
     gap: var(--space-5);
   }
   .liste {
     margin: 0;
     padding: 0;
     list-style: none;
-    border-top: 2px solid var(--ink);
   }
   .liste li {
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--rule-strong);
+  }
+  .liste li:first-child,
+  .etapes li:first-child {
+    padding-top: 0;
+  }
+  .liste li:last-child,
+  .etapes li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .rencontre {
+    max-width: 68ch;
   }
   .personnes {
     gap: var(--space-6);
@@ -136,11 +154,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 2px solid var(--ink);
   }
   .etapes li {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 128px 1fr;
     gap: var(--space-4);
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--rule-strong);
@@ -152,7 +169,7 @@
   }
   @media (max-width: 720px) {
     .intro {
-      padding-block: var(--space-6) var(--space-5);
+      padding-block: var(--space-5);
     }
   }
 </style>

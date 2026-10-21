@@ -2,7 +2,7 @@
   import Photo from '$lib/components/Photo.svelte';
   import Etiquette from '$lib/components/Etiquette.svelte';
   import { volets, periode } from '$lib/contenu.js';
-  import { mailto } from '$lib/site.js';
+  import { mailto, lettre } from '$lib/site.js';
 
   let { data } = $props();
   const f = $derived(data.f);
@@ -33,7 +33,6 @@
   <header class="colonne entete pile">
     <span class="tags">
       <Etiquette volet={f.volet} />
-      {#if f.formats}<span class="tag tag--neutre">{f.formats}</span>{/if}
       {#if !ouverte}<span class="tag tag--neutre">En préparation</span>{/if}
     </span>
     <h1 class="titre-1 {classe}-texte">{f.titre}</h1>
@@ -41,13 +40,15 @@
   </header>
 
   <div class="colonne corps">
-    <div class="principal pile">
+    <div class="haut pile">
       {#if f.photo}
         <Photo nom={f.photo} alt={f.photoAlt ?? ''} ratio="21 / 9" sizes="(max-width: 720px) 100vw, 760px" prioritaire />
       {/if}
 
       <div class="prose">{@html f.html}</div>
+    </div>
 
+    <div class="bas pile">
       {#if f.deroule?.length}
         <section class="pile" aria-labelledby="deroule">
           <h2 class="titre-2" id="deroule">Déroulé</h2>
@@ -100,7 +101,7 @@
 
       {#if !ouverte}
         <p>Cette formation est en préparation.</p>
-        <a class="btn btn--{classe}" href={mailto(`Prévenez-moi : ${f.titre}`)}>Être prévenu·e</a>
+        <a class="btn btn--{classe}" href={lettre.ancre}>Être prévenu·e</a>
       {:else if data.sessions.length}
         <h3 class="etiquette">Prochaines dates</h3>
         <ul class="dates">
@@ -120,9 +121,9 @@
         </ul>
       {:else}
         <p>Pas de date publiée pour l'instant.</p>
-        <a class="btn btn--{classe}" href={mailto(`Prochaine date : ${f.titre}`)}>Être prévenu·e de la prochaine date</a>
+        <a class="btn btn--{classe}" href={lettre.ancre}>Être prévenu·e</a>
       {/if}
-      <p class="annotation">L'inscription se fait par e-mail ; nous confirmons votre place sous 48 h.</p>
+      <p class="annotation">L'inscription se fait par e-mail ; nous confirmons votre place sous 48 h.</p>
     </aside>
   </div>
 </article>
@@ -146,14 +147,19 @@
   .corps {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 360px;
-    gap: var(--space-8);
+    gap: var(--space-7) var(--space-8);
     align-items: start;
     padding-bottom: var(--space-9);
   }
-  .principal {
+  /* Desktop : fiche technique à droite, sur toute la hauteur. Mobile : entre la description et le déroulé. */
+  .haut,
+  .bas {
+    grid-column: 1;
     gap: var(--space-7);
   }
   .cote {
+    grid-column: 2;
+    grid-row: 1 / span 2;
     position: sticky;
     top: var(--space-5);
   }
@@ -161,7 +167,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 2px solid var(--ink);
   }
   .deroule li {
     display: grid;
@@ -169,6 +174,13 @@
     gap: var(--space-4);
     padding: var(--space-5) 0;
     border-bottom: 1px solid var(--rule-strong);
+  }
+  .deroule li:first-child {
+    padding-top: 0;
+  }
+  .deroule li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
   .deroule .pile {
     gap: var(--space-2);
@@ -224,7 +236,12 @@
     }
     .cote {
       position: static;
-      grid-row: 1;
+      grid-column: 1;
+      grid-row: auto;
+      order: 1;
+    }
+    .bas {
+      order: 2;
     }
     .infos {
       grid-template-columns: 1fr;

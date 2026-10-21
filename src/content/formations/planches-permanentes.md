@@ -18,7 +18,7 @@ deroule:
     texte: Dimensions, outils, travail superficiel, à la main.
   - titre: L'entretenir
     texte: Couverture, apports, place dans la rotation.
-prerequis: Aucun.
+prerequis: Ne pas être allergique à la terre.
 aApporter:
   - Vêtements de travail et chaussures fermées
   - Gants
@@ -26,6 +26,6 @@ aApporter:
 formateur: Youri Vezza, agriculteur et ingénieur agronome, spécialisé dans la santé des sols ; fondateur de La Finca Locale.
 ---
 
-Une formation sur la ferme pour comprendre et créer des planches permanentes. Les planches font 75 cm de large, la largeur standard en permaculture, et ne sont jamais piétinées : on circule uniquement dans les passe-pieds.
+Une formation sur la ferme pour comprendre et créer des planches permanentes. Les planches font 75 cm de large, le format du maraîchage bio-intensif popularisé par Jean-Martin Fortier, et ne sont jamais piétinées : on circule uniquement dans les passe-pieds.
 
 En **une journée**, on voit le principe et on crée une planche de bout en bout. En **une semaine**, on suit le même déroulé sur plusieurs planches, jusqu'au semis.
