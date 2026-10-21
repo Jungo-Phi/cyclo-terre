@@ -23,7 +23,7 @@ export const site = {
  */
 export const lettre = {
   action: 'https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26536/submit',
-  cle: 'eyJpdiI6IlFwdlRCOUNaZ2x3RUlLV0ZRbkJVbW5weVhVZlhmNDUxZk9sWnhkcWo2YXc9IiwibWFjIjoiMmE0NjFkNTJjOTcxZTc1YjVhNTJhMWFjMGFjMDVjMjEzYzNkY2FjNDI5YmE1Nzg0MzYxYTU2YzIwMzlhN2NmNiIsInZhbHVlIjoiVlk3eWx4NmtidTRobjc3SzZFcWp5SHVhWWlldmMrUUcrdEtjVkZRazY1az0ifQ==',
+  cle: 'eyJpdiI6IklucWg1TnE5QVNGdnlcLzhRT0VuSkRhOTJGNkVOT0NWRm9Cck1jVWwrNkRvPSIsIm1hYyI6Ijg4MWY4ZTJmMTU2M2M1NWZmYTlkNmQ2Njg4YmY0NzQ5NjM1MGFmYmZmOTU4MmQ3YTBiY2M0YzAxYzc2Y2Q0ZGUiLCJ2YWx1ZSI6IlRuSDdSYTFraU9UXC8zanRERnVhMFFDY3k4eXFCY043bUs2MWhyQlVheGVrPSJ9',
   formulaire: '26536',
   champEmail: 'inf[1]',
   captcha: 'https://newsletter.infomaniak.com/v3/altcha-challenge',
