@@ -1,0 +1,84 @@
+# Configuration de l'interface d'administration (Sveltia CMS) — https://sveltiacms.app/en/docs
+# Chaque enregistrement crée un commit sur la branche ci-dessous ; le site se republie ensuite seul.
+backend:
+  name: github
+  repo: jungo-phi/cyclo-terre
+  branch: main
+  commit_messages:
+    create: 'Contenu : ajoute {{collection}} « {{slug}} »'
+    update: 'Contenu : modifie {{collection}} « {{slug}} »'
+    delete: 'Contenu : supprime {{collection}} « {{slug}} »'
+    uploadMedia: 'Photos : ajoute {{path}}'
+    deleteMedia: 'Photos : supprime {{path}}'
+
+site_url: https://cyclo-terre.ch
+display_url: https://cyclo-terre.ch
+
+# Les photos envoyées sont converties en WebP et réduites à 2400 px au plus.
+media_folder: src/lib/photos
+public_folder: /photos
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 2400
+          height: 2400
+
+collections:
+  - name: sessions
+    label: Dates de formation
+    label_singular: Date de formation
+    description: Une date dans l'agenda. Les dates passées disparaissent seules du site.
+    folder: src/content/sessions
+    create: true
+    slug: '{{date}}-{{formation}}'
+    summary: '{{date}} · {{formation}}'
+    sortable_fields: [date, formation]
+    fields:
+      - { name: formation, label: Formation, widget: relation, collection: formations, value_field: '{{slug}}', search_fields: [titre], display_fields: [titre] }
+      - { name: date, label: Premier jour, widget: datetime, format: 'YYYY-MM-DD', date_format: 'DD.MM.YYYY', time_format: false }
+      - { name: fin, label: Dernier jour, widget: datetime, format: 'YYYY-MM-DD', date_format: 'DD.MM.YYYY', time_format: false, required: false, hint: Laisser vide pour une formation d'une journée. }
+      - { name: horaires, label: Horaires, widget: string, required: false, hint: 'Par exemple : 9 h – 17 h' }
+      - { name: prix, label: Prix, widget: string, required: false, hint: 'Par exemple : CHF 160' }
+      - { name: lieu, label: Lieu, widget: string, required: false, hint: Seulement s'il diffère du lieu habituel de la formation. }
+      - { name: places, label: Places au total, widget: number, value_type: int, required: false }
+      - { name: placesRestantes, label: Places restantes, widget: number, value_type: int, required: false, hint: '0 = complet, les inscriptions passent en liste d''attente.' }
+      - { name: brouillon, label: Brouillon (non publié), widget: boolean, default: false, required: false }
+
+  - name: formations
+    label: Formations
+    label_singular: Formation
+    description: La description d'une formation, valable pour toutes ses dates.
+    folder: src/content/formations
+    create: true
+    slug: '{{titre}}'
+    identifier_field: titre
+    summary: '{{titre}} ({{volet}})'
+    sortable_fields: [ordre, titre]
+    fields:
+      - { name: titre, label: Titre, widget: string }
+      - { name: volet, label: Volet, widget: select, options: [{ label: Agricole, value: agricole }, { label: Mécanique, value: mecanique }] }
+      - { name: statut, label: État, widget: select, default: ouverte, options: [{ label: Ouverte aux inscriptions, value: ouverte }, { label: En préparation, value: en-preparation }] }
+      - { name: ordre, label: Ordre d'affichage, widget: number, value_type: int, default: 10 }
+      - { name: resume, label: Résumé (une phrase), widget: text }
+      - { name: formats, label: Durée, widget: string, required: false, hint: 'Par exemple : 1 jour ou 1 semaine' }
+      - { name: groupe, label: Groupe, widget: string, required: false, hint: 'Par exemple : 5 à 8 personnes' }
+      - { name: lieu, label: Lieu habituel, widget: string, required: false }
+      - { name: photo, label: Photo, widget: image, required: false }
+      - { name: photoAlt, label: Description de la photo, widget: string, required: false, hint: "Ce qu'on voit sur la photo, pour les personnes qui ne la voient pas." }
+      - name: deroule
+        label: Déroulé
+        label_singular: Étape
+        widget: list
+        required: false
+        fields:
+          - { name: titre, label: Étape, widget: string }
+          - { name: texte, label: Description, widget: text }
+      - { name: prerequis, label: Prérequis, widget: string, required: false }
+      - { name: aApporter, label: À apporter, widget: list, required: false }
+      - { name: formateur, label: Formation donnée par, widget: text, required: false }
+      - { name: brouillon, label: Brouillon (non publié), widget: boolean, default: false, required: false }
+      - { name: body, label: Présentation, widget: markdown }
