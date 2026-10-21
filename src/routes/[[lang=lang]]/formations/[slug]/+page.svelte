@@ -2,7 +2,7 @@
   import Photo from '$lib/components/Photo.svelte';
   import Etiquette from '$lib/components/Etiquette.svelte';
   import { volets, periode } from '$lib/contenu.js';
-  import { mailto, lettre } from '$lib/site.js';
+  import { mailto } from '$lib/site.js';
 
   let { data } = $props();
   const f = $derived(data.f);
@@ -100,8 +100,8 @@
       </dl>
 
       {#if !ouverte}
-        <p>Cette formation est en préparation.</p>
-        <a class="btn btn--{classe}" href={lettre.ancre}>Être prévenu·e</a>
+        <p>Cette formation est en préparation. Inscrivez-vous : nous vous écrirons dès qu'une date sera fixée.</p>
+        <a class="btn btn--{classe}" href={inscription(null)}>S'inscrire</a>
       {:else if data.sessions.length}
         <h3 class="etiquette">Prochaines dates</h3>
         <ul class="dates">
@@ -120,8 +120,8 @@
           {/each}
         </ul>
       {:else}
-        <p>Pas de date publiée pour l'instant.</p>
-        <a class="btn btn--{classe}" href={lettre.ancre}>Être prévenu·e</a>
+        <p>Pas de date publiée pour l'instant. Inscrivez-vous : nous vous proposerons la prochaine date.</p>
+        <a class="btn btn--{classe}" href={inscription(null)}>S'inscrire</a>
       {/if}
       <p class="annotation">L'inscription se fait par e-mail ; nous confirmons votre place sous 48 h.</p>
     </aside>

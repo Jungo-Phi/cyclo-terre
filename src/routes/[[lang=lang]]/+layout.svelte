@@ -5,35 +5,55 @@
   import '@fontsource/source-sans-3/600.css';
   import '@fontsource/ibm-plex-mono/400.css';
   import '@fontsource/ibm-plex-mono/500.css';
-  import '../app.css';
+  import '../../app.css';
   import { page } from '$app/state';
   import { site } from '$lib/site.js';
+  import { langues, actives, langueDe, textes, chemin, cheminFrancais } from '$lib/i18n/index.js';
   import logo from '$lib/assets/logo/cyclo-terre-logo.svg';
   import logoSombre from '$lib/assets/logo/cyclo-terre-logo-fond-sombre.svg';
 
   let { children } = $props();
 
-  /** @param {string} href */
-  const actif = (href) => page.url.pathname.startsWith(href);
+  const lang = $derived(langueDe(page.params.lang));
+  const t = $derived(textes(lang));
+  /** Chemin de la page courante en français, pour construire les autres langues. */
+  const ici = $derived(cheminFrancais(page.url.pathname));
+
+  /** @param {string} href chemin français */
+  const actif = (href) => ici.startsWith(href);
 </script>
 
 <svelte:head>
   <meta property="og:site_name" content={site.nom} />
-  <meta property="og:locale" content="fr_CH" />
+  <meta property="og:locale" content={langues[lang].locale} />
+  {#if actives.length > 1}
+    {#each actives as l}
+      <link rel="alternate" hreflang={l} href={site.url + chemin(l, ici)} />
+    {/each}
+    <link rel="alternate" hreflang="x-default" href={site.url + ici} />
+  {/if}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={site.url + page.url.pathname} />
+  <meta property="og:image" content="{site.url}/partage.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Logo Cyclo-Terre et prototype du Cyclo-Terre dans l'herbe" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href={site.url + page.url.pathname} />
 </svelte:head>
 
-<a class="btn btn--encre evitement" href="#contenu">Aller au contenu</a>
+<a class="btn btn--encre evitement" href="#contenu">{t.allerAuContenu}</a>
 
 <header class="entete">
   <div class="colonne barre">
-    <a class="logo" href="/" aria-label="Cyclo-Terre, accueil">
+    <a class="logo" href={chemin(lang, '/')} aria-label={t.accueil}>
       <img src={logo} alt="Cyclo-Terre" width="530" height="296" />
     </a>
-    <nav aria-label="Principale">
+    <nav aria-label={t.menuPrincipal}>
       <ul class="menu">
         {#each site.navigation as item}
           <li>
-            <a href={item.href} aria-current={actif(item.href) ? 'page' : undefined}>{item.label}</a>
+            <a href={chemin(lang, item.href)} aria-current={actif(item.href) ? 'page' : undefined}>{t.nav[item.href] ?? item.label}</a>
           </li>
         {/each}
       </ul>
@@ -47,27 +67,41 @@
 
 <footer class="pied">
   <div class="colonne barre">
-    <a class="logo" href="/" aria-label="Cyclo-Terre, accueil">
+    <a class="logo" href={chemin(lang, '/')} aria-label={t.accueil}>
       <img src={logoSombre} alt="Cyclo-Terre" width="530" height="296" />
     </a>
-    <nav class="nav-pied" aria-label="Pied de page">
+    <nav class="nav-pied" aria-label={t.menuPied}>
       <ul class="menu">
         {#each site.navigation as item}
-          <li><a href={item.href}>{item.label}</a></li>
+          <li><a href={chemin(lang, item.href)}>{t.nav[item.href] ?? item.label}</a></li>
         {/each}
       </ul>
     </nav>
   </div>
   <div class="colonne">
     <div class="legal">
-      <span>Porte-outils maraîcher et formations en agroécologie pour les micro-fermes</span>
-      <a href="/mentions-legales/">Mentions légales</a>
-      <a href="/confidentialite/">Confidentialité</a>
+      <span>{t.slogan}</span>
+      <a href={chemin(lang, '/mentions-legales/')}>{t.mentionsLegales}</a>
+      <a href={chemin(lang, '/confidentialite/')}>{t.confidentialite}</a>
+      {#if actives.length > 1}
+        <nav class="langues" aria-label={t.langue}>
+          {#each actives as l}
+            <a href={chemin(l, ici)} hreflang={l} lang={l} aria-current={l === lang ? 'true' : undefined}>{langues[l].nom}</a>
+          {/each}
+        </nav>
+      {/if}
     </div>
   </div>
 </footer>
 
 <style>
+  .langues {
+    display: flex;
+    gap: var(--space-4);
+  }
+  .langues a[aria-current='true'] {
+    text-decoration-thickness: 2px;
+  }
   /* En-tête et pied partagent la même barre : logo, menu horizontal. */
   .barre {
     display: flex;

@@ -4,6 +4,8 @@ export const site = {
   url: 'https://cyclo-terre.ch',
   email: 'contact@cyclo-terre.ch',
   ville: 'Genève',
+  /** Dépôt des plans de la machine (matériel libre). */
+  depot: 'https://github.com/Cyclo-Terre-Org/Cyclo-Terre',
   description:
     'Porte-outils maraîcher léger et formations en agroécologie et mécanique pour les micro-fermes.',
   navigation: [
