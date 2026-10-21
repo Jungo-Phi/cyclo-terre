@@ -17,6 +17,11 @@ publié sur GitHub Pages. Voir README.md pour les commandes et l'organisation du
 - Le Cyclo-Terre est un prototype : ne jamais laisser croire qu'il est en vente. Les formations
   agricoles ont lieu sans la machine.
 
+## Traductions
+- Français = référence, sans préfixe ; anglais et espagnol sous /en/ et /es/ (pages fixes seulement).
+- Langues publiées : `actives` dans `src/lib/i18n/index.js`. Ne pas activer une langue non relue.
+- Liens internes d'une page traduite : `chemin(lang, '/chemin-francais/')`.
+
 ## Design
 - Valeurs uniquement via les variables de `src/lib/tokens.css` (design system Cyclo-Terre).
 - Vert `--agri*` = volet agricole, rose `--meca*` = volet mécanique, rien d'autre (jamais pour

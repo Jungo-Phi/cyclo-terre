@@ -48,6 +48,17 @@ La configuration est dans `static/admin/config.yml`.
 3. Vérifier le site final : `npm run build && npm run preview`.
 4. Pousser la branche et ouvrir une pull request ; fusionner dans `main` publie le site.
 
+## Traductions
+
+Seules les pages fixes sont traduites ; les formations restent en français.
+
+- Les pages vivent sous `src/routes/[[lang=lang]]/` : `/contact/` en français, `/en/contact/`, `/es/contact/`.
+- Les textes d'interface (menu, pied de page…) sont dans `src/lib/i18n/fr.js`, `en.js`, `es.js` ;
+  une clé absente retombe sur le français.
+- Une langue n'est générée et proposée qu'une fois ajoutée à `actives` dans `src/lib/i18n/index.js`.
+- Pour traduire une page : déplacer ses textes dans les dictionnaires, lire la langue avec
+  `langueDe(page.params.lang)` et écrire ses liens internes avec `chemin(lang, '/…/')`.
+
 ## Design
 
 Couleurs, polices et espacements viennent du design system Cyclo-Terre (`src/lib/tokens.css`).
