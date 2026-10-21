@@ -20,6 +20,14 @@
 <svelte:head>
   <meta property="og:site_name" content={site.nom} />
   <meta property="og:locale" content="fr_CH" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={site.url + page.url.pathname} />
+  <meta property="og:image" content="{site.url}/partage.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Logo Cyclo-Terre et prototype du Cyclo-Terre dans l'herbe" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href={site.url + page.url.pathname} />
 </svelte:head>
 
 <a class="btn btn--encre evitement" href="#contenu">Aller au contenu</a>

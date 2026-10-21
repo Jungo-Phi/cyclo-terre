@@ -162,8 +162,9 @@
     </div>
     <div class="prose">
       <p>
-        Les plans du Cyclo-Terre et de ses outils seront publiés sous licence libre
-        [NOM DE LA LICENCE] en 2028, avec la sortie de la version commerciale.
+        Les plans du Cyclo-Terre et de ses outils seront publiés sous licence libre en 2028, avec
+        la sortie de la version commerciale : CERN-OHL-S v2 pour le matériel (plans, fichiers CAO,
+        nomenclature) et CC BY-SA 4.0 pour la documentation.
       </p>
       <h3 class="titre-3">Ce qui sera publié</h3>
       <ul>
