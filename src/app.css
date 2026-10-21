@@ -14,6 +14,11 @@ html {
 
 body {
   margin: 0;
+  /* Pied de page toujours en bas de l'écran, même sur une page courte. */
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-texte);
@@ -388,4 +393,9 @@ p {
 /* Placé en fin de fichier pour l'emporter sur les marges nulles des titres. */
 .entete-section {
   margin-bottom: var(--space-7);
+}
+
+/* Le contenu occupe l'espace libre ; le pied de page reste en bas. */
+#contenu {
+  flex: 1 0 auto;
 }

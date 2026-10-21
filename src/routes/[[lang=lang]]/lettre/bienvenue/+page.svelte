@@ -1,13 +1,13 @@
 <svelte:head>
-  <title>Inscription confirmée — Cyclo-Terre</title>
+  <title>Inscription confirmée&#8239;! — Cyclo-Terre</title>
   <meta name="robots" content="noindex" />
 </svelte:head>
 
 <section class="colonne section pile page">
   <p class="etiquette">Lettre d'information</p>
-  <h1 class="titre-1">Inscription confirmée</h1>
+  <h1 class="titre-1">Inscription confirmée&#8239;!</h1>
   <p class="chapo">
-    Merci. Vous recevrez la lettre de Cyclo-Terre : l'avancement de la machine et des outils, et les
+    Merci et bienvenue&#8239;! Vous recevrez la lettre de Cyclo-Terre : l'avancement de la machine et des outils, et les
     prochaines formations. Chaque lettre contient un lien pour vous désabonner.
   </p>
   <div class="actions">
