@@ -17,12 +17,19 @@ export const site = {
 };
 
 /**
- * Lettre d'information (Infomaniak Newsletter). Tant que `action` est vide, le formulaire
- * ouvre un e-mail « Abonnez-moi » ; y mettre l'adresse du formulaire Infomaniak pour l'activer.
+ * Lettre d'information (Infomaniak Newsletter, formulaire n° 26536).
+ * `action`, `cle` et `formulaire` viennent du code d'intégration fourni par Infomaniak
+ * (Manager → Newsletter → Formulaires) ; `champEmail` est le nom du champ e-mail de ce formulaire.
  */
 export const lettre = {
-  action: '',
-  ancre: '/contact/#lettre'
+  action: 'https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26536/submit',
+  cle: 'eyJpdiI6IklucWg1TnE5QVNGdnlcLzhRT0VuSkRhOTJGNkVOT0NWRm9Cck1jVWwrNkRvPSIsIm1hYyI6Ijg4MWY4ZTJmMTU2M2M1NWZmYTlkNmQ2Njg4YmY0NzQ5NjM1MGFmYmZmOTU4MmQ3YTBiY2M0YzAxYzc2Y2Q0ZGUiLCJ2YWx1ZSI6IlRuSDdSYTFraU9UXC8zanRERnVhMFFDY3k4eXFCY043bUs2MWhyQlVheGVrPSJ9',
+  formulaire: '26536',
+  champEmail: 'inf[1]',
+  captcha: 'https://newsletter.infomaniak.com/v3/altcha-challenge',
+  scriptCaptcha: 'https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v=1792620000',
+  ancre: '/contact/#lettre',
+  confirmation: '/lettre/confirmation/'
 };
 
 /** Lien mailto avec sujet (et corps) pré-remplis. */
