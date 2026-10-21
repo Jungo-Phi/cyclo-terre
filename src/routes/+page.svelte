@@ -61,7 +61,20 @@
         </p>
       </div>
     </div>
-    <div class="deux faces">
+  </div>
+</section>
+
+<section class="section" aria-label="Les formations">
+  <div class="colonne pile faces">
+    <!-- Photo provisoire : à remplacer par une photo de formation. -->
+    <Photo
+      nom="arnaud-youri"
+      alt="Youri Vezza et Arnaud Jungo devant le premier prototype du Cyclo-Terre"
+      ratio="21 / 9"
+      position="center 5%"
+      sizes="(max-width: 1312px) 100vw, 1200px"
+    />
+    <div class="deux">
       <article class="pile">
         <p class="etiquette agri-texte">La méthode · Youri Vezza</p>
         <h3 class="titre-3 agri-texte">Cultiver en prenant soin de son environnement</h3>
@@ -166,9 +179,7 @@
     max-width: 900px;
   }
   .faces {
-    margin-top: var(--space-7);
-    padding-top: var(--space-6);
-    border-top: 1px solid var(--rule);
+    gap: var(--space-6);
   }
   .faces .lien {
     margin-top: auto;
@@ -214,7 +225,8 @@
     .machine {
       grid-template-columns: 1fr;
     }
-    .hero :global(.photo img) {
+    .hero :global(.photo img),
+    .faces :global(.photo img) {
       aspect-ratio: 3 / 2 !important;
     }
     .reperes {
