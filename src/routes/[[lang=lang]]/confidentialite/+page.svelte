@@ -33,8 +33,11 @@
     sont servies par le site lui-même, sans appel à un service tiers.
   </p>
   <p>
-    La lettre d'information est envoyée avec Infomaniak (Suisse), qui conserve votre adresse
-    jusqu'à votre désabonnement.
+    La lettre d'information est envoyée avec Infomaniak (Infomaniak Network SA, Genève), qui
+    héberge les données en Suisse et conserve votre adresse jusqu'à votre désabonnement.
+    L'inscription est confirmée par un e-mail (double validation). Le formulaire est protégé
+    contre les robots par une vérification calculée dans votre navigateur, fournie par
+    Infomaniak, sans cookie.
   </p>
 
   <h2 class="titre-3">Vos droits</h2>
