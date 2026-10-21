@@ -18,11 +18,11 @@ deroule:
     texte: Travail superficiel, couverture permanente, apports, rotations.
   - titre: Appliquer chez soi
     texte: Un plan d'action pour ses propres parcelles.
-prerequis: Aucun.
+prerequis: Savoir tenir une pelle.
 aApporter:
   - Vêtements de travail et chaussures fermées
   - Repas de midi
 formateur: Youri Vezza, agriculteur et ingénieur agronome, spécialisé dans la santé des sols ; fondateur de La Finca Locale.
 ---
 
-Une formation pour comprendre ce qui se passe sous ses pieds et adapter ses pratiques. L'érosion et le tassement des sols mènent à une perte de fertilité d'année en année ; un sol bien traité, lui, s'améliore culture après culture.
+Une formation pour comprendre ce qui se passe sous ses pieds et adapter ses pratiques. Vous y apprendrez comment un travail superficiel du sol et de bonnes pratiques permettent de gagner en fertilité d'année en année et de moins s'épuiser.

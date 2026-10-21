@@ -27,10 +27,29 @@
   </p>
 </section>
 
-<section class="section volets" aria-label="Les deux volets">
+<section class="section premiere" aria-labelledby="titre-agenda" id="agenda">
+  <div class="colonne">
+    <div class="entete-section">
+      <h2 class="titre-2" id="titre-agenda">Agenda</h2>
+      {#if sessions.length}
+      <div class="filtres" role="group" aria-label="Filtrer par volet">
+        <button type="button" aria-pressed={filtre === 'tous'} onclick={() => (filtre = 'tous')}>Tous</button>
+        <button type="button" aria-pressed={filtre === 'agricole'} onclick={() => (filtre = 'agricole')}>Agricole</button>
+        <button type="button" aria-pressed={filtre === 'mecanique'} onclick={() => (filtre = 'mecanique')}>Mécanique</button>
+      </div>
+      {/if}
+    </div>
+    <LigneAgenda
+      sessions={visibles}
+      vide="Aucune date publiée pour l'instant. Abonnez-vous à la lettre d'information pour être prévenu·e de la prochaine session."
+    />
+  </div>
+</section>
+
+<section class="section" aria-label="Les deux volets">
   <div class="colonne deux">
     <div class="pile" id="agricole">
-      <span><span class="tag tag--agri">Volet agricole</span></span>
+      <span><span class="tag tag--agri">Agricole</span></span>
       <h2 class="titre-2 agri-texte">Cultiver en préservant le sol</h2>
       <p>
         Des formations aux méthodes de culture agroécologiques, pour produire en symbiose avec
@@ -52,14 +71,15 @@
     </div>
     <div class="pile" id="mecanique">
       <span class="tags">
-        <span class="tag tag--meca">Volet mécanique</span>
+        <span class="tag tag--meca">Mécanique</span>
         <span class="tag tag--neutre">En préparation</span>
       </span>
       <h2 class="titre-2 meca-texte">Construire, régler, réparer</h2>
       <p>
-        Des formations à l'auto-construction, à l'entretien et à la maintenance de l'outillage. Elles
-        s'appuient sur le Cyclo-Terre et ses plans libres, et sur des compétences utiles à tout outil
-        de ferme. Elles démarreront quand le prototype sera disponible pour les groupes.
+        Des formations pour construire son Cyclo-Terre ou ses outils, les régler et les réparer.
+        Elles s'appuient sur les plans libres de la machine et sur des compétences utiles à tout
+        outil de ferme. Elles démarreront dès que la version commerciale du Cyclo-Terre sera
+        finalisée.
       </p>
       <ul class="cartes">
         {#each mecaniques as f (f.slug)}
@@ -81,33 +101,14 @@
     <h2 class="titre-2" id="pratique">Comment ça se passe</h2>
     <dl class="fiche pratique">
       <dt>Où</dt>
-      <dd>À La Finca Locale, à Cartigny (GE), pour le volet agricole ; à l'atelier pour le volet mécanique. Le lieu exact figure sur chaque fiche.</dd>
+      <dd>À La Finca Locale, à Cartigny (GE), pour le volet agricole ; à l'atelier pour le volet mécanique, dont le lieu sera annoncé avec les premières formations mécaniques. Le lieu exact figure sur chaque fiche.</dd>
       <dt>Groupe</dt>
       <dd>5 à 8 personnes.</dd>
       <dt>Durée</dt>
-      <dd>Une journée ou une semaine selon la formation.</dd>
+      <dd>Une journée ou une semaine, au choix, pour les formations agricoles ; une journée ou plusieurs sessions pour les formations mécaniques.</dd>
       <dt>Paiement</dt>
-      <dd>Sur place, le premier jour. Le prix figure sur chaque date.</dd>
-      <dt>Sur mesure</dt>
-      <dd>Une ferme, une association ou une école peut accueillir une formation pour son équipe. <a href="/contact/">Nous écrire</a>.</dd>
+      <dd>Sur place, le premier jour. Environ 200 CHF par jour à titre indicatif ; le prix exact figure sur chaque date.</dd>
     </dl>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="titre-agenda" id="agenda">
-  <div class="colonne">
-    <div class="entete-section">
-      <h2 class="titre-2" id="titre-agenda">Agenda</h2>
-      <div class="filtres" role="group" aria-label="Filtrer par volet">
-        <button type="button" aria-pressed={filtre === 'tous'} onclick={() => (filtre = 'tous')}>Tous</button>
-        <button type="button" aria-pressed={filtre === 'agricole'} onclick={() => (filtre = 'agricole')}>Agricole</button>
-        <button type="button" aria-pressed={filtre === 'mecanique'} onclick={() => (filtre = 'mecanique')}>Mécanique</button>
-      </div>
-    </div>
-    <LigneAgenda
-      sessions={visibles}
-      vide="Aucune date publiée pour l'instant. Écrivez-nous pour être prévenu·e de la prochaine session."
-    />
   </div>
 </section>
 
@@ -118,10 +119,10 @@
 
 <style>
   .intro {
-    padding-block: var(--space-8) var(--space-7);
+    padding-block: var(--space-7);
     gap: var(--space-5);
   }
-  .volets {
+  .premiere {
     border-top: 1px solid var(--rule);
   }
   .tags {
@@ -181,7 +182,7 @@
   }
   @media (max-width: 720px) {
     .intro {
-      padding-block: var(--space-6) var(--space-5);
+      padding-block: var(--space-5);
     }
   }
 </style>

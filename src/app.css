@@ -19,6 +19,9 @@ body {
   font-family: var(--font-texte);
   font-size: 19px;
   line-height: 1.55;
+  /* Jamais de césure automatique. */
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 img,
@@ -57,7 +60,7 @@ p {
 }
 
 .section {
-  padding-block: var(--space-9);
+  padding-block: var(--space-8);
 }
 
 .section + .section {
@@ -118,10 +121,14 @@ p {
     padding-inline: var(--space-4);
   }
   .section {
-    padding-block: var(--space-8);
+    padding-block: var(--space-7);
   }
   .deux {
     grid-template-columns: 1fr;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
@@ -158,7 +165,7 @@ p {
   font-size: 20px;
   line-height: 1.5;
   color: var(--ink-2);
-  max-width: 58ch;
+  max-width: 74ch;
 }
 
 .annotation {

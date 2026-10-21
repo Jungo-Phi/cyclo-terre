@@ -4,7 +4,8 @@
   const photos = import.meta.glob('$lib/photos/*.{jpg,jpeg,png,webp}', {
     eager: true,
     import: 'default',
-    query: { enhanced: true }
+    // Plusieurs largeurs, pour que le navigateur charge la plus petite qui suffit à l'écran.
+    query: { enhanced: true, w: '2400;1800;1200;800;480' }
   });
 
   /** @type {{ nom: string, alt: string, ratio?: string, legende?: string, sizes?: string, prioritaire?: boolean, position?: string }} */

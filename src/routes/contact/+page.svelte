@@ -1,21 +1,25 @@
 <script>
-  import { site, mailto } from '$lib/site.js';
+  import LettreInfo from '$lib/components/LettreInfo.svelte';
+  import { site } from '$lib/site.js';
 
   const demandes = [
     {
-      titre: 'Fermes',
-      texte: 'Échanger sur vos pratiques, suivre le développement, accueillir une formation.',
-      sujet: 'Ferme : échanger sur le projet'
+      titre: 'Une ferme',
+      texte: 'Échanger sur vos pratiques, suivre le développement, accueillir une formation.'
     },
     {
-      titre: 'Écoles et institutions',
-      texte: 'Recherche, essais, formations pour vos étudiant·es ou vos équipes.',
-      sujet: 'Institution : collaboration'
+      titre: 'Une école',
+      texte: 'Formations pour vos élèves ou vos étudiant·es, projets de recherche, essais sur le terrain.'
     },
     {
-      titre: 'Ateliers et constructeurs',
-      texte: "Construire, réparer, améliorer l'outil avec nous.",
-      sujet: 'Atelier : construire avec vous'
+      titre: 'Une fondation ou une association',
+      texte: "Engagée pour l'agroécologie : soutenir le projet, accueillir ou financer des formations."
+    },
+    {
+      titre: 'Un·e bricoleur·euse',
+      texte:
+        'Construire votre Cyclo-Terre, améliorer la machine ou ses outils, partager vos modifications : le projet est ouvert aux contributions sur GitHub, selon les règles de son guide de contribution [GUIDE À RÉDIGER].',
+      note: 'Le projet sur GitHub : [LIEN GITHUB]'
     }
   ];
 </script>
@@ -27,18 +31,29 @@
 
 <section class="colonne intro">
   <div class="pile">
-    <p class="etiquette">Contact</p>
-    <h1 class="titre-1">Discutons du projet</h1>
+    <h1 class="titre-1">Discutons</h1>
     <p class="chapo">
-      Le Cyclo-Terre avance grâce à celles et ceux qui cultivent, enseignent, construisent ou
+      Cyclo-Terre avance grâce à celles et ceux qui cultivent, enseignent, construisent ou
       soutiennent l'agroécologie. Une idée, une question, une envie de contribuer : écrivez-nous.
     </p>
   </div>
   <div class="fiche adresse">
-    <p class="etiquette">Écrire</p>
+    <p class="etiquette">Nous écrire</p>
     <a class="courriel" href="mailto:{site.email}">{site.email}</a>
     <p class="annotation">Cyclo-Terre · {site.ville}</p>
-    <a class="btn btn--encre" href="mailto:{site.email}">Nous écrire</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="titre-lettre" id="lettre">
+  <div class="colonne deux">
+    <h2 class="titre-2" id="titre-lettre">La lettre d'information</h2>
+    <div class="pile">
+      <p>
+        Tous les mois ou tous les deux mois, des nouvelles de Cyclo-Terre : l'avancement de la
+        machine, les prochaines formations, la publication des plans.
+      </p>
+      <LettreInfo />
+    </div>
   </div>
 </section>
 
@@ -50,7 +65,7 @@
         <li class="pile">
           <h3 class="titre-3">{d.titre}</h3>
           <p>{d.texte}</p>
-          <a class="lien" href={mailto(d.sujet)}>Nous écrire →</a>
+          {#if d.note}<p class="annotation">{d.note}</p>{/if}
         </li>
       {/each}
       <li class="pile">
@@ -68,17 +83,13 @@
     grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
     gap: var(--space-7);
     align-items: end;
-    padding-block: var(--space-8) var(--space-9);
+    padding-block: var(--space-7) var(--space-8);
   }
   .intro .pile {
     gap: var(--space-5);
   }
   .adresse {
     gap: var(--space-3);
-  }
-  .adresse .btn {
-    align-self: flex-start;
-    margin-top: var(--space-2);
   }
   .courriel {
     font-family: var(--font-titre);
@@ -91,7 +102,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--space-5);
   }
   .demandes li {
@@ -102,18 +113,10 @@
   .demandes .lien {
     margin-top: auto;
   }
-  @media (max-width: 960px) {
-    .demandes {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   @media (max-width: 720px) {
     .intro {
       grid-template-columns: 1fr;
-      padding-block: var(--space-6) var(--space-8);
-    }
-    .demandes {
-      grid-template-columns: 1fr;
+      padding-block: var(--space-5) var(--space-7);
     }
   }
 </style>
