@@ -7,5 +7,5 @@ prix: 300 CHF
 lieu: ''
 places: 4
 placesRestantes: 4
-brouillon: false
+brouillon: true
 ---
