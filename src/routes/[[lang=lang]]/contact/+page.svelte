@@ -18,8 +18,8 @@
     {
       titre: 'Un·e bricoleur·euse',
       texte:
-        'Construire votre Cyclo-Terre, améliorer la machine ou ses outils, partager vos modifications : le projet est ouvert aux contributions sur GitHub, selon les règles de son guide de contribution [GUIDE À RÉDIGER].',
-      note: 'Le projet sur GitHub : [LIEN GITHUB]'
+        'Construire votre Cyclo-Terre, améliorer la machine ou ses outils, partager vos modifications : le projet est ouvert aux contributions sur GitHub, selon les règles de son guide de contribution.',
+      lien: { href: site.depot, label: 'Le projet sur GitHub →' }
     }
   ];
 </script>
@@ -46,7 +46,7 @@
 
 <section class="section" aria-labelledby="titre-lettre" id="lettre">
   <div class="colonne deux">
-    <h2 class="titre-2" id="titre-lettre">La lettre d'information</h2>
+    <h2 class="titre-2" id="titre-lettre">La newsletter</h2>
     <div class="pile">
       <p>
         Tous les mois ou tous les deux mois, des nouvelles de Cyclo-Terre : l'avancement de la
@@ -66,6 +66,7 @@
           <h3 class="titre-3">{d.titre}</h3>
           <p>{d.texte}</p>
           {#if d.note}<p class="annotation">{d.note}</p>{/if}
+          {#if d.lien}<a class="lien" href={d.lien.href}>{d.lien.label}</a>{/if}
         </li>
       {/each}
       <li class="pile">

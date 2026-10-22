@@ -7,6 +7,11 @@ export default {
   kit: {
     // Site entièrement statique, publié sur GitHub Pages.
     adapter: adapter({ fallback: '404.html' }),
-    prerender: { handleHttpError: 'fail' }
+    prerender: {
+      handleHttpError: 'fail',
+      // Une rubrique encore vide (aucune actualité, aucun guide) n'a pas de page à générer.
+      handleUnseenRoutes: 'ignore',
+      entries: ['*', '/actualites/rss.xml', '/sitemap.xml']
+    }
   }
 };

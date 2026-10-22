@@ -1,7 +1,7 @@
 <script>
   /*
    * Logo Cyclo-Terre en SVG intégré, animé au survol : l'engin avance vers la gauche.
-   * Tracés repris tels quels de src/lib/assets/logo/ : seuls des groupes sont ajoutés.
+   * Tracés repris tels quels des logos v3 de src/lib/assets/logo/ : seuls des groupes sont ajoutés.
    *
    * Tout dépend d'une seule grandeur, `avance`, en cycles. Par cycle :
    * - le sol et « TERRE » défilent d'une période (505 unités) vers la droite ;
@@ -109,9 +109,9 @@
   class="logo-anime"
   class:sombre
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="16 2 530 296"
-  width="530"
-  height="296"
+  viewBox="0 0 560 300"
+  width="560"
+  height="300"
   role="img"
   aria-label="Cyclo-Terre"
 >
@@ -120,15 +120,13 @@
       <rect x="24" y="230" width="495" height="68" />
     </clipPath>
   </defs>
-  {#if sombre}
-    <rect class="fond" x="16" y="2" width="530" height="296" />
-  {/if}
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect class="fond" x="0" y="0" width="560" height="300" />
+  <g fill="none" stroke-linecap="round">
     <!-- Engin : monte et descend avec la hauteur d'essieu des roues ovales. -->
     <g transform="translate(0 {assiette})">
       <path
         class="meca"
-        d="M73 170L114 102L87 73L96 57 M114 102L464 10L536 56L536 149L521 153 M536 57L385 95L309 51 M385 95L385 187 M309 51L309 149L265 169 M309 149L318.4 153.7 M349.6 169.3L385 187L401 183"
+        d="M73 170L114 102L87 73L96 57 M114 102L464 10L534 57L534 150L519 154 M534 58L385 95L309 51 M385 95L385 187 M309 51L309 149L265 169 M347 168L385 187L401 183 M309 149L321 155"
         stroke-width="8"
       />
       <circle class="moyeu" cx="73" cy="169" r="8" />
@@ -196,6 +194,9 @@
   }
   .agri {
     stroke: var(--agri);
+  }
+  .fond {
+    fill: var(--paper);
   }
   .sombre .fond {
     fill: var(--ink);

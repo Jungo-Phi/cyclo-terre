@@ -1,7 +1,9 @@
 <script>
   import Photo from '$lib/components/Photo.svelte';
   import SchemaProfil from '$lib/components/SchemaProfil.svelte';
-  import { lettre } from '$lib/site.js';
+  import { lettre, site } from '$lib/site.js';
+
+  let { data } = $props();
 
   const pictos = import.meta.glob('$lib/assets/pictos/*.svg', { eager: true, import: 'default' });
   /** @param {string} nom */
@@ -147,7 +149,7 @@
         Les essais ont lieu à La Finca Locale, à Cartigny. Vous voulez suivre le développement,
         partager votre expérience ou y contribuer ?
       </p>
-      <a class="lien" href={lettre.ancre}>S'abonner à la lettre d'information →</a>
+      <a class="lien" href={lettre.ancre}>S'abonner à la newsletter →</a>
       <a class="lien" href="/projet/#calendrier">Le calendrier du projet →</a>
       <a class="lien" href="/contact/">Nous écrire →</a>
     </div>
@@ -162,8 +164,9 @@
     </div>
     <div class="prose">
       <p>
-        Les plans du Cyclo-Terre et de ses outils seront publiés sous licence libre
-        [NOM DE LA LICENCE] en 2028, avec la sortie de la version commerciale.
+        Les plans du Cyclo-Terre et de ses outils seront publiés sous licence libre en 2028, avec
+        la sortie de la version commerciale : CERN-OHL-S v2 pour le matériel (plans, fichiers CAO,
+        nomenclature) et CC BY-SA 4.0 pour la documentation.
       </p>
       <h3 class="titre-3">Ce qui sera publié</h3>
       <ul>
@@ -205,7 +208,162 @@
 </section>
 
 
+<section class="section" aria-labelledby="titre-construire" id="construire">
+  <div class="colonne">
+    <div class="entete-section pile">
+      <p class="etiquette">Plans et guides</p>
+      <h2 class="titre-2" id="titre-construire">Construire et contribuer</h2>
+    </div>
+
+    <div class="deux">
+      <div class="pile">
+        <h3 class="titre-3">Les plans</h3>
+        {#if data.version}
+          <p>
+            Version <strong>{data.version.tag}</strong>, publiée le {data.version.date.split('-').reverse().join('.')}.
+            Les fichiers sont gratuits et libres.
+          </p>
+          <ul class="telechargements">
+            {#each data.version.fichiers as f}
+              <li><a href={f.url}>{f.nom}</a> <span class="annotation">{f.taille}</span></li>
+            {/each}
+          </ul>
+          <a class="lien" href={site.depot}>Toutes les sources sur GitHub →</a>
+        {:else}
+          <p>
+            Les plans seront publiés ici avec la version commerciale, en 2028 : téléchargement direct,
+            sans compte ni logiciel particulier.
+          </p>
+          <a class="lien" href={lettre.ancre}>Être prévenu·e de la publication →</a>
+        {/if}
+
+        <h3 class="titre-3">Les guides</h3>
+        {#if data.sections.length}
+          {#each data.sections as s}
+            <div class="pile guides">
+              <p class="etiquette">{s.nom}</p>
+              <ul>
+                {#each s.guides as g}
+                  <li><a href="/outils/guides/{g.slug}/">{g.titre}</a></li>
+                {/each}
+              </ul>
+            </div>
+          {/each}
+        {:else}
+          <p>
+            Le manuel d'utilisation et d'entretien, les consignes de sécurité et les instructions
+            d'assemblage seront lisibles ici, au fur et à mesure de leur rédaction.
+          </p>
+        {/if}
+      </div>
+
+      <div class="pile">
+        <h3 class="titre-3">Participer, à votre rythme</h3>
+        <p>
+          Le Cyclo-Terre s'améliore avec celles et ceux qui l'utilisent. Chaque étape est facultative ;
+          les trois premières ne demandent aucun compte.
+        </p>
+        <ol class="echelle">
+          <li>
+            <span class="num">1</span>
+            <div><strong>Suivre</strong> l'avancement : <a href="/actualites/">actualités</a> et <a href={lettre.ancre}>newsletter</a>.</div>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <div><strong>Poser une question</strong> ou partager une idée : <a href="mailto:{site.email}">par e-mail</a>, ou dans les <a href={site.discussions}>discussions</a> ouvertes à tous.</div>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <div><strong>Partager votre construction</strong> ou signaler un problème : envoyez-nous photos et remarques <a href="mailto:{site.email}?subject=Ma%20construction%20du%20Cyclo-Terre">par e-mail</a>.</div>
+          </li>
+          <li>
+            <span class="num">4</span>
+            <div><strong>Corriger un guide</strong> : chaque guide a un bouton « Proposer une correction » qui ouvre l'éditeur en ligne de GitHub (compte gratuit).</div>
+          </li>
+          <li>
+            <span class="num">5</span>
+            <div><strong>Modifier les plans</strong> ou concevoir un outil : suivez le <a href={site.contribuer}>guide de contribution</a>.</div>
+          </li>
+        </ol>
+
+        <details class="lexique">
+          <summary>Les mots de GitHub, en clair</summary>
+          <dl>
+            <dt>Dépôt</dt><dd>Le dossier en ligne qui contient tous les fichiers du projet et leur historique.</dd>
+            <dt>Version (release)</dt><dd>Un état figé des plans, avec des fichiers prêts à télécharger.</dd>
+            <dt>Discussion</dt><dd>Un fil de questions et de réponses, ouvert à tous.</dd>
+            <dt>Signalement (issue)</dt><dd>Une fiche qui décrit un problème ou une idée précise, à traiter.</dd>
+            <dt>Copie (fork)</dt><dd>Votre propre copie du dépôt, où vous pouvez tout modifier.</dd>
+            <dt>Proposition (pull request)</dt><dd>Une demande d'intégrer vos modifications aux plans communs, relue avant d'être acceptée.</dd>
+          </dl>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <style>
+  .telechargements,
+  .guides ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule-strong);
+  }
+  .telechargements li,
+  .guides li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .guides {
+    gap: var(--space-2);
+  }
+  .echelle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid var(--ink);
+  }
+  .echelle li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: var(--space-3);
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .echelle .num {
+    display: inline-grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius-rond);
+    font-family: var(--font-mono);
+    font-size: 13px;
+  }
+  .lexique summary {
+    cursor: pointer;
+    font-family: var(--font-titre);
+    font-weight: 600;
+    font-size: 19px;
+  }
+  .lexique dl {
+    margin: var(--space-3) 0 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-2) var(--space-4);
+    font-size: 17px;
+  }
+  .lexique dt {
+    font-weight: 600;
+  }
+  .lexique dd {
+    margin: 0;
+  }
   .intro {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

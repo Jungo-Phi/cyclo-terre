@@ -1,9 +1,12 @@
 import { error } from '@sveltejs/kit';
 import { formations, formation, sessionsDe } from '$lib/contenu.js';
+import { actives, parDefaut } from '$lib/i18n/index.js';
 
-/** Une page par fichier de src/content/formations. */
+/** Une page par fichier de src/content/formations, dans chaque langue publiée (contenu en français). */
 export function entries() {
-  return formations.map((f) => ({ slug: f.slug }));
+  return actives.flatMap((lang) =>
+    formations.map((f) => (lang === parDefaut ? { slug: f.slug } : { lang, slug: f.slug }))
+  );
 }
 
 export function load({ params }) {
