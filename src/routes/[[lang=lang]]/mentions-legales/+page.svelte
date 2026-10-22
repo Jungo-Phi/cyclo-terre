@@ -14,7 +14,7 @@
   <p>
     Cyclo-Terre, projet porté par Youri Vezza et Arnaud Jungo<br />
     [STRUCTURE JURIDIQUE, PAS ENCORE FIXÉE]<br />
-    6 A chemin de Drize, 1256 Troinex<br />
+    {site.adresse.join(', ')}<br />
     <a href="mailto:{site.email}">{site.email}</a>
   </p>
 

@@ -8,7 +8,6 @@
 </svelte:head>
 
 <section class="colonne section pile page">
-  <p class="etiquette">Newsletter</p>
   <h1 class="titre-1">E-mail de confirmation envoyé</h1>
   <p class="chapo">Cliquez sur le lien qu'il contient pour valider votre inscription.</p>
   <p class="annotation">

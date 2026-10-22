@@ -159,7 +159,6 @@
 <section class="section" aria-labelledby="plans">
   <div class="colonne deux">
     <div class="pile">
-      <p class="etiquette">Open source</p>
       <h2 class="titre-2" id="plans">Des plans libres</h2>
     </div>
     <div class="prose">
@@ -211,7 +210,6 @@
 <section class="section" aria-labelledby="titre-construire" id="construire">
   <div class="colonne">
     <div class="entete-section pile">
-      <p class="etiquette">Plans et guides</p>
       <h2 class="titre-2" id="titre-construire">Construire et contribuer</h2>
     </div>
 

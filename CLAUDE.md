@@ -32,3 +32,7 @@ publié sur GitHub Pages. Voir README.md pour les commandes et l'organisation du
 - Coins droits, filets plutôt qu'ombres, polices Barlow Semi Condensed (titres), Source Sans 3
   (texte), IBM Plex Mono (annotations).
 - Logo : fichiers de `src/lib/assets/logo/`, à ne jamais redessiner ni recolorer.
+- Pas de fil d'Ariane en haut des pages, ni de petit sur-titre gris (`.etiquette`) au-dessus d'un
+  titre de page ou de section (h1, h2) : le titre suffit. Restent permis : `.etiquette` comme
+  intitulé de bloc (« Fiche technique », « Prérequis »…), les sur-titres colorés de volet au-dessus
+  d'un titre secondaire (« La méthode · Youri Vezza ») et les badges `.tag` de volet.

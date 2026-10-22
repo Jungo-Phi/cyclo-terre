@@ -40,7 +40,24 @@
   <div class="fiche adresse">
     <p class="etiquette">Nous écrire</p>
     <a class="courriel" href="mailto:{site.email}">{site.email}</a>
-    <p class="annotation">Cyclo-Terre · {site.ville}</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="titre-coordonnees">
+  <div class="colonne deux">
+    <h2 class="titre-2" id="titre-coordonnees">Adresse et téléphones</h2>
+    <div class="coordonnees">
+      <div class="pile">
+        <p class="etiquette">Adresse</p>
+        <p>Cyclo-Terre{#each site.adresse as ligne}<br />{ligne}{/each}</p>
+      </div>
+      {#each site.telephones as t}
+        <div class="pile">
+          <p class="etiquette {t.volet === 'agricole' ? 'agri' : 'meca'}-texte">{t.domaine}</p>
+          <p>{t.nom}<br /><a href="tel:{t.numero.replaceAll(' ', '')}">{t.numero}</a></p>
+        </div>
+      {/each}
+    </div>
   </div>
 </section>
 
@@ -97,6 +114,19 @@
     font-weight: 600;
     font-size: 26px;
     overflow-wrap: anywhere;
+  }
+  .coordonnees {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-5);
+  }
+  .coordonnees .pile {
+    gap: var(--space-2);
+    padding-top: var(--space-4);
+    border-top: 2px solid var(--ink);
+  }
+  .coordonnees p {
+    margin: 0;
   }
   .demandes {
     list-style: none;

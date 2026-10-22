@@ -15,13 +15,17 @@
   let { sombre = false } = $props();
 
   const PERIODE = 505; // unités du viewBox
-  const DUREE_CYCLE = 2; // s, à pleine vitesse
+  const DUREE_CYCLE = 2.0; // s, à pleine vitesse
   const V_MAX = 1 / DUREE_CYCLE; // cycles/s
   const FREINAGE = V_MAX ** 2 / (2 * 0.5); // arrêt en un demi-cycle depuis la pleine vitesse
-  const DEMARRAGE = FREINAGE * 3;
+  const DEMARRAGE = FREINAGE * 2;
+  const ECHELLE_CRANTEE = 0.85; // taille de la roue crantée pendant l'animation
+  const TRANSITION_CRANTEE = 0.8; // s, durée du rétrécissement et de l'agrandissement
 
   let avance = $state(0);
   let vitesse = 0;
+  /** 0 = taille d'origine, 1 = taille réduite */
+  let reduction = $state(0);
   let actif = false;
   /** @type {number | null} cycle entier visé pour l'arrêt */
   let butee = null;
@@ -33,10 +37,13 @@
     const dt = Math.min((t - instant) / 1000, 0.05);
     instant = t;
 
+    const pasReduction = dt / TRANSITION_CRANTEE;
+
     if (actif) {
       butee = null;
       vitesse = Math.min(V_MAX, vitesse + DEMARRAGE * dt);
       avance += vitesse * dt;
+      reduction = Math.min(1, reduction + pasReduction);
     } else {
       const distanceArret = vitesse ** 2 / (2 * FREINAGE);
       butee ??= Math.ceil(avance + distanceArret - 1e-9);
@@ -50,12 +57,19 @@
       if (reste <= 1e-4 || v <= 0) {
         avance = 0;
         vitesse = 0;
+        reduction = 0;
         butee = null;
         image = 0;
         return;
       }
       avance = Math.min(butee, avance + ((vitesse + v) / 2) * dt);
       vitesse = v;
+      // La roue crantée reprend sa taille pendant les derniers instants du freinage.
+      const tempsRestant = reste > distanceArret ? Infinity : (2 * (butee - avance)) / vitesse;
+      reduction =
+        tempsRestant > TRANSITION_CRANTEE
+          ? Math.min(1, reduction + pasReduction)
+          : Math.min(reduction, tempsRestant / TRANSITION_CRANTEE);
     }
     image = requestAnimationFrame(pas);
   }
@@ -75,6 +89,10 @@
   const cycle = $derived(avance - Math.floor(avance));
   const angleRoues = $derived(-720 * cycle); // sens antihoraire
   const angleCrantee = $derived(-1080 * cycle);
+  // Transition adoucie (smoothstep) ; taille d'origine à l'arrêt.
+  const echelleCrantee = $derived(
+    1 - (1 - ECHELLE_CRANTEE) * reduction * reduction * (3 - 2 * reduction)
+  );
   const decalageSol = $derived(PERIODE * cycle);
   // Hauteur d'essieu d'une ellipse de demi-axes 50 (vertical au repos) et 44 qui roule.
   const assiette = $derived.by(() => {
@@ -150,7 +168,7 @@
         stroke-width="12"
       />
       <!-- Roue crantée (C central), centre des pointes de crans (264.89, 169). -->
-      <g transform="translate(264.89 169) rotate({angleCrantee}) translate(-264.89 -169)">
+      <g transform="translate(264.89 169) rotate({angleCrantee}) scale({echelleCrantee}) translate(-264.89 -169)">
         <path
           class="encre-plein"
           d="M271,129C267.37,127.79,264.6,127.5,256.14,130C235.8,136,224.71,157,229.33,179C234.2,202.18,256.14,213,274.63,208C280.3,206.47,286.47,202.35,290,200C293,198,295,198,297,200C299,202,300,205,297,208C292.47,212.53,294.92,219.5,294.92,219.5L290.76,222C290.76,222,284.95,214.03,276.75,216.39C268.55,218.75,267.2,229,267.2,229L262.58,229C262.58,229,261.23,218.95,253.07,216.6C244.82,214.23,239.03,222,239.03,222L234.87,219.5C234.87,219.5,238.31,210.19,232.27,203.7C226.3,197.28,217.78,201,217.78,201L215.47,196.5C215.47,196.5,222.8,190.37,220.6,181.56C218.4,172.75,209,171,209,171L209,166.5C209,166.5,218.22,164.88,220.41,156.11C222.62,147.25,215.47,141,215.47,141L217.78,136.5C217.78,136.5,226.79,140.92,232.63,134.65C238.81,128.02,234.87,118,234.87,118L239.03,115.5C239.03,115.5,244.82,123.59,253.02,121.23C261.22,118.86,262.58,109,262.58,109L267.2,109C267.2,109,269.48,116.99,275,119C275.85,119.31,280,122,278,126C276.59,128.83,274,130,271,129Z"

@@ -4,7 +4,6 @@
 </svelte:head>
 
 <section class="colonne section pile page">
-  <p class="etiquette">Newsletter</p>
   <h1 class="titre-1">Inscription confirmée&#8239;!</h1>
   <p class="chapo">
     Merci et bienvenue&#8239;! Vous recevrez la newsletter de Cyclo-Terre : l'avancement de la machine et des outils, et les

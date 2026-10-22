@@ -11,11 +11,10 @@ export default {
     '/projet/': 'Nuestra visión',
     '/contact/': 'Contacto'
   },
-  slogan: 'Portaherramientas hortícola y formaciones en agroecología para microgranjas',
+  slogan: 'Portaherramientas hortícola y formaciones en agroecología',
   mentionsLegales: 'Aviso legal',
   confidentialite: 'Privacidad',
-  newsletterTexte: 'Newsletter: novedades de las herramientas y próximas formaciones.',
-  newsletterLien: 'Suscribirse a la newsletter →',
+  newsletter: 'Newsletter',
   langue: 'Idioma',
   formationsEnFrancais: 'Las formaciones se imparten en francés.'
 };

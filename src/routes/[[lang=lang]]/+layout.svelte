@@ -78,12 +78,9 @@
     </nav>
   </div>
   <div class="colonne">
-    <p class="abonnement">
-      <span>{t.newsletterTexte}</span>
-      <a class="lien" href={chemin(lang, '/contact/') + '#lettre'}>{t.newsletterLien}</a>
-    </p>
     <div class="legal">
       <span>{t.slogan}</span>
+      <a href={chemin(lang, '/contact/') + '#lettre'}>{t.newsletter}</a>
       <a href={chemin(lang, '/mentions-legales/')}>{t.mentionsLegales}</a>
       <a href={chemin(lang, '/confidentialite/')}>{t.confidentialite}</a>
       {#if actives.length > 1}
@@ -166,17 +163,6 @@
   }
   .pied :global(:focus-visible) {
     outline-color: var(--paper);
-  }
-  .abonnement {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: var(--space-1) var(--space-4);
-    margin: var(--space-5) 0 0;
-    font-size: 17px;
-  }
-  .abonnement .lien {
-    color: var(--paper);
   }
   .legal {
     display: flex;

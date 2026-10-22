@@ -13,10 +13,6 @@
   <meta property="og:type" content="article" />
 </svelte:head>
 
-<nav class="colonne fil annotation" aria-label="Fil d'Ariane">
-  <a href="/actualites/">Actualités</a>
-</nav>
-
 <article class="colonne article">
   <header class="pile entete">
     <time class="annotation" datetime={a.date}>{dateLongue(a.date)}</time>
@@ -37,18 +33,12 @@
 </section>
 
 <style>
-  .fil {
-    padding-top: var(--space-6);
-  }
-  .fil a {
-    color: var(--ink-muted);
-  }
   .article {
     max-width: calc(800px + 2 * var(--space-8));
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
-    padding-block: var(--space-5) var(--space-9);
+    padding-block: var(--space-7) var(--space-9);
   }
   .entete {
     gap: var(--space-4);

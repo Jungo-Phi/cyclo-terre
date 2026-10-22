@@ -1,19 +1,19 @@
 # Cyclo-Terre — textes du site
 
-Oct 21, 2026 · @Arnaud
+Oct 22, 2026 · @Arnaud
 
 ## Mode d'emploi
 
-Ce document reprend tout le texte visible du site, page par page et dans l'ordre d'affichage. Modifiez directement le texte ; je le reporterai ensuite dans le site.
+Ce document reprend tout le texte visible du site, page par page et dans l'ordre d'affichage, tel qu'il est en ligne au 22 octobre 2026. Modifiez directement le texte ; je le reporterai ensuite dans le site.
 
 - Les lignes en italique commençant par « Rôle » ne sont pas sur le site : elles décrivent ce que chaque texte apporte au parcours du visiteur.
 - Les crochets, comme \[LIEU\], signalent une information manquante à compléter.
 - Les titres de niveau 3 donnent le nom de la section tel qu'il apparaît sur le site, ou entre parenthèses quand la section n'a pas de titre visible.
 - Pour supprimer un texte, barrez-le ou écrivez « à supprimer » ; pour une question, laissez un commentaire.
-- Deux versions : quand un texte dépend de l'avancement du projet, il est donné deux fois. **Aujourd'hui** = en ligne dès maintenant (prototype en essai, atelier et structure juridique pas encore fixés). **À terme** = quand la version commerciale sera disponible.
+- Deux versions : quand un texte dépend de l'avancement du projet, il est donné deux fois. **Aujourd'hui** = en ligne dès maintenant (prototype en essai, atelier et structure juridique pas encore fixés). **À terme** = quand la version commerciale sera disponible ; ces textes ne sont pas encore sur le site.
 - Vocabulaire : « Cyclo-Terre » sans article désigne le projet, « le Cyclo-Terre » la machine. Le Cyclo-Terre est « la machine », « l'engin » ou « le porte-outils », jamais « l'outil » : les outils sont ce qu'il porte.
 
-Parcours général : l'accueil résume et oriente ; Outils présente le Cyclo-Terre et les outils qu'il porte ; Formations montre ce que l'on peut faire dès maintenant ; Notre vision explique le pourquoi, les personnes et le calendrier ; Contact convertit l'intérêt en prise de contact.
+Parcours général : l'accueil résume et oriente ; Outils présente le Cyclo-Terre et les outils qu'il porte, puis ses plans et ses guides ; Formations montre ce que l'on peut faire dès maintenant ; Actualités donne les nouvelles du projet ; Notre vision explique le pourquoi, les personnes et le calendrier ; Contact convertit l'intérêt en prise de contact.
 
 ## Éléments communs
 
@@ -21,17 +21,17 @@ Parcours général : l'accueil résume et oriente ; Outils présente le Cyclo-Te
 
 ### En-tête et pied de page : menu
 
-*Rôle : les quatre portes d'entrée du site, dans le même ordre en haut et en bas.*
+*Rôle : les cinq portes d'entrée du site, dans le même ordre en haut et en bas.*
 
-Outils · Formations · Notre vision · Contact
+Outils · Formations · Actualités · Notre vision · Contact
 
-### Pied de page : accroche et liens légaux
+### Pied de page : accroche et liens
 
-*Rôle : rappelle en une ligne ce qu'est Cyclo-Terre.*
+*Rôle : rappelle en une ligne ce qu'est Cyclo-Terre ; le lien Newsletter mène à l'inscription (page Contact).*
 
-Porte-outils maraîcher et formations en agroécologie pour les micro-fermes
+Porte-outils maraîcher & formations en agroécologie
 
-Mentions légales · Confidentialité
+Newsletter · Mentions légales · Confidentialité
 
 ### Description pour les moteurs de recherche et les partages
 
@@ -49,32 +49,33 @@ Porte-outils maraîcher léger et formations en agroécologie et mécanique pour
 
 Cyclo-Terre — Porte-outils et formations pour micro-fermes
 
-### La mécanisation légère pour une méthode agroécologique
+### La mécanisation légère pour l'agroécologie
 
-*Rôle : première impression. Dit ce qu'est Cyclo-Terre et pour qui, et met en avant le Cyclo-Terre et la méthode qu'il sert, en trois phrases. Suivi de la grande photo de la machine et de deux boutons.*
+*Rôle : première impression. Dit ce qu'est Cyclo-Terre et pour qui, et met en avant le Cyclo-Terre et la méthode qu'il sert. Suivi de la grande photo de la machine.*
 
-Le Cyclo-Terre est une machine agricole à propulsion humaine conçue pour les micro-fermes et sert une méthode de production agroécologique.
-L'objectif de cette machine est de favoriser l'émergence de micro-fermes à taille humaine, produisant en symbiose avec l'environnement.
-
-Boutons : Découvrir le Cyclo-Terre · Voir les formations
+Le Cyclo-Terre est une machine agricole à propulsion humaine conçue pour les micro-fermes et sert une méthode de production agroécologique. L'objectif de cette machine est de favoriser l'émergence de micro-fermes à taille humaine, produisant en symbiose avec l'environnement.
 
 ### L'outil au service de la méthode
 
-*Rôle : résumer l'origine du projet en deux phrases (l'histoire complète est dans Notre vision) et montrer que la méthode de culture et la machine sont les deux faces d'une même pièce. Donner envie, sans détail technique.*
+*Rôle : résumer l'origine du projet (l'histoire complète est dans Notre vision) et montrer que la méthode de culture et la machine sont les deux faces d'une même pièce. Donner envie, sans détail technique.*
 
-Le projet Cyclo-Terre est né d’une rencontre : celle de Youri Vezza, ingénieur agronome et maraîcher depuis 2018, et d’Arnaud Jungo, ingénieur en mécanique, qui a conçu la machine dans le cadre de son master.
+Le projet Cyclo-Terre est né d'une rencontre : celle de Youri Vezza, ingénieur agronome et maraîcher depuis 2018, et d'Arnaud Jungo, ingénieur en mécanique, qui a conçu la machine dans le cadre de son master.
 
-Au fil de plusieurs années de maraîchage biologique entièrement manuel, Youri Vezza a développé une méthode de travail du sol qui a fait ses preuves : la fertilité de ses parcelles s’est nettement améliorée. Mais cette méthode restait physiquement éprouvante et très chronophage.
+Au fil de plusieurs années de maraîchage biologique entièrement manuel, Youri Vezza a développé une méthode de travail du sol qui a fait ses preuves : la fertilité de ses parcelles s'est nettement améliorée. Mais cette méthode restait physiquement éprouvante et très chronophage.
 
-Adapté à cette méthode, le Cyclo-Terre en réduit la pénibilité avec une mécanisation légère, tout en orientant le travail vers des pratiques qui préservent la fertilité du sol. Il est le fruit d’une co-conception entre le maraîcher et l’ingénieur.
+Adapté à cette méthode, le Cyclo-Terre en réduit la pénibilité avec une mécanisation légère, tout en orientant le travail vers des pratiques qui préservent la fertilité du sol. Il est le fruit d'une co-conception entre le maraîcher et l'ingénieur.
 
-Le Cyclo-Terre est pensé pour l’autoconstruction, inspiré par les machines de L’Atelier Paysan : une machine simple que l’on fabrique et répare soi-même, pour rendre aux agricultrices et aux agriculteurs la maîtrise de leurs outils de production.
+Le Cyclo-Terre est pensé pour l'autoconstruction, inspiré par les machines de L'Atelier Paysan : une machine simple que l'on fabrique et répare soi-même, pour rendre aux agricultrices et aux agriculteurs la maîtrise de leurs outils de production.
+
+### (Les formations)
+
+*Rôle : les deux volets, sous une photo des deux fondateurs (provisoire, à remplacer par une photo de formation).*
 
 **La méthode · Youri Vezza** (en vert)
 
 Cultiver en prenant soin de son environnement
 
-Avec sa méthode de maraîchage bio-intensif, inspirée des travaux de Jean-Martin Fortier, Youri Vezza vous apprendra à cultiver en planches permanentes, lire votre sol, gérer l’arrosage et préparer votre saison. Une formation ouverte à toutes et à tous, que vous utilisiez le Cyclo-Terre ou non.
+Avec sa méthode de maraîchage bio-intensif, inspirée des travaux de Jean-Martin Fortier, Youri Vezza vous apprendra à cultiver en planches permanentes, lire votre sol, gérer l'arrosage et préparer votre saison. Une formation ouverte à toutes et à tous, que vous utilisiez le Cyclo-Terre ou non.
 
 Lien : Les formations agricoles →
 
@@ -82,9 +83,9 @@ Lien : Les formations agricoles →
 
 Concevoir, construire et réparer ses outils
 
-**Aujourd'hui :** Lors d’un atelier d’autoconstruction, Arnaud Jungo vous accompagnera dans la fabrication de votre Cyclo-Terre : travail du métal, réglage, entretien et réparation, jusqu’aux premières esquisses de vos propres outils. Ces ateliers débuteront dès que la version commerciale du Cyclo-Terre sera finalisée.
+**Aujourd'hui :** Lors d'un atelier d'autoconstruction, Arnaud Jungo vous accompagnera dans la fabrication de votre Cyclo-Terre : travail du métal, réglage, entretien et réparation, jusqu'aux premières esquisses de vos propres outils. Ces ateliers débuteront dès que la version commerciale du Cyclo-Terre sera finalisée.
 
-**À terme :** Avec son expérience d’ingénieur en mécanique, Arnaud Jungo vous accompagnera dans la fabrication de votre Cyclo-Terre lors d’un atelier d’autoconstruction. Vous apprendrez à travailler le métal (couper, percer, souder, assembler), puis à régler, entretenir et réparer votre machine en toute autonomie. L’atelier sera aussi l’occasion d’aborder la conception d’outils, et peut-être d’esquisser les vôtres.
+**À terme :** Avec son expérience d'ingénieur en mécanique, Arnaud Jungo vous accompagnera dans la fabrication de votre Cyclo-Terre lors d'un atelier d'autoconstruction. Vous apprendrez à travailler le métal (couper, percer, souder, assembler), puis à régler, entretenir et réparer votre machine en toute autonomie. L'atelier sera aussi l'occasion d'aborder la conception d'outils, et peut-être d'esquisser les vôtres.
 
 Lien : Les formations mécaniques →
 
@@ -92,34 +93,30 @@ Lien : Les formations mécaniques →
 
 *Rôle : résumé de la page Outils. Situe le porte-outils par rapport à ce que le visiteur connaît déjà, avec le schéma annoté. Rappelle où en est la machine.*
 
-Étiquette : Outils
-
 Le Cyclo-Terre se situe entre la houe maraîchère et le motoculteur. La houe respecte le sol, mais elle demande un effort considérable ; le motoculteur va vite, mais il est lourd, consomme du carburant et dégrade le sol. Le Cyclo-Terre allie la finesse du travail manuel à l'efficacité d'une machine : sans carburant, il prend en charge le sarclage, la préparation du sol et le semis, avec un travail superficiel qui laisse la structure du sol s'améliorer culture après culture. Il sert aussi de véhicule utilitaire pour les récoltes et les livraisons.
 
 **Aujourd'hui :** Prototype en essai sur le terrain. Version commerciale prévue pour 2028.
 
 **À terme :** À assistance électrique. Disponible monté, en kit ou en atelier d'autoconstruction, ou à fabriquer soi-même grâce aux plans libres.
 
+Lien : Découvrir le Cyclo-Terre →
+
 Légendes du schéma :
 
 1. Caisse arrière : 2 piles de caisses maraîchères, jusqu'à 250 kg
-2. Voie pensée pour les planches de 75 cm
-3. Moteur de pédalier
-4. Pièces de vélo standard, réparables à l'atelier
-
-Lien : Découvrir le Cyclo-Terre →
+2. Moteur de pédalier
+3. Pièces de vélo standard, réparables à l'atelier
+4. Voie pensée pour les planches de 75 cm
 
 ### Prochaines formations
 
-*Rôle : montrer les trois prochaines dates. La section n'apparaît que lorsqu'au moins une date est publiée.*
+*Rôle : montrer les trois prochaines dates. La section n'apparaît que lorsqu'au moins une date est publiée (aucune aujourd'hui).*
 
 Lien : Tout l'agenda →
 
 ### Des plans libres
 
 *Rôle : résumé de la section open source de la page Outils. Fait comprendre que le Cyclo-Terre appartient à ceux qui l'utilisent.*
-
-Étiquette : Open source
 
 **Aujourd'hui :** Plans, fichiers CAO, nomenclature et instructions d'assemblage du Cyclo-Terre seront publiés sous licence libre. Chacun·e pourra le construire, l'adapter à sa ferme et partager ses améliorations.
 
@@ -133,7 +130,11 @@ Lien : Pourquoi des plans libres →
 
 ## Outils
 
-*Rôle de la page : tout savoir sur le Cyclo-Terre et les outils qu'il porte — pourquoi il existe, ce qu'il fait, ses chiffres, comment se le procurer et ce que signifient ses plans libres. Aujourd'hui, elle doit lever toute ambiguïté : c'est un prototype, il n'est pas en vente.*
+*Rôle de la page : tout savoir sur le Cyclo-Terre et les outils qu'il porte — pourquoi il existe, ce qu'il fait, ses chiffres, comment se le procurer, ce que signifient ses plans libres, puis où trouver les plans et les guides. Aujourd'hui, elle doit lever toute ambiguïté : c'est un prototype, il n'est pas en vente.*
+
+### Titre de l'onglet
+
+Outils — Cyclo-Terre
 
 ### Description pour les moteurs de recherche
 
@@ -175,7 +176,7 @@ Le Cyclo-Terre est un porte-outils : on y monte l'outil dont la culture a besoin
 
 **Aujourd'hui :** Pictogrammes : Sarcloir · Semoir · Disques butteurs · Herse rotative
 
-**À terme :** Pictogrammes cliquables, chacun·e menant à la fiche technique de l'outil : Sarcloir · Semoir · Disques butteurs · Herse rotative
+**À terme :** Pictogrammes cliquables, chacun menant à la fiche technique de l'outil : Sarcloir · Semoir · Disques butteurs · Herse rotative
 
 ### Fiches techniques des outils (à terme)
 
@@ -192,7 +193,7 @@ Le Cyclo-Terre est un porte-outils : on y monte l'outil dont la culture a besoin
 
 | Caractéristique | Valeur |
 | --- | --- |
-| Assistance électrique | \[500 W, 800 Wh\] |
+| Assistance électrique | 500 W, autonomie 800 Wh |
 | Charge utile | jusqu'à 250 kg |
 | Voie | pensée pour les planches de 75 cm, le format du maraîchage bio-intensif popularisé par Jean-Martin Fortier |
 | Largeur hors tout | 92 cm |
@@ -202,7 +203,7 @@ Le Cyclo-Terre est un porte-outils : on y monte l'outil dont la culture a besoin
 
 ### Où en est-on · Se procurer un Cyclo-Terre
 
-*Rôle : aujourd'hui, dire clairement que la machine n'est pas en vente et renvoyer vers le calendrier et la lettre d'information ; à terme, présenter les quatre façons de se procurer un Cyclo-Terre.*
+*Rôle : aujourd'hui, dire clairement que la machine n'est pas en vente et renvoyer vers le calendrier et la newsletter ; à terme, présenter les quatre façons de se procurer un Cyclo-Terre.*
 
 **Aujourd'hui** (titre : Où en est-on)
 
@@ -210,7 +211,7 @@ Le Cyclo-Terre n'est pas encore en vente : le prototype est en essai sur le terr
 
 Les essais ont lieu à La Finca Locale, à Cartigny. Vous voulez suivre le développement, partager votre expérience ou y contribuer ?
 
-Liens : S'abonner à la lettre d'information → · Le calendrier du projet → · Nous écrire →
+Liens : S'abonner à la newsletter → · Le calendrier du projet → · Nous écrire →
 
 **À terme** (titre : Se procurer un Cyclo-Terre)
 
@@ -227,11 +228,9 @@ Liens : Nous écrire → · L'atelier d'autoconstruction → · Les plans sur Gi
 
 *Rôle : la section détaillée sur l'open source — ce qui sera publié, pourquoi, ce que ça change pour l'utilisateur, et comment plans libres et vente vont ensemble.*
 
-Étiquette : Open source
+**Aujourd'hui :** Les plans du Cyclo-Terre et de ses outils seront publiés sous licence libre en 2028, avec la sortie de la version commerciale : CERN-OHL-S v2 pour le matériel (plans, fichiers CAO, nomenclature) et CC BY-SA 4.0 pour la documentation.
 
-**Aujourd'hui :** Les plans du Cyclo-Terre et de ses outils seront publiés sous licence libre \[NOM DE LA LICENCE\] en 2028, avec la sortie de la version commerciale.
-
-**À terme :** Les plans du Cyclo-Terre et de ses outils sont publiés sous licence libre \[NOM DE LA LICENCE\], sur GitHub \[LIEN GITHUB\].
+**À terme :** Les plans du Cyclo-Terre et de ses outils sont publiés sous licence libre sur GitHub : CERN-OHL-S v2 pour le matériel (plans, fichiers CAO, nomenclature) et CC BY-SA 4.0 pour la documentation.
 
 **Ce qui sera publié**
 
@@ -251,13 +250,71 @@ Chacun·e pourra construire, modifier et partager le Cyclo-Terre, à condition d
 
 Les deux sont complémentaires. Acheter un Cyclo-Terre monté, en kit ou en atelier fait gagner du temps et finance le développement du projet ; les plans libres garantissent que chacun·e peut le fabriquer, le réparer et l'améliorer sans dépendre de nous.
 
-**Aujourd'hui :** Bouton : Être prévenu·e de la publication (inscription à la lettre d'information)
+**Aujourd'hui :** Bouton : Être prévenu·e de la publication (inscription à la newsletter)
 
 **À terme :** Boutons : Voir les plans sur GitHub · Contribuer au projet
+
+### Construire et contribuer
+
+*Rôle : l'endroit où l'on trouvera les plans et les guides, lus directement dans le dépôt GitHub de la machine, et les façons de participer, de la plus simple à la plus technique.*
+
+**Les plans**
+
+**Aujourd'hui** (aucune version publiée) : Les plans seront publiés ici avec la version commerciale, en 2028 : téléchargement direct, sans compte ni logiciel particulier.
+
+Lien : Être prévenu·e de la publication →
+
+**Quand une version est publiée :** Version \[NUMÉRO\], publiée le \[DATE\]. Les fichiers sont gratuits et libres. Suivie de la liste des fichiers à télécharger, avec leur taille.
+
+Lien : Toutes les sources sur GitHub →
+
+**Les guides**
+
+**Aujourd'hui** (aucun guide rédigé) : Le manuel d'utilisation et d'entretien, les consignes de sécurité et les instructions d'assemblage seront lisibles ici, au fur et à mesure de leur rédaction.
+
+**Quand des guides existent :** la liste des guides, en deux groupes : Utiliser et entretenir · Construire
+
+**Participer, à votre rythme**
+
+Le Cyclo-Terre s'améliore avec celles et ceux qui l'utilisent. Chaque étape est facultative ; les trois premières ne demandent aucun compte.
+
+1. **Suivre** l'avancement : actualités et newsletter.
+2. **Poser une question** ou partager une idée : par e-mail, ou dans les discussions ouvertes à tous.
+3. **Partager votre construction** ou signaler un problème : envoyez-nous photos et remarques par e-mail.
+4. **Corriger un guide** : chaque guide a un bouton « Proposer une correction » qui ouvre l'éditeur en ligne de GitHub (compte gratuit).
+5. **Modifier les plans** ou concevoir un outil : suivez le guide de contribution.
+
+**Les mots de GitHub, en clair** (encadré dépliable)
+
+- **Dépôt** : Le dossier en ligne qui contient tous les fichiers du projet et leur historique.
+- **Version (release)** : Un état figé des plans, avec des fichiers prêts à télécharger.
+- **Discussion** : Un fil de questions et de réponses, ouvert à tous.
+- **Signalement (issue)** : Une fiche qui décrit un problème ou une idée précise, à traiter.
+- **Copie (fork)** : Votre propre copie du dépôt, où vous pouvez tout modifier.
+- **Proposition (pull request)** : Une demande d'intégrer vos modifications aux plans communs, relue avant d'être acceptée.
+
+### Pages de guide (textes communs)
+
+*Rôle : une page par guide du dépôt. Le texte du guide lui-même est rédigé dans le dépôt Cyclo-Terre, pas ici ; seuls les textes autour sont du site.*
+
+- Sous le titre : Plans \[VERSION\] · documentation sous licence CC BY-SA 4.0 (sans version publiée : Version en cours de rédaction · documentation sous licence CC BY-SA 4.0)
+- En bas : liens vers le guide précédent et le guide suivant de la même section
+
+**Une erreur, une précision ?**
+
+Ce guide est rédigé avec celles et ceux qui construisent et utilisent le Cyclo-Terre. Écrivez-nous, ou corrigez-le directement sur GitHub : l'éditeur en ligne prépare votre proposition, nous la relisons avant de la publier.
+
+Boutons : Nous écrire · Proposer une correction sur GitHub
+
+Il faut un compte GitHub (gratuit) pour la seconde option.
 
 ## Formations
 
 *Rôle de la page : ce que l'on peut faire dès maintenant. L'agenda d'abord, puis le catalogue par domaine, les infos pratiques et l'appel à accueillir une formation.*
+
+### Titre de l'onglet
+
+Formations — Cyclo-Terre
 
 ### Description pour les moteurs de recherche
 
@@ -271,15 +328,17 @@ Des formations pratiques, sur le terrain et à l'atelier, pour cultiver en prés
 
 ### Agenda
 
-*Rôle : les dates à venir, filtrables par domaine. Le texte ci-dessous s'affiche quand aucune date n'est publiée.*
+*Rôle : les dates à venir, filtrables par domaine. Le texte ci-dessous s'affiche quand aucune date n'est publiée (c'est le cas aujourd'hui ; les filtres n'apparaissent qu'avec des dates).*
 
 Filtres : Tous · Agricole · Mécanique
 
-Aucune date publiée pour l'instant. Abonnez-vous à la lettre d'information pour être prévenu·e de la prochaine session.
+Aucune date publiée pour l'instant. Abonnez-vous à la newsletter pour être prévenu·e de la prochaine session.
+
+Ligne d'agenda (quand une date est publiée) : date · volet · titre de la formation · lieu · \[N\] places (ou : Complet, liste d'attente)
 
 ### Cultiver en préservant le sol
 
-*Rôle : présente le domaine agricole et à qui il s'adresse, suivi des cartes de chaque formation (titre et résumé tirés des fiches).*
+*Rôle : présente le domaine agricole et à qui il s'adresse, suivi des cartes de chaque formation (titre, résumé, durée et taille du groupe tirés des fiches).*
 
 Étiquette : Agricole
 
@@ -295,7 +354,7 @@ Des formations aux méthodes de culture agroécologiques, pour produire en symbi
 
 **Aujourd'hui :** Des formations pour construire son Cyclo-Terre ou ses outils, les régler et les réparer. Elles s'appuient sur les plans libres de la machine et sur des compétences utiles à tout outil de ferme. Elles démarreront dès que la version commerciale du Cyclo-Terre sera finalisée.
 
-**À terme :** Des formations pour construire son Cyclo-Terre ou ses outils, les régler et les réparer, à l'atelier de \[LIEU DE L'ATELIER\]. Elles s'appuient sur les plans libres de la machine et sur des compétences utiles à tout outil de ferme.
+**À terme :** Des formations pour construire son Cyclo-Terre ou ses outils, les régler et les réparer, à l'atelier d'Avully (GE). Elles s'appuient sur les plans libres de la machine et sur des compétences utiles à tout outil de ferme.
 
 ### Comment ça se passe
 
@@ -303,7 +362,7 @@ Des formations aux méthodes de culture agroécologiques, pour produire en symbi
 
 | Question | Réponse |
 | --- | --- |
-| Où | À La Finca Locale, à Cartigny (GE), pour le volet agricole ; à l'atelier pour le volet mécanique (aujourd'hui : lieu annoncé avec les premières formations mécaniques ; à terme : \[LIEU DE L'ATELIER\]). Le lieu exact figure sur chaque fiche. |
+| Où | À La Finca Locale, à Cartigny (GE), pour le volet agricole ; à l'atelier, avenue de Gennecy 18, à Avully (GE), pour le volet mécanique. Le lieu exact figure sur chaque fiche. |
 | Groupe | 5 à 8 personnes. |
 | Durée | Une journée ou une semaine, au choix, pour les formations agricoles ; une journée ou plusieurs sessions pour les formations mécaniques. |
 | Paiement | Sur place, le premier jour. Environ 200 CHF par jour à titre indicatif ; le prix exact figure sur chaque date. |
@@ -324,12 +383,30 @@ Bouton : Nous écrire
 
 *Rôle : encadré « Fiche technique » à droite (en mobile : après la description), avec l'inscription.*
 
+- Titre de l'onglet : \[TITRE DE LA FORMATION\] — Formations Cyclo-Terre
 - Titres : Fiche technique · Prochaines dates · Déroulé · Prérequis · À apporter · Formation donnée par
-- Paiement : sur place
-- Sans date : Pas de date publiée pour l'instant. Bouton : Être prévenu·e (inscription à la lettre d'information)
-- En préparation : Cette formation est en préparation. Bouton : Être prévenu·e (inscription à la lettre d'information)
-- Avec dates : boutons S'inscrire, ou Liste d'attente quand c'est complet
+- Fiche technique : Durée · Lieu · Groupe · Paiement : sur place
+- Sans date : Pas de date publiée pour l'instant. Inscrivez-vous : nous vous proposerons la prochaine date. Bouton : S'inscrire
+- En préparation : Cette formation est en préparation. Inscrivez-vous : nous vous écrirons dès qu'une date sera fixée. Bouton : S'inscrire
+- Avec dates : pour chaque date, période · horaires, puis prix · \[N\] places restantes (ou : complet) ; bouton S'inscrire, ou Liste d'attente quand c'est complet
 - L'inscription se fait par e-mail ; nous confirmons votre place sous 48 h.
+
+### E-mail d'inscription pré-rempli
+
+*Rôle : le bouton S'inscrire ouvre la messagerie du visiteur avec ce message prêt à compléter.*
+
+Objet : Inscription : \[TITRE DE LA FORMATION\] — \[DATE\] (ou : Liste d'attente : …)
+
+Bonjour,
+
+Je souhaite m'inscrire à la formation « \[TITRE DE LA FORMATION\] » — \[DATE\].
+
+Prénom et nom :
+Téléphone :
+Je suis : (maraîcher·ère, en reconversion, étudiant·e, jardinier·ère, autre)
+Remarques (alimentation, accessibilité, questions) :
+
+Merci !
 
 ### Planches permanentes (agricole, ouverte)
 
@@ -375,9 +452,9 @@ Formation donnée par : Youri Vezza, agriculteur et ingénieur agronome, spécia
 
 Résumé : Comprendre le Cyclo-Terre pièce par pièce, le régler soi-même et savoir quoi vérifier avant chaque sortie au champ.
 
-Durée : 1 jour · Groupe : 5 à 8 personnes · Lieu : \[LIEU DE L'ATELIER\]
+Durée : 1 jour · Groupe : 5 à 8 personnes · Lieu : Avenue de Gennecy 18, 1237 Avully (GE)
 
-Les formations mécaniques démarreront dès que la version commerciale du Cyclo-Terre sera finalisée. Abonnez-vous à la lettre d'information pour être prévenu·e.
+Les formations mécaniques démarreront dès que la version commerciale du Cyclo-Terre sera finalisée. Abonnez-vous à la newsletter pour être prévenu·e.
 
 Déroulé :
 
@@ -390,31 +467,58 @@ Prérequis : Savoir tenir un tournevis. · À apporter : Vêtements de travail ;
 
 Formation donnée par : Arnaud Jungo, ingénieur en mécanique et automaticien CFC, spécialisé dans le prototypage rapide.
 
-### ~~Transmission et freinage (mécanique, en préparation)~~
-
-~~Résumé : Diagnostiquer, remplacer les pièces d'usure, choisir l'outillage vélo adapté.~~
-
-~~Durée : 1 jour · Groupe : 5 à 8 personnes · Lieu : \[LIEU DE L'ATELIER\]~~
-
-~~Les formations mécaniques démarreront quand le prototype sera disponible pour les groupes. Abonnez-vous à la lettre d'information pour être prévenu·e.~~
-
-~~Prérequis : Aucun.~~
-
-~~Formation donnée par : Arnaud Jungo, ingénieur en mécanique et automaticien CFC, spécialisé dans le prototypage rapide.~~
-
 ### Autoconstruction (mécanique, en préparation)
 
-Résumé : Construire un Cyclo-Terre d'après les plans ~~libres~~, en atelier, sur plusieurs sessions, et repartir avec sa propre machine.
+Résumé : Construire un Cyclo-Terre d'après les plans, en atelier, sur plusieurs sessions, et repartir avec sa propre machine.
 
-Groupe : 5 à 8 personnes · Lieu : \[LIEU DE L'ATELIER\] · Prix, machine comprise : \[À FIXER\]
+Durée : 2 jours · Groupe : 3 à 4 personnes · Lieu : Avenue de Gennecy 18, 1237 Avully (GE)
 
-Cette formation démarrera dès que la version commerciale du Cyclo-Terre sera finalisée. Abonnez-vous à la lettre d'information pour être prévenu·e.
+Prix, machine comprise : \[À FIXER\].
+
+Cette formation démarrera dès que la version commerciale du Cyclo-Terre sera finalisée. Abonnez-vous à la newsletter pour être prévenu·e.
 
 Formation donnée par : Arnaud Jungo, ingénieur en mécanique et automaticien CFC, spécialisé dans le prototypage rapide.
+
+## Actualités
+
+*Rôle de la page : les nouvelles du projet, les mêmes que dans la newsletter, consultables à tout moment. Les articles sont rédigés dans l'administration du site (Sveltia CMS).*
+
+### Titre de l'onglet
+
+Actualités — Cyclo-Terre
+
+### Description pour les moteurs de recherche
+
+Les nouvelles de Cyclo-Terre : avancement de la machine et des outils, formations, publication des plans.
+
+### Actualités
+
+*Rôle : introduction, puis la liste des articles (date, titre, résumé, photo).*
+
+L'avancement de la machine et des outils, les formations, la publication des plans. Les mêmes nouvelles que dans la newsletter, à lire ici quand vous voulez.
+
+**Aujourd'hui** (aucun article publié) : Les premières nouvelles arrivent bientôt. Abonnez-vous pour les recevoir.
+
+### Recevoir les nouvelles
+
+*Rôle : inscription à la newsletter en bas de page.*
+
+Chaque actualité est aussi envoyée par la newsletter, tous les mois ou tous les deux mois.
+
+Formulaire d'inscription (voir Contact).
+
+### Page d'un article (textes communs)
+
+- Titre de l'onglet : \[TITRE DE L'ARTICLE\] — Actualités Cyclo-Terre
+- En bas : Recevoir les prochaines nouvelles, avec le formulaire d'inscription
 
 ## Notre vision
 
 *Rôle de la page : le pourquoi du projet, ses objectifs, les personnes qui le portent et le calendrier. S'adresse surtout aux partenaires potentiels et aux curieux qui veulent comprendre la démarche.*
+
+### Titre de l'onglet
+
+Notre vision — Cyclo-Terre
 
 ### Description pour les moteurs de recherche
 
@@ -449,7 +553,7 @@ Cyclo-Terre veut rendre aux agricultrices et aux agriculteurs la maîtrise de le
 
 Deux profils liés par une passion commune pour le vélo, l'open source et les enjeux écologiques.
 
-Youri et Arnaud se sont rencontrés par hasard lors d'un concours d'innovation \[NOM DU CONCOURS, ANNÉE\]. Youri cultivait à la main depuis 2018 à La Finca Locale : le sol s'y améliorait d'année en année, mais le travail était épuisant. Arnaud a consacré son travail de master à la conception du premier prototype du Cyclo-Terre.
+Youri et Arnaud se sont rencontrés par hasard lors du concours d'innovation Ecobooster, à Vernier, en 2025. Youri cultivait à la main depuis 2018 à La Finca Locale : le sol s'y améliorait d'année en année, mais le travail était épuisant. Arnaud a consacré son travail de master à la conception du premier prototype du Cyclo-Terre.
 
 **Youri Vezza** (en vert)
 
@@ -482,6 +586,10 @@ Bouton : Nous écrire
 
 *Rôle de la page : transformer l'intérêt en prise de contact. Une seule adresse, puis des profils pour que chacun·e se reconnaisse.*
 
+### Titre de l'onglet
+
+Contact — Cyclo-Terre
+
 ### Description pour les moteurs de recherche
 
 Écrire à Cyclo-Terre : questions, formations, partenariats, contributions au projet.
@@ -492,15 +600,38 @@ Bouton : Nous écrire
 
 Cyclo-Terre avance grâce à celles et ceux qui cultivent, enseignent, construisent ou soutiennent l'agroécologie. Une idée, une question, une envie de contribuer : écrivez-nous.
 
-Encadré : Nous écrire · contact@cyclo-terre.ch · Cyclo-Terre · Genève
+Encadré : Nous écrire · contact@cyclo-terre.ch
 
-### La lettre d'information
+### Adresse et téléphones
 
-*Rôle : mettre en avant la lettre d'information, le moyen principal de suivre le projet. Tous les boutons « Être prévenu·e » du site y mènent.*
+*Rôle : pour celles et ceux qui préfèrent appeler, avec la bonne personne selon le sujet.*
+
+**Adresse**
+
+Cyclo-Terre · 6 A chemin de Drize · 1256 Troinex
+
+**Agronomie** (en vert)
+
+Youri Vezza · +41 79 575 36 07
+
+**Mécanique** (en rose)
+
+Arnaud Jungo · +41 79 348 55 09
+
+### La newsletter
+
+*Rôle : mettre en avant la newsletter, le moyen principal de suivre le projet. Tous les liens « S'abonner » et « Être prévenu·e de la publication » du site y mènent.*
 
 Tous les mois ou tous les deux mois, des nouvelles de Cyclo-Terre : l'avancement de la machine, les prochaines formations, la publication des plans.
 
-Champ : votre adresse e-mail · Bouton : S'abonner
+Champ : Votre adresse e-mail · Bouton : S'abonner (pendant l'envoi : Envoi…)
+
+Votre adresse sert uniquement à vous envoyer des nouvelles de nos activités. Chaque envoi contient un lien de désabonnement.
+
+Messages d'erreur :
+
+- Erreur : La vérification anti-robot a échoué. Réessayez.
+- Erreur : L'inscription n'a pas pu être envoyée. Réessayez dans un instant.
 
 ### Vous êtes…
 
@@ -520,15 +651,37 @@ Engagée pour l'agroécologie : soutenir le projet, accueillir ou financer des f
 
 **Un·e bricoleur·euse**
 
-Construire votre Cyclo-Terre, améliorer la machine ou ses outils, partager vos modifications : le projet est ouvert aux contributions sur GitHub, selon les règles de son guide de contribution \[GUIDE À RÉDIGER\].
+Construire votre Cyclo-Terre, améliorer la machine ou ses outils, partager vos modifications : le projet est ouvert aux contributions sur GitHub, selon les règles de son guide de contribution.
 
-Lien : Le projet sur GitHub → \[LIEN GITHUB\]
+Lien : Le projet sur GitHub → (github.com/Cyclo-Terre-Org/Cyclo-Terre)
 
 **Intéressé·e par une formation**
 
 Pour vous inscrire, passez par la fiche de la formation.
 
 Lien : Voir l'agenda →
+
+## Newsletter : pages de confirmation
+
+*Rôle : les deux pages vues après l'inscription à la newsletter. Non indexées par Google.*
+
+### E-mail de confirmation envoyé
+
+*Rôle : affichée juste après l'envoi du formulaire.*
+
+Cliquez sur le lien qu'il contient pour valider votre inscription.
+
+Rien reçu d'ici quelques minutes ? Regardez dans les courriers indésirables, ou écrivez-nous.
+
+Bouton : Retour à l'accueil
+
+### Inscription confirmée !
+
+*Rôle : affichée quand la personne a cliqué sur le lien de l'e-mail de confirmation.*
+
+Merci et bienvenue ! Vous recevrez la newsletter de Cyclo-Terre : l'avancement de la machine et des outils, et les prochaines formations. Chaque envoi contient un lien pour vous désabonner.
+
+Boutons : Voir les formations · Retour à l'accueil
 
 ## Pages secondaires
 
@@ -538,7 +691,7 @@ Lien : Voir l'agenda →
 
 **Responsables du site**
 
-Cyclo-Terre, projet porté par Youri Vezza et Arnaud Jungo · \[STRUCTURE JURIDIQUE, PAS ENCORE FIXÉE\] · \[ADRESSE POSTALE, PAS ENCORE FIXÉE\] · contact@cyclo-terre.ch
+Cyclo-Terre, projet porté par Youri Vezza et Arnaud Jungo · \[STRUCTURE JURIDIQUE, PAS ENCORE FIXÉE\] · 6 A chemin de Drize, 1256 Troinex · contact@cyclo-terre.ch
 
 **Hébergement**
 
@@ -546,7 +699,9 @@ GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107
 
 **Contenus**
 
-Textes, photos et schémas : © Cyclo-Terre, sauf mention contraire. Les plans de la machine seront publiés sous licence libre ; leur licence sera indiquée avec les fichiers.
+**Aujourd'hui :** Textes, photos et schémas : © Cyclo-Terre, sauf mention contraire. Les plans de la machine seront publiés sous licence libre : CERN-OHL-S v2 pour le matériel, CC BY-SA 4.0 pour la documentation.
+
+**À terme :** Textes, photos et schémas : © Cyclo-Terre, sauf mention contraire. Les plans de la machine sont publiés sous licence libre : CERN-OHL-S v2 pour le matériel, CC BY-SA 4.0 pour la documentation.
 
 **Responsabilité**
 
@@ -562,17 +717,17 @@ Ce site ne dépose aucun cookie et ne mesure pas votre navigation.
 
 **Ce que nous recevons**
 
-Quand vous nous écrivez ou vous vous inscrivez à une formation, nous recevons votre e-mail et ce que vous y indiquez : nom, téléphone, remarques. Nous les utilisons uniquement pour vous répondre, organiser la formation et, si vous vous y abonnez, vous envoyer la lettre d'information. Chaque envoi contient un lien pour vous désabonner.
+Quand vous nous écrivez ou vous vous inscrivez à une formation, nous recevons votre e-mail et ce que vous y indiquez : nom, téléphone, remarques. Nous les utilisons uniquement pour vous répondre, organiser la formation et, si vous vous y abonnez, vous envoyer la newsletter. Chaque envoi contient un lien pour vous désabonner.
 
 **Combien de temps**
 
-Les données d'inscription sont supprimées \[DÉLAI, par ex. 12 mois\] après la formation, sauf obligation comptable. Nous ne les transmettons à aucun tiers, hormis les prestataires mentionnés ci-dessous.
+Les données d'inscription sont supprimées 12 mois après la formation, sauf obligation comptable. Nous ne les transmettons à aucun tiers, hormis les prestataires mentionnés ci-dessous.
 
 **Hébergement**
 
 Le site est hébergé par GitHub Pages (GitHub Inc., États-Unis), qui peut enregistrer techniquement l'adresse IP des personnes qui consultent le site. Les polices de caractères sont servies par le site lui-même, sans appel à un service tiers.
 
-La lettre d'information est envoyée avec \[OUTIL D'ENVOI\], qui conserve votre adresse jusqu'à votre désabonnement.
+La newsletter est envoyée avec Infomaniak (Infomaniak Network SA, Genève), qui héberge les données en Suisse et conserve votre adresse jusqu'à votre désabonnement. L'inscription est confirmée par un e-mail (double validation). Le formulaire est protégé contre les robots par une vérification calculée dans votre navigateur, fournie par Infomaniak, sans cookie.
 
 **Vos droits**
 

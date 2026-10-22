@@ -25,10 +25,6 @@
   <meta name="description" content={f.resume} />
 </svelte:head>
 
-<nav class="colonne fil annotation" aria-label="Fil d'Ariane">
-  <a href="/formations/">Formations</a> / <span>{volets[f.volet].nom}</span>
-</nav>
-
 <article>
   <header class="colonne entete pile">
     <span class="tags">
@@ -129,14 +125,8 @@
 </article>
 
 <style>
-  .fil {
-    padding-top: var(--space-6);
-  }
-  .fil a {
-    color: var(--ink-muted);
-  }
   .entete {
-    padding-block: var(--space-5) var(--space-7);
+    padding-block: var(--space-7);
     gap: var(--space-5);
   }
   .tags {

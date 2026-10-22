@@ -9,11 +9,6 @@
   <title>{g.titre} — Cyclo-Terre</title>
 </svelte:head>
 
-<nav class="colonne fil annotation" aria-label="Fil d'Ariane">
-  <a href="/outils/">Outils</a> / <a href="/outils/#construire">Construire et contribuer</a>
-  {#if data.section} / <span>{data.section}</span>{/if}
-</nav>
-
 <article class="colonne guide">
   <header class="pile entete">
     <h1 class="titre-1">{g.titre}</h1>
@@ -48,18 +43,12 @@
 </article>
 
 <style>
-  .fil {
-    padding-top: var(--space-6);
-  }
-  .fil a {
-    color: var(--ink-muted);
-  }
   .guide {
     max-width: calc(800px + 2 * var(--space-8));
     display: flex;
     flex-direction: column;
     gap: var(--space-7);
-    padding-block: var(--space-5) var(--space-9);
+    padding-block: var(--space-7) var(--space-9);
   }
   .entete {
     gap: var(--space-3);

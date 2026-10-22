@@ -6,7 +6,7 @@ ordre: 5
 resume: Construire un Cyclo-Terre d'après les plans, en atelier, sur plusieurs sessions, et repartir avec sa propre machine.
 formats: 2 jours
 groupe: 3 à 4 personnes
-lieu: à Gency
+lieu: "Avenue de Gennecy 18, 1237 Avully (GE)"
 photo: /photos/porte-velo.jpeg
 photoAlt: Dessin annoté du Cyclo-Terre présentant ses points clés
 deroule: []

@@ -15,7 +15,7 @@
 
 <section class="hero colonne">
   <div class="pile texte">
-    <h1 class="titre-1">La mécanisation légère pour l'agroécologique</h1>
+    <h1 class="titre-1">La mécanisation légère pour l'agroécologie</h1>
     <p class="chapo">
       Le Cyclo-Terre est une machine agricole à propulsion humaine conçue pour les micro-fermes et
       sert une méthode de production agroécologique. L'objectif de cette machine est de favoriser
@@ -104,7 +104,6 @@
 <section class="section" aria-labelledby="machine">
   <div class="colonne machine">
     <div class="pile">
-      <p class="etiquette">Outils</p>
       <h2 class="titre-2" id="machine">Le Cyclo-Terre</h2>
       <p>
         Le Cyclo-Terre se situe entre la houe maraîchère et le motoculteur. La houe respecte le
@@ -148,7 +147,6 @@
 <section class="section" aria-labelledby="plans">
   <div class="colonne deux">
     <div class="pile">
-      <p class="etiquette">Open source</p>
       <h2 class="titre-2" id="plans">Des plans libres</h2>
     </div>
     <div class="pile">

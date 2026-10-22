@@ -101,7 +101,7 @@
     <h2 class="titre-2" id="pratique">Comment ça se passe</h2>
     <dl class="fiche pratique">
       <dt>Où</dt>
-      <dd>À La Finca Locale, à Cartigny (GE), pour le volet agricole ; à l'atelier pour le volet mécanique, dont le lieu sera annoncé avec les premières formations mécaniques. Le lieu exact figure sur chaque fiche.</dd>
+      <dd>À La Finca Locale, à Cartigny (GE), pour le volet agricole ; à l'atelier, avenue de Gennecy 18, à Avully (GE), pour le volet mécanique. Le lieu exact figure sur chaque fiche.</dd>
       <dt>Groupe</dt>
       <dd>5 à 8 personnes.</dd>
       <dt>Durée</dt>

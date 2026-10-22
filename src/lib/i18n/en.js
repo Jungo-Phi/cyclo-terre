@@ -11,11 +11,10 @@ export default {
     '/projet/': 'Our vision',
     '/contact/': 'Contact'
   },
-  slogan: 'Market-garden tool carrier and agroecology training for micro-farms',
+  slogan: 'Market-garden tool carrier & agroecology training',
   mentionsLegales: 'Legal notice',
   confidentialite: 'Privacy',
-  newsletterTexte: 'Newsletter: tool development news and upcoming training courses.',
-  newsletterLien: 'Subscribe to the newsletter →',
+  newsletter: 'Newsletter',
   langue: 'Language',
   formationsEnFrancais: 'Training courses are taught in French.'
 };

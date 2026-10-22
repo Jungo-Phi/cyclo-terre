@@ -3,7 +3,13 @@ export const site = {
   nom: 'Cyclo-Terre',
   url: 'https://cyclo-terre.ch',
   email: 'contact@cyclo-terre.ch',
-  ville: 'Genève',
+  /** Adresse postale (lignes). */
+  adresse: ['6 A chemin de Drize', '1256 Troinex'],
+  /** Téléphones, un par volet. */
+  telephones: [
+    { nom: 'Youri Vezza', volet: 'agricole', domaine: 'Agronomie', numero: '+41 79 575 36 07' },
+    { nom: 'Arnaud Jungo', volet: 'mecanique', domaine: 'Mécanique', numero: '+41 79 348 55 09' }
+  ],
   /** Dépôt des plans de la machine (matériel libre). */
   depot: 'https://github.com/Cyclo-Terre-Org/Cyclo-Terre',
   /** Questions ouvertes sur la machine (GitHub Discussions). */
