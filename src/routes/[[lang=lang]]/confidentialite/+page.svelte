@@ -15,8 +15,7 @@
   <p>
     Quand vous nous écrivez ou vous vous inscrivez à une formation, nous recevons votre e-mail et
     ce que vous y indiquez : nom, téléphone, remarques. Nous les utilisons uniquement pour vous
-    répondre, organiser la formation et, si vous vous y abonnez, vous envoyer la lettre
-    d'information. Chaque envoi contient un lien pour vous désabonner.
+    répondre, organiser la formation et, si vous vous y abonnez, vous envoyer la newsletter. Chaque envoi contient un lien pour vous désabonner.
   </p>
 
   <h2 class="titre-3">Combien de temps</h2>
@@ -33,7 +32,7 @@
     sont servies par le site lui-même, sans appel à un service tiers.
   </p>
   <p>
-    La lettre d'information est envoyée avec Infomaniak (Infomaniak Network SA, Genève), qui
+    La newsletter est envoyée avec Infomaniak (Infomaniak Network SA, Genève), qui
     héberge les données en Suisse et conserve votre adresse jusqu'à votre désabonnement.
     L'inscription est confirmée par un e-mail (double validation). Le formulaire est protégé
     contre les robots par une vérification calculée dans votre navigateur, fournie par

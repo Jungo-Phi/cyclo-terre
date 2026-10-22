@@ -8,12 +8,12 @@
 </svelte:head>
 
 <section class="colonne section pile page">
-  <p class="etiquette">Lettre d'information</p>
+  <p class="etiquette">Newsletter</p>
   <h1 class="titre-1">E-mail de confirmation envoyé</h1>
   <p class="chapo">Cliquez sur le lien qu'il contient pour valider votre inscription.</p>
   <p class="annotation">
     Rien reçu d'ici quelques minutes ? Regardez dans les courriers indésirables, ou
-    <a href={mailto("Inscription à la lettre d'information")}>écrivez-nous</a>.
+    <a href={mailto("Inscription à la newsletter")}>écrivez-nous</a>.
   </p>
   <div class="actions"><a class="btn btn--contour" href="/">Retour à l'accueil</a></div>
 </section>

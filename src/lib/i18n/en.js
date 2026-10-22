@@ -13,6 +13,8 @@ export default {
   slogan: 'Market-garden tool carrier and agroecology training for micro-farms',
   mentionsLegales: 'Legal notice',
   confidentialite: 'Privacy',
+  newsletterTexte: 'Newsletter: tool development news and upcoming training courses.',
+  newsletterLien: 'Subscribe to the newsletter →',
   langue: 'Language',
   formationsEnFrancais: 'Training courses are taught in French.'
 };

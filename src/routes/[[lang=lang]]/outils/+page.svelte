@@ -147,7 +147,7 @@
         Les essais ont lieu à La Finca Locale, à Cartigny. Vous voulez suivre le développement,
         partager votre expérience ou y contribuer ?
       </p>
-      <a class="lien" href={lettre.ancre}>S'abonner à la lettre d'information →</a>
+      <a class="lien" href={lettre.ancre}>S'abonner à la newsletter →</a>
       <a class="lien" href="/projet/#calendrier">Le calendrier du projet →</a>
       <a class="lien" href="/contact/">Nous écrire →</a>
     </div>

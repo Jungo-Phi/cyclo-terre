@@ -18,4 +18,4 @@ brouillon: false
 
 Prix, machine comprise : [À FIXER].
 
-Cette formation démarrera dès que la version commerciale du Cyclo-Terre sera finalisée. Abonnez-vous à la [lettre d'information](/contact/#lettre) pour être prévenu·e.
+Cette formation démarrera dès que la version commerciale du Cyclo-Terre sera finalisée. Abonnez-vous à la [newsletter](/contact/#lettre) pour être prévenu·e.

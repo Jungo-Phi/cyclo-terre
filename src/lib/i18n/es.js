@@ -13,6 +13,8 @@ export default {
   slogan: 'Portaherramientas hortícola y formaciones en agroecología para microgranjas',
   mentionsLegales: 'Aviso legal',
   confidentialite: 'Privacidad',
+  newsletterTexte: 'Newsletter: novedades de las herramientas y próximas formaciones.',
+  newsletterLien: 'Suscribirse a la newsletter →',
   langue: 'Idioma',
   formationsEnFrancais: 'Las formaciones se imparten en francés.'
 };
