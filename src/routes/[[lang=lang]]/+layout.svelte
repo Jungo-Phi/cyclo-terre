@@ -47,7 +47,7 @@
 <header class="entete">
   <div class="colonne barre">
     <a class="logo" href={chemin(lang, '/')} aria-label={t.accueil}>
-      <img src={logo} alt="Cyclo-Terre" width="530" height="296" />
+      <img src={logo} alt="Cyclo-Terre" width="560" height="300" />
     </a>
     <nav aria-label={t.menuPrincipal}>
       <ul class="menu">
@@ -68,7 +68,7 @@
 <footer class="pied">
   <div class="colonne barre">
     <a class="logo" href={chemin(lang, '/')} aria-label={t.accueil}>
-      <img src={logoSombre} alt="Cyclo-Terre" width="530" height="296" />
+      <img src={logoSombre} alt="Cyclo-Terre" width="560" height="300" />
     </a>
     <nav class="nav-pied" aria-label={t.menuPied}>
       <ul class="menu">
