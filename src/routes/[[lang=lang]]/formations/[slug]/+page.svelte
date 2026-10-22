@@ -225,6 +225,20 @@
     padding-block: 10px;
     text-align: center;
   }
+  .documents {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .documents li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+    align-items: baseline;
+  }
   .quand {
     font-family: var(--font-mono);
     font-size: 15px;

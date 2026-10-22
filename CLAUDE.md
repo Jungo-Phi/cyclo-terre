@@ -10,12 +10,15 @@ publié sur GitHub Pages. Voir README.md pour les commandes et l'organisation du
 - Vérifier avec `npm run build` (la génération échoue sur un lien interne cassé).
 
 ## Contenu
-- Formations : `src/content/formations/*.md` ; dates : `src/content/sessions/*.md`. Champs : voir
+- Formations : `src/content/formations/*.md` ; dates : `src/content/sessions/*.md` ; actualités :
+  `src/content/actualites/*.md`. Champs : voir
   `static/admin/config.yml` (à garder synchronisé avec `src/lib/contenu.js`).
 - Ton : sobre, descriptif, vouvoiement, faits mesurables plutôt qu'adjectifs, pas d'emoji,
   écriture inclusive au point médian avec parcimonie. Données inconnues entre crochets : `[LIEU]`.
 - Le Cyclo-Terre est un prototype : ne jamais laisser croire qu'il est en vente. Les formations
   agricoles ont lieu sans la machine.
+- Plans, manuel, assemblage : uniquement dans le dépôt Cyclo-Terre-Org/Cyclo-Terre, lus au build
+  (`src/lib/server/depot.js`). Ne jamais les recopier dans ce dépôt.
 
 ## Traductions
 - Français = référence, sans préfixe ; anglais et espagnol sous /en/ et /es/ (pages fixes seulement).

@@ -1,6 +1,7 @@
 // Lecture du contenu éditable (dossier src/content).
 // Une formation = un fichier Markdown dans src/content/formations/.
 // Une date de formation = un fichier Markdown dans src/content/sessions/.
+// Une actualité = un fichier Markdown dans src/content/actualites/.
 import { parse } from 'yaml';
 import { marked } from 'marked';
 
@@ -10,6 +11,12 @@ const fichiersFormations = import.meta.glob('/src/content/formations/*.md', {
   eager: true
 });
 const fichiersSessions = import.meta.glob('/src/content/sessions/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true
+});
+
+const fichiersActualites = import.meta.glob('/src/content/actualites/*.md', {
   query: '?raw',
   import: 'default',
   eager: true
@@ -70,4 +77,24 @@ export function periode(s) {
   const [a2, m2, j2] = s.fin.split('-');
   if (a1 === a2 && m1 === m2) return `${j1}–${j2}.${m2}.${a2}`;
   return `${dateCourte(s.date)} – ${dateCourte(s.fin)}`;
+}
+
+/** Actualités publiées, de la plus récente à la plus ancienne. */
+export const actualites = Object.entries(fichiersActualites)
+  .map(([chemin, brut]) => lire(/** @type {string} */ (brut), chemin))
+  .filter((a) => !a.brouillon)
+  .map((a) => ({ ...a, date: String(a.date).slice(0, 10) }))
+  .sort((a, b) => b.date.localeCompare(a.date));
+
+/** @param {string} slug */
+export function actualite(slug) {
+  return actualites.find((a) => a.slug === slug);
+}
+
+const mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+
+/** 2026-11-14 → 14 novembre 2026 */
+export function dateLongue(iso) {
+  const [a, m, j] = iso.split('-').map(Number);
+  return `${j}${j === 1 ? 'er' : ''} ${mois[m - 1]} ${a}`;
 }
