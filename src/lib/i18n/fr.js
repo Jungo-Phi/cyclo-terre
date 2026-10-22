@@ -13,6 +13,8 @@ export default {
   slogan: 'Porte-outils maraîcher et formations en agroécologie pour les micro-fermes',
   mentionsLegales: 'Mentions légales',
   confidentialite: 'Confidentialité',
+  newsletterTexte: "Newsletter : l'avancement des outils et les prochaines formations.",
+  newsletterLien: "S'abonner à la newsletter →",
   langue: 'Langue',
   formationsEnFrancais: 'Les formations sont données en français.'
 };

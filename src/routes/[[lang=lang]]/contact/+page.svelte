@@ -46,7 +46,7 @@
 
 <section class="section" aria-labelledby="titre-lettre" id="lettre">
   <div class="colonne deux">
-    <h2 class="titre-2" id="titre-lettre">La lettre d'information</h2>
+    <h2 class="titre-2" id="titre-lettre">La newsletter</h2>
     <div class="pile">
       <p>
         Tous les mois ou tous les deux mois, des nouvelles de Cyclo-Terre : l'avancement de la

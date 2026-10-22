@@ -17,7 +17,7 @@ export const site = {
 };
 
 /**
- * Lettre d'information (Infomaniak Newsletter, formulaire n° 26536).
+ * Newsletter (Infomaniak Newsletter, formulaire n° 26536).
  * `action`, `cle` et `formulaire` viennent du code d'intégration fourni par Infomaniak
  * (Manager → Newsletter → Formulaires) ; `champEmail` est le nom du champ e-mail de ce formulaire.
  */

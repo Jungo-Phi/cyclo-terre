@@ -1,5 +1,5 @@
 <script>
-  // Inscription à la lettre d'information Infomaniak.
+  // Inscription à la newsletter Infomaniak.
   // Infomaniak attend une requête JSONP (GET + paramètre `callback`), protégée par un captcha
   // ALTCHA (preuve de travail calculée par le navigateur, sans cookie ni image à déchiffrer).
   import { onMount } from 'svelte';
@@ -106,7 +106,7 @@
   <altcha-widget hidelogo hidefooter floating challengeurl={lettre.captcha}></altcha-widget>
   {#if erreur}<p class="erreur" id="lettre-erreur" role="alert">Erreur : {erreur}</p>{/if}
   <p class="annotation" id="lettre-note">
-    Votre adresse sert uniquement à vous envoyer des nouvelles de nos activités. Chaque lettre
+    Votre adresse sert uniquement à vous envoyer des nouvelles de nos activités. Chaque envoi
     contient un lien de désabonnement.
   </p>
 </form>

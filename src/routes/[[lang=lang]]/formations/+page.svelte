@@ -41,7 +41,7 @@
     </div>
     <LigneAgenda
       sessions={visibles}
-      vide="Aucune date publiée pour l'instant. Abonnez-vous à la lettre d'information pour être prévenu·e de la prochaine session."
+      vide="Aucune date publiée pour l'instant. Abonnez-vous à la newsletter pour être prévenu·e de la prochaine session."
     />
   </div>
 </section>
