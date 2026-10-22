@@ -8,8 +8,7 @@
   import '../app.css';
   import { page } from '$app/state';
   import { site } from '$lib/site.js';
-  import logo from '$lib/assets/logo/cyclo-terre-logo.svg';
-  import logoSombre from '$lib/assets/logo/cyclo-terre-logo-fond-sombre.svg';
+  import Logo from '$lib/components/Logo.svelte';
 
   let { children } = $props();
 
@@ -27,7 +26,7 @@
 <header class="entete">
   <div class="colonne barre">
     <a class="logo" href="/" aria-label="Cyclo-Terre, accueil">
-      <img src={logo} alt="Cyclo-Terre" width="530" height="296" />
+      <Logo />
     </a>
     <nav aria-label="Principale">
       <ul class="menu">
@@ -48,7 +47,7 @@
 <footer class="pied">
   <div class="colonne barre">
     <a class="logo" href="/" aria-label="Cyclo-Terre, accueil">
-      <img src={logoSombre} alt="Cyclo-Terre" width="530" height="296" />
+      <Logo sombre />
     </a>
     <nav class="nav-pied" aria-label="Pied de page">
       <ul class="menu">
@@ -79,7 +78,7 @@
     display: block;
     flex: 0 0 auto;
   }
-  .logo img {
+  .logo :global(svg) {
     height: 64px;
     width: auto;
   }
@@ -120,7 +119,7 @@
   .pied a {
     color: var(--paper);
   }
-  .pied .logo img {
+  .pied .logo :global(svg) {
     height: 96px;
   }
   .pied .barre {
@@ -148,10 +147,10 @@
     .barre {
       gap: var(--space-3);
     }
-    .logo img {
+    .logo :global(svg) {
       height: var(--space-7);
     }
-    .pied .logo img {
+    .pied .logo :global(svg) {
       height: var(--space-9);
     }
     .menu {
@@ -173,7 +172,7 @@
     }
   }
   @media (max-width: 380px) {
-    .entete .logo img {
+    .entete .logo :global(svg) {
       height: var(--space-6);
     }
   }

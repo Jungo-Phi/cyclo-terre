@@ -15,7 +15,7 @@
 
 <section class="hero colonne">
   <div class="pile texte">
-    <h1 class="titre-1">La mécanisation légère pour une méthode agroécologique</h1>
+    <h1 class="titre-1">La mécanisation légère pour l'agroécologique</h1>
     <p class="chapo">
       Le Cyclo-Terre est une machine agricole à propulsion humaine conçue pour les micro-fermes et
       sert une méthode de production agroécologique. L'objectif de cette machine est de favoriser
