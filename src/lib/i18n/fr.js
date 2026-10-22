@@ -7,6 +7,7 @@ export default {
   nav: {
     '/outils/': 'Outils',
     '/formations/': 'Formations',
+    '/actualites/': 'Actualités',
     '/projet/': 'Notre vision',
     '/contact/': 'Contact'
   },

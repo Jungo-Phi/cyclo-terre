@@ -28,6 +28,25 @@ media_libraries:
           height: 2400
 
 collections:
+  - name: actualites
+    label: Actualités
+    label_singular: Actualité
+    description: Les nouvelles du projet ; reprenez ici le contenu de chaque newsletter.
+    folder: src/content/actualites
+    create: true
+    slug: '{{date}}-{{titre}}'
+    identifier_field: titre
+    summary: '{{date}} · {{titre}}'
+    sortable_fields: [date, titre]
+    fields:
+      - { name: titre, label: Titre, widget: string }
+      - { name: date, label: Date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'DD.MM.YYYY', time_format: false }
+      - { name: resume, label: Résumé (une ou deux phrases), widget: text, hint: Affiché dans la liste des actualités et lors des partages. }
+      - { name: photo, label: Photo, widget: image, required: false }
+      - { name: photoAlt, label: Description de la photo, widget: string, required: false, hint: "Ce qu'on voit sur la photo, pour les personnes qui ne la voient pas." }
+      - { name: brouillon, label: Brouillon (non publié), widget: boolean, default: false, required: false }
+      - { name: body, label: Texte, widget: markdown }
+
   - name: sessions
     label: Dates de formation
     label_singular: Date de formation
@@ -80,5 +99,14 @@ collections:
       - { name: prerequis, label: Prérequis, widget: string, required: false }
       - { name: aApporter, label: À apporter, widget: list, required: false }
       - { name: formateur, label: Formation donnée par, widget: text, required: false }
+      - name: documents
+        label: Documents à télécharger
+        label_singular: Document
+        widget: list
+        required: false
+        hint: Fiche imprimable, programme, plan d'accès… (PDF de préférence)
+        fields:
+          - { name: titre, label: Titre, widget: string }
+          - { name: fichier, label: Fichier, widget: file, media_folder: /static/documents, public_folder: /documents }
       - { name: brouillon, label: Brouillon (non publié), widget: boolean, default: false, required: false }
       - { name: body, label: Présentation, widget: markdown }

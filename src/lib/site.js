@@ -6,11 +6,16 @@ export const site = {
   ville: 'Genève',
   /** Dépôt des plans de la machine (matériel libre). */
   depot: 'https://github.com/Cyclo-Terre-Org/Cyclo-Terre',
+  /** Questions ouvertes sur la machine (GitHub Discussions). */
+  discussions: 'https://github.com/Cyclo-Terre-Org/Cyclo-Terre/discussions',
+  /** Guide de contribution du dépôt de la machine. */
+  contribuer: 'https://github.com/Cyclo-Terre-Org/Cyclo-Terre/blob/main/CONTRIBUTING.md',
   description:
     'Porte-outils maraîcher léger et formations en agroécologie et mécanique pour les micro-fermes.',
   navigation: [
     { href: '/outils/', label: 'Outils' },
     { href: '/formations/', label: 'Formations' },
+    { href: '/actualites/', label: 'Actualités' },
     { href: '/projet/', label: 'Notre vision' },
     { href: '/contact/', label: 'Contact' }
   ]
