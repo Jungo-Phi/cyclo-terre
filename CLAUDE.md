@@ -4,7 +4,9 @@ Site vitrine de Cyclo-Terre (porte-outils maraîcher et formations), en françai
 publié sur GitHub Pages. Voir README.md pour les commandes et l'organisation du contenu.
 
 ## Façon de travailler
-- Ne jamais pousser sur `main` directement : une branche, puis une pull request. `main` = site en ligne.
+- Ne jamais pousser sur `main` directement. `main` = site en ligne.
+- Ne jamais créer soi-même de branche ni de pull request (ni pousser) : travailler sur la branche
+  courante et laisser l'utilisateur gérer branches, commits poussés et pull requests.
 - Proposer les changements de design sur une page d'abord, les faire valider, puis les appliquer partout.
 - En cas de doute sur un choix (design, contenu), demander et proposer plusieurs options.
 - Vérifier avec `npm run build` (la génération échoue sur un lien interne cassé).

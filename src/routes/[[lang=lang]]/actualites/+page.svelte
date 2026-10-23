@@ -16,8 +16,8 @@
 <section class="colonne intro pile">
   <h1 class="titre-1">Actualités</h1>
   <p class="chapo">
-    L'avancement de la machine et des outils, les formations, la publication des plans. Les mêmes
-    nouvelles que dans la newsletter, à lire ici quand vous voulez.
+    Suivez l'avancement de la machine, des outils et la publication des plans. Restez informé·es
+    des formations à venir.
   </p>
 </section>
 
@@ -41,7 +41,7 @@
         {/each}
       </ul>
     {:else}
-      <p class="vide">Les premières nouvelles arrivent bientôt. Abonnez-vous pour les recevoir.</p>
+      <p class="vide">Premières nouvelles bientôt. Abonnez-vous pour les recevoir.</p>
     {/if}
   </div>
 </section>
@@ -50,7 +50,7 @@
   <div class="colonne deux">
     <div class="pile">
       <h2 class="titre-2" id="titre-abonnement">Recevoir les nouvelles</h2>
-      <p>Chaque actualité est aussi envoyée par la newsletter, tous les mois ou tous les deux mois.</p>
+      <p>Suivez nos actualités avec la newsletter.</p>
     </div>
     <LettreInfo />
   </div>

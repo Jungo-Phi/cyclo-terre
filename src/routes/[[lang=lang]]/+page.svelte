@@ -9,17 +9,16 @@
 </script>
 
 <svelte:head>
-  <title>Cyclo-Terre — Porte-outils et formations pour micro-fermes</title>
+  <title>Cyclo-Terre · Porte-outils maraîcher & formations en agroécologie</title>
   <meta name="description" content={site.description} />
 </svelte:head>
 
 <section class="hero colonne">
   <div class="pile texte">
-    <h1 class="titre-1">La mécanisation légère pour l'agroécologie</h1>
+    <h1 class="titre-1">La mécanisation légère de l'agroécologie</h1>
     <p class="chapo">
-      Le Cyclo-Terre est une machine agricole à propulsion humaine conçue pour les micro-fermes et
-      sert une méthode de production agroécologique. L'objectif de cette machine est de favoriser
-      l'émergence de micro-fermes à taille humaine, produisant en symbiose avec l'environnement.
+      Le Cyclo-Terre est une machine agricole à propulsion humaine, conçue pour les micro-fermes.
+      Il allège le travail du maraîcher, au service d'une méthode qui préserve le sol.
     </p>
   </div>
   <Photo
@@ -35,31 +34,16 @@
   <div class="colonne">
     <h2 class="titre-2 entete-section" id="origine">L'outil au service de la méthode</h2>
     <div class="deux recit">
-      <div class="prose">
-        <p>
-          Le projet Cyclo-Terre est né d'une rencontre : celle de Youri Vezza, ingénieur agronome
-          et maraîcher depuis 2018, et d'Arnaud Jungo, ingénieur en mécanique, qui a conçu la
-          machine dans le cadre de son master.
-        </p>
-        <p>
-          Au fil de plusieurs années de maraîchage biologique entièrement manuel, Youri Vezza a
-          développé une méthode de travail du sol qui a fait ses preuves : la fertilité de ses
-          parcelles s'est nettement améliorée. Mais cette méthode restait physiquement éprouvante
-          et très chronophage.
-        </p>
-      </div>
-      <div class="prose">
-        <p>
-          Adapté à cette méthode, le Cyclo-Terre en réduit la pénibilité avec une mécanisation
-          légère, tout en orientant le travail vers des pratiques qui préservent la fertilité du
-          sol. Il est le fruit d'une co-conception entre le maraîcher et l'ingénieur.
-        </p>
-        <p>
-          Le Cyclo-Terre est pensé pour l'autoconstruction, inspiré par les machines de L'Atelier
-          Paysan : une machine simple que l'on fabrique et répare soi-même, pour rendre aux
-          agricultrices et aux agriculteurs la maîtrise de leurs outils de production.
-        </p>
-      </div>
+      <p>
+        En cultivant entièrement à la main depuis 2018, Youri Vezza, ingénieur agronome et
+        maraîcher, a mis au point une méthode de travail du sol qui a nettement amélioré la
+        fertilité de ses parcelles, mais qui restait exigeante physiquement.
+      </p>
+      <p>
+        Pour rendre cette méthode moins pénible, Arnaud Jungo, ingénieur en mécanique, a conçu avec
+        lui le Cyclo-Terre. Dans l'esprit de L'Atelier Paysan, il est pensé pour que chacun·e puisse
+        le fabriquer et le réparer soi-même.
+      </p>
     </div>
   </div>
 </section>
@@ -77,23 +61,21 @@
     <div class="deux">
       <article class="pile">
         <p class="etiquette agri-texte">La méthode · Youri Vezza</p>
-        <h3 class="titre-3 agri-texte">Cultiver en prenant soin de son environnement</h3>
+        <h3 class="titre-3 agri-texte">Prendre soin du sol</h3>
         <p>
-          Avec sa méthode de maraîchage bio-intensif, inspirée des travaux de Jean-Martin Fortier,
-          Youri Vezza vous apprendra à cultiver en planches permanentes, lire votre sol, gérer
-          l'arrosage et préparer votre saison. Une formation ouverte à toutes et à tous, que vous
-          utilisiez le Cyclo-Terre ou non.
+          Youri Vezza vous apprend le maraîchage bio-intensif, inspiré des travaux de Jean-Martin
+          Fortier : créer des planches permanentes, lire votre sol, préparer votre saison. Une
+          formation ouverte à toutes et à tous, avec ou sans Cyclo-Terre.
         </p>
         <a class="lien lien--agri" href="/formations/#agricole">Les formations agricoles →</a>
       </article>
       <article class="pile">
         <p class="etiquette meca-texte">La machine · Arnaud Jungo</p>
-        <h3 class="titre-3 meca-texte">Concevoir, construire et réparer ses outils</h3>
+        <h3 class="titre-3 meca-texte">Maîtriser ses outils</h3>
         <p>
-          Lors d'un atelier d'autoconstruction, Arnaud Jungo vous accompagnera dans la fabrication
-          de votre Cyclo-Terre : travail du métal, réglage, entretien et réparation, jusqu'aux
-          premières esquisses de vos propres outils. Ces ateliers débuteront dès que la version
-          commerciale du Cyclo-Terre sera finalisée.
+          En atelier d'autoconstruction, Arnaud Jungo vous accompagnera dans la fabrication de votre
+          Cyclo-Terre, de la découpe du métal au réglage, puis dans son entretien et sa réparation.
+          Ces ateliers débuteront avec la version commerciale.
         </p>
         <a class="lien lien--meca" href="/formations/#mecanique">Les formations mécaniques →</a>
       </article>
@@ -104,18 +86,16 @@
 <section class="section" aria-labelledby="machine">
   <div class="colonne machine">
     <div class="pile">
-      <h2 class="titre-2" id="machine">Le Cyclo-Terre</h2>
+      <h2 class="titre-2" id="machine">Entre houe et motoculteur</h2>
       <p>
-        Le Cyclo-Terre se situe entre la houe maraîchère et le motoculteur. La houe respecte le
-        sol, mais elle demande un effort considérable ; le motoculteur va vite, mais il est lourd,
-        consomme du carburant et dégrade le sol. Le Cyclo-Terre allie la finesse du travail manuel
-        à l'efficacité d'une machine : sans carburant, il prend en charge le sarclage, la
-        préparation du sol et le semis, avec un travail superficiel qui laisse la structure du sol
-        s'améliorer culture après culture. Il sert aussi de véhicule utilitaire pour les récoltes
-        et les livraisons.
+        Dans bien des micro-fermes, le motoculteur est la seule machine motorisée. Le Cyclo-Terre a
+        été pensé pour le remplacer. Il permet de préparer les semis avec un travail superficiel du
+        sol, de sarcler et de semer avec la même finesse qu'une houe maraîchère, mais plus vite et
+        avec moins d'effort. C'est aussi un vélo-cargo : un atout pour les micro-fermes qui doivent
+        déplacer du matériel parfois en ville.
       </p>
       <p class="annotation">
-        Prototype en essai sur le terrain. Version commerciale prévue
+        Un prototype est actuellement en essai sur le terrain, la version commerciale est prévue
         pour 2028.
       </p>
       <a class="lien" href="/outils/">Découvrir le Cyclo-Terre →</a>
@@ -146,19 +126,12 @@
 
 <section class="section" aria-labelledby="plans">
   <div class="colonne deux">
-    <div class="pile">
-      <h2 class="titre-2" id="plans">Des plans libres</h2>
-    </div>
+    <h2 class="titre-2" id="plans">Des plans libres</h2>
     <div class="pile">
       <p>
-        Plans, fichiers CAO, nomenclature et instructions d'assemblage du Cyclo-Terre seront
-        publiés sous licence libre. Chacun·e pourra le construire, l'adapter à sa ferme et partager
-        ses améliorations.
-      </p>
-      <p>
-        Qu'on l'achète monté ou en kit, qu'on le construise en atelier ou qu'on le fabrique
-        soi-même, le Cyclo-Terre appartiendra à celles et ceux qui l'utilisent : il ne dépendra ni
-        d'un fabricant ni d'un réparateur agréé.
+        Parce que nous croyons aux outils ouverts, les plans et la documentation du Cyclo-Terre
+        sont publiés sous licence libre. Vous pourrez l'acheter ou le construire avec nous en
+        atelier, mais aussi le fabriquer librement de votre côté.
       </p>
       <a class="lien" href="/outils/#plans">Pourquoi des plans libres →</a>
     </div>

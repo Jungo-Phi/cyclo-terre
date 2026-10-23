@@ -5,20 +5,19 @@
   const demandes = [
     {
       titre: 'Une ferme',
-      texte: 'Échanger sur vos pratiques, suivre le développement, accueillir une formation.'
+      texte: 'Échangez sur vos pratiques, suivez le développement ou accueillez une formation.'
     },
     {
       titre: 'Une école',
-      texte: 'Formations pour vos élèves ou vos étudiant·es, projets de recherche, essais sur le terrain.'
+      texte: 'Formez vos élèves ou vos étudiant·es, et menez avec nous des projets de recherche et des essais sur le terrain.'
     },
     {
       titre: 'Une fondation ou une association',
-      texte: "Engagée pour l'agroécologie : soutenir le projet, accueillir ou financer des formations."
+      texte: 'Soutenez le projet, accueillez ou financez des formations.'
     },
     {
       titre: 'Un·e bricoleur·euse',
-      texte:
-        'Construire votre Cyclo-Terre, améliorer la machine ou ses outils, partager vos modifications : le projet est ouvert aux contributions sur GitHub, selon les règles de son guide de contribution.',
+      texte: 'Construisez votre Cyclo-Terre, améliorez la machine ou ses outils et partagez vos modifications.',
       lien: { href: site.depot, label: 'Le projet sur GitHub →' }
     }
   ];
@@ -33,8 +32,8 @@
   <div class="pile">
     <h1 class="titre-1">Discutons</h1>
     <p class="chapo">
-      Cyclo-Terre avance grâce à celles et ceux qui cultivent, enseignent, construisent ou
-      soutiennent l'agroécologie. Une idée, une question, une envie de contribuer : écrivez-nous.
+      Une idée, une question, une envie de contribuer ? Cyclo-Terre avance avec celles et ceux qui
+      cultivent, enseignent, construisent ou soutiennent l'agroécologie.
     </p>
   </div>
   <div class="fiche adresse">
@@ -61,19 +60,6 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="titre-lettre" id="lettre">
-  <div class="colonne deux">
-    <h2 class="titre-2" id="titre-lettre">La newsletter</h2>
-    <div class="pile">
-      <p>
-        Tous les mois ou tous les deux mois, des nouvelles de Cyclo-Terre : l'avancement de la
-        machine, les prochaines formations, la publication des plans.
-      </p>
-      <LettreInfo />
-    </div>
-  </div>
-</section>
-
 <section class="section" aria-labelledby="qui">
   <div class="colonne">
     <h2 class="titre-2 entete-section" id="qui">Vous êtes…</h2>
@@ -88,10 +74,23 @@
       {/each}
       <li class="pile">
         <h3 class="titre-3">Intéressé·e par une formation</h3>
-        <p>Pour vous inscrire, passez par la fiche de la formation.</p>
+        <p>Inscrivez-vous depuis la fiche de chaque formation.</p>
         <a class="lien" href="/formations/#agenda">Voir l'agenda →</a>
       </li>
     </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="titre-lettre" id="lettre">
+  <div class="colonne deux">
+    <h2 class="titre-2" id="titre-lettre">La newsletter</h2>
+    <div class="pile">
+      <p>
+        Suivez l'avancement de la machine, des outils et la publication des plans. Restez informé·es
+        des formations à venir.
+      </p>
+      <LettreInfo />
+    </div>
   </div>
 </section>
 
