@@ -15,15 +15,15 @@
   <title>Formations — Cyclo-Terre</title>
   <meta
     name="description"
-    content="Formations pratiques en agroécologie (planches permanentes, agronomie) à La Finca Locale, Cartigny, et formations mécaniques sur l'outillage. 5 à 8 personnes."
+    content="Formations pratiques en petit groupe : planches permanentes et agronomie à La Finca Locale, Cartigny ; construction et entretien de l'outillage à Avully."
   />
 </svelte:head>
 
 <section class="colonne intro pile">
-  <h1 class="titre-1">Formations</h1>
+  <h1 class="titre-1">Apprendre en faisant</h1>
   <p class="chapo">
-    Des formations pratiques, sur le terrain et à l'atelier, pour cultiver en préservant les sols et
-    pour construire et entretenir son outillage. On y apprend en faisant, en petit groupe.
+    Des formations pratiques, sur le terrain et à l'atelier, pour cultiver en préservant les sols ou
+    pour construire et entretenir son outillage.
   </p>
 </section>
 
@@ -41,7 +41,7 @@
     </div>
     <LigneAgenda
       sessions={visibles}
-      vide="Aucune date publiée pour l'instant. Abonnez-vous à la newsletter pour être prévenu·e de la prochaine session."
+      vide="Aucune date pour l'instant. Abonnez-vous à la newsletter pour connaître la prochaine."
     />
   </div>
 </section>
@@ -50,12 +50,11 @@
   <div class="colonne deux">
     <div class="pile" id="agricole">
       <span><span class="tag tag--agri">Agricole</span></span>
-      <h2 class="titre-2 agri-texte">Cultiver en préservant le sol</h2>
+      <h2 class="titre-2 agri-texte">Cultivez en préservant le sol</h2>
       <p>
-        Des formations aux méthodes de culture agroécologiques, pour produire en symbiose avec
-        l'environnement, développer la biodiversité et limiter l'assèchement et l'érosion des
-        terres. Elles s'adressent aux maraîchères et maraîchers, aux fermes en reconversion, aux
-        potagers associatifs. Aucune machine n'est nécessaire pour y participer.
+        Apprenez à cultiver selon une méthode agroécologique qui améliore la fertilité des sols.
+        Maraîchère ou maraîcher, ferme en reconversion ou potager associatif : ces formations sont
+        faites pour vous, que vous ayez un Cyclo-Terre ou non.
       </p>
       <ul class="cartes">
         {#each agricoles as f (f.slug)}
@@ -74,12 +73,11 @@
         <span class="tag tag--meca">Mécanique</span>
         <span class="tag tag--neutre">En préparation</span>
       </span>
-      <h2 class="titre-2 meca-texte">Construire, régler, réparer</h2>
+      <h2 class="titre-2 meca-texte">Maîtrisez vos outils</h2>
       <p>
-        Des formations pour construire son Cyclo-Terre ou ses outils, les régler et les réparer.
-        Elles s'appuient sur les plans libres de la machine et sur des compétences utiles à tout
-        outil de ferme. Elles démarreront dès que la version commerciale du Cyclo-Terre sera
-        finalisée.
+        Construisez votre Cyclo-Terre ou vos outils et apprenez à les régler et à les réparer. Vous
+        y acquerrez des bases de mécanique pour gagner en autonomie. Ces formations démarreront avec
+        la version commerciale du Cyclo-Terre.
       </p>
       <ul class="cartes">
         {#each mecaniques as f (f.slug)}
@@ -96,25 +94,10 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="pratique">
-  <div class="colonne deux">
-    <h2 class="titre-2" id="pratique">Comment ça se passe</h2>
-    <dl class="fiche pratique">
-      <dt>Où</dt>
-      <dd>À La Finca Locale, à Cartigny (GE), pour le volet agricole ; à l'atelier, avenue de Gennecy 18, à Avully (GE), pour le volet mécanique. Le lieu exact figure sur chaque fiche.</dd>
-      <dt>Groupe</dt>
-      <dd>5 à 8 personnes.</dd>
-      <dt>Durée</dt>
-      <dd>Une journée ou une semaine, au choix, pour les formations agricoles ; une journée ou plusieurs sessions pour les formations mécaniques.</dd>
-      <dt>Paiement</dt>
-      <dd>Sur place, le premier jour. Environ 200 CHF par jour à titre indicatif ; le prix exact figure sur chaque date.</dd>
-    </dl>
-  </div>
-</section>
 
 <Contribuer
   titre="Accueillir une formation"
-  texte="Les formations peuvent se déplacer. Si votre ferme, votre association ou votre école peut accueillir un groupe, écrivez-nous : dites-nous où, quand et pour combien de personnes."
+  texte="Votre ferme, votre association ou votre école peut recevoir un groupe ? Dites-nous où, quand et pour combien de personnes."
 />
 
 <style>
@@ -153,12 +136,6 @@
   }
   .carte > span:nth-child(2) {
     font-size: 17px;
-  }
-  .pratique {
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--space-3) var(--space-5);
   }
   .filtres {
     display: flex;

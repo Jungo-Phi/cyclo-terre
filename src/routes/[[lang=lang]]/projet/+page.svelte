@@ -3,17 +3,17 @@
   import Contribuer from '$lib/components/Contribuer.svelte';
 
   const objectifs = [
-    "Favoriser l'émergence de micro-fermes à taille humaine, produisant en symbiose avec l'environnement.",
+    "Favoriser l'émergence de micro-fermes à taille humaine, pour réconcilier agriculture et environnement.",
     "Remettre la mécanisation au service de l'humain.",
-    'Faire découvrir au plus grand nombre ce que peut être une agriculture soutenable.',
-    "Constituer une communauté d'utilisatrices et d'utilisateurs engagé·es dans la conception, la réparation et la création de machines adaptées à leurs besoins."
+    'Faire découvrir au plus grand nombre un modèle d\'agriculture soutenable.',
+    'Constituer une communauté engagée dans la conception, la réparation et la création de machines adaptées à ses besoins.'
   ];
 
   const calendrier = [
-    ['Février 2026', "Construction du premier prototype, issu du travail de master d'Arnaud Jungo."],
-    ['2026', "Structuration du projet (stratégie de communication, plan d'affaires, recherche de financements) et candidature au concours IDDEA."],
-    ['2027', 'Essais et mesures sur champ à La Finca Locale, développement de la version commerciale et premières formations agricoles.'],
-    ['2028', 'Sortie de la version commerciale du Cyclo-Terre, publication des plans sous licence libre et premières formations mécaniques.']
+    ['Février 2026', "Premier prototype, issu du travail de master d'Arnaud Jungo."],
+    ['2026', "Structuration du projet (communication, plan d'affaires, financements) et candidature au concours IDDEA."],
+    ['2027', 'Essais et mesures sur champ à La Finca Locale, développement de la version commerciale, premières formations agricoles.'],
+    ['2028', 'Sortie de la version commerciale du Cyclo-Terre, publication des plans libres, premières formations mécaniques.']
   ];
 </script>
 
@@ -26,28 +26,29 @@
 </svelte:head>
 
 <section class="colonne intro pile">
-  <h1 class="titre-1">Un outillage et une méthode pour les micro-fermes</h1>
+  <h1 class="titre-1">Outiller les micro-fermes</h1>
   <p class="chapo">
-    Cyclo-Terre construit un outillage et transmet une méthode pour que des micro-fermes à taille
-    humaine puissent produire en préservant leurs sols.
+    Nous souhaitons favoriser l'émergence de micro-fermes à taille humaine, en harmonie avec leur
+    environnement, en les équipant de machines qu'elles comprennent et savent réparer elles-mêmes.
   </p>
 </section>
 
 <section class="section" aria-labelledby="pourquoi">
   <div class="colonne deux">
-    <h2 class="titre-2" id="pourquoi">Pourquoi</h2>
+    <h2 class="titre-2" id="pourquoi">Cultiver sans épuiser</h2>
     <div class="prose">
       <p>
-        L'érosion et le tassement des sols mènent à une perte de fertilité d'année en année, et
-        beaucoup d'agricultrices et d'agriculteurs se retrouvent enfermé·es dans un modèle de fortes
-        dépenses — machines, intrants — sans perspective d'amélioration de leurs conditions de
-        travail. Le travail manuel préserve
-        les sols, mais il est trop éprouvant et chronophage.
+        En agriculture conventionnelle, les tracteurs lourds et le labour profond tassent les sols et
+        les exposent à l'érosion : année après année, ils perdent leur fertilité. Beaucoup
+        d'agricultrices et d'agriculteurs restent enfermé·es dans un modèle de fortes dépenses, en
+        machines et en intrants, sans que leurs conditions de travail s'améliorent. Le travail
+        manuel, lui, préserve les sols et offre un travail plus fin, mais il reste souvent épuisant,
+        et les micro-fermes cherchent encore leur place.
       </p>
       <p>
-        Cyclo-Terre veut rendre aux agricultrices et aux agriculteurs la maîtrise de leurs outils,
-        grâce à une mécanisation légère, facile à entretenir et pensée pour l'autoconstruction, dans
-        l'esprit de L'Atelier Paysan.
+        Avec une mécanisation légère, Cyclo-Terre aide les paysannes et les paysans à alléger leur
+        travail quotidien et à reprendre la maîtrise de leurs outils. Faciles à entretenir, ces
+        outils sont pensés pour l'autoconstruction, dans l'esprit de L'Atelier Paysan.
       </p>
     </div>
   </div>
@@ -65,13 +66,13 @@
 <section class="section" aria-labelledby="equipe">
   <div class="colonne">
     <div class="entete-section pile">
-      <h2 class="titre-2" id="equipe">L'équipe</h2>
-      <p class="chapo">Deux profils liés par une passion commune pour le vélo, l'open source et les enjeux écologiques.</p>
+      <h2 class="titre-2" id="equipe">Une rencontre</h2>
       <p class="rencontre">
-        Youri et Arnaud se sont rencontrés par hasard lors du concours d'innovation
-        Ecobooster, à Vernier, en 2025. Youri cultivait à la main depuis 2018 à La Finca Locale : le sol
-        s'y améliorait d'année en année, mais le travail était épuisant. Arnaud a consacré son
-        travail de master à la conception du premier prototype du Cyclo-Terre.
+        Youri et Arnaud se sont rencontrés par hasard en 2025, au concours d'innovation Ecobooster à
+        Vernier. L'un cherchait à alléger son travail aux champs, l'autre en a fait son travail de
+        master : le premier prototype du Cyclo-Terre. Au fil du projet, ils ont développé leurs
+        intérêts communs pour le vélo, l'open source et l'écologie, et une véritable complicité est
+        née.
       </p>
     </div>
     <div class="deux">
@@ -84,15 +85,17 @@
         <div class="pile">
           <h3 class="titre-3 agri-texte">Youri Vezza</h3>
           <p>
-            Agriculteur de profession et ingénieur agronome de formation, spécialisé dans la santé
-            des sols. Il a fondé La Finca Locale, une exploitation maraîchère agroécologique, en 2018.
+            Agriculteur de profession et ingénieur agronome, spécialisé dans la santé des sols. Il
+            a fondé La Finca Locale en 2018, une exploitation maraîchère agroécologique dont il
+            soigne l'écosystème avec passion.
           </p>
         </div>
         <div class="pile">
           <h3 class="titre-3 meca-texte">Arnaud Jungo</h3>
           <p>
-            Ingénieur en mécanique, automaticien CFC, spécialisé dans le prototypage rapide ; il a
-            mené de nombreux projets d'électronique, de programmation et de mécanique.
+            Ingénieur en mécanique et automaticien CFC, il aime imaginer des machines et les
+            construire de ses mains. Avant Cyclo-Terre, il ne connaissait rien à l'agriculture, mais
+            l'envie de contribuer à changer le modèle agricole l'a convaincu de se lancer.
           </p>
         </div>
       </div>
@@ -115,7 +118,7 @@
 
 <Contribuer
   titre="Cyclo-Terre se construit avec vous"
-  texte="Fermes, écoles, ateliers, institutions : nous cherchons des partenaires pour accueillir des formations, mener des essais et faire évoluer la machine et ses outils. Écrivez-nous."
+  texte="Ce projet, nous voulons le construire avec celles et ceux qui partagent cette vision. Ferme, école, atelier ou institution, vous pouvez accueillir une formation, tester la machine sur votre terrain ou nous aider à la faire évoluer. Envie d'en faire partie ?"
 />
 
 <style>

@@ -17,7 +17,7 @@ export const site = {
   /** Guide de contribution du dépôt de la machine. */
   contribuer: 'https://github.com/Cyclo-Terre-Org/Cyclo-Terre/blob/main/CONTRIBUTING.md',
   description:
-    'Porte-outils maraîcher léger et formations en agroécologie et mécanique pour les micro-fermes.',
+    'Porte-outils maraîcher & formations en agroécologie',
   navigation: [
     { href: '/outils/', label: 'Outils' },
     { href: '/formations/', label: 'Formations' },

@@ -11,7 +11,7 @@
     <h2 class="titre-2" id="contribuer">{titre}</h2>
     <div class="pile">
       <p class="chapo">{texte}</p>
-      <div class="actions"><a class="btn btn--encre" href="/contact/">Nous écrire</a></div>
+      <div class="actions"><a class="btn btn--encre" href="/contact/">Écrivez-nous</a></div>
     </div>
   </div>
 </section>

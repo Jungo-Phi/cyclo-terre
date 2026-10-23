@@ -19,11 +19,11 @@
   const caracteristiques = [
     ['Assistance électrique', '500 W, autonomie 800 Wh'],
     ['Charge utile', "jusqu'à 250 kg"],
-    ['Voie', 'pensée pour les planches de 75 cm, le format du maraîchage bio-intensif popularisé par Jean-Martin Fortier'],
+    ['Voie', '75 cm, la largeur des planches du maraîchage bio-intensif popularisé par Jean-Martin Fortier'],
     ['Largeur hors tout', '92 cm'],
     ['Poids à vide', '50 kg'],
     ['Cadre', 'profilés inox'],
-    ['Surface visée', 'une machine pour environ 1 hectare']
+    ['Surface', 'environ 1 hectare par machine']
   ];
 
 </script>
@@ -32,7 +32,7 @@
   <title>Outils — Cyclo-Terre</title>
   <meta
     name="description"
-    content="Le Cyclo-Terre, porte-outils maraîcher léger et vélo-cargo : ce qu'il fait, les outils qu'il porte, ses caractéristiques, comment se le procurer et ses plans libres."
+    content="Le Cyclo-Terre, porte-outils maraîcher léger et vélo-cargo pour les micro-fermes : travail superficiel du sol, transport, plans libres et formations."
   />
 </svelte:head>
 
@@ -41,10 +41,8 @@
     <h1 class="titre-1">Le Cyclo-Terre</h1>
     <p class="chapo">
       Le Cyclo-Terre est une machine agricole légère à propulsion humaine, conçue pour les
-      micro-fermes et au service d'une méthode de production agroécologique. Ce porte-outils
-      maraîcher effectue un travail du sol superficiel en gardant la qualité du travail manuel. Il
-      fait aussi office de vélo-cargo pour transporter des charges en milieu urbain et
-      péri-urbain.
+      micro-fermes. Ce porte-outils maraîcher permet un travail du sol superficiel, avec la qualité
+      du travail manuel. Il fait aussi office de vélo-cargo, sur la ferme comme en ville.
     </p>
   </div>
   <Photo
@@ -55,51 +53,30 @@
   />
 </section>
 
-<section class="section" aria-labelledby="pourquoi">
-  <div class="colonne deux">
-    <h2 class="titre-2" id="pourquoi">Pourquoi cette machine</h2>
-    <div class="prose">
-      <p>
-        Depuis 2018, Youri Vezza cultive des légumes biologiques à la main à La Finca Locale. Sa
-        méthode a fait ses preuves : la fertilité des sols s'améliore d'année en année. Mais elle
-        reste physiquement éprouvante et très chronophage.
-      </p>
-      <p>
-        Le Cyclo-Terre en réduit la pénibilité avec une mécanisation légère, sans renoncer aux
-        pratiques qui préservent le sol.
-      </p>
-    </div>
-  </div>
-</section>
-
 <section class="section" aria-labelledby="fait">
   <div class="colonne">
     <h2 class="titre-2 entete-section" id="fait">Fonctions</h2>
     <div class="trois">
       <div class="pile">
-        <h3 class="titre-3">Travailler le sol</h3>
+        <h3 class="titre-3">Travail du sol</h3>
         <p>
-          Sarclage, préparation du sol, semis : un travail superficiel qui ne dégrade pas la
-          fertilité et laisse la structure du sol s'améliorer culture après culture.
+          Réalisez plus efficacement toutes les opérations du maraîchage manuel. Le sol n'y est
+          travaillé qu'en surface, pour ne pas dégrader sa fertilité.
         </p>
       </div>
       <div class="pile">
-        <h3 class="titre-3">Transporter</h3>
+        <h3 class="titre-3">Transport</h3>
         <p>
-          Le Cyclo-Terre est aux normes pour circuler sur les pistes cyclables, en milieu urbain et
-          péri-urbain. Adapté aux livraisons, il dispose d'une caisse arrière qui accueille deux
-          piles de caisses maraîchères, pour une charge allant jusqu'à 250 kg.
+          Transportez de lourdes charges en milieu urbain et périurbain avec une machine qui respecte
+          les normes des pistes cyclables. Chargez jusqu'à 250 kg, et jusqu'à deux piles de caisses
+          maraîchères dans la caisse arrière.
         </p>
       </div>
       <div class="pile">
-        <h3 class="titre-3">S'adapter</h3>
+        <h3 class="titre-3">Polyvalence</h3>
         <p>
-          Le Cyclo-Terre est un porte-outils : on y monte l'outil dont la culture a besoin, et nous
-          pouvons vous aider à développer des outils spécialisés.
-        </p>
-        <p>
-          Une fois la documentation et les plans libres publiés, chacun·e pourra aussi le modifier
-          et le réparer facilement.
+          Le Cyclo-Terre est un porte-outils : son équipement de base peut être complété par des
+          outils spécialisés, adaptés à chaque terrain.
         </p>
       </div>
     </div>
@@ -117,7 +94,7 @@
 <section class="section" aria-labelledby="caracteristiques">
   <div class="colonne deux">
     <div class="pile">
-      <h2 class="titre-2" id="caracteristiques">Caractéristiques</h2>
+      <h2 class="titre-2" id="caracteristiques">En chiffres</h2>
       <dl class="fiche specs">
         {#each caracteristiques as [cle, valeur]}
           <dt>{cle}</dt>
@@ -137,67 +114,44 @@
 
 <section class="section" aria-labelledby="avancement">
   <div class="colonne deux">
-    <h2 class="titre-2" id="avancement">Où en est-on</h2>
+    <h2 class="titre-2" id="avancement">Où en est-on ?</h2>
     <div class="prose">
       <p>
-        Le Cyclo-Terre n'est pas encore en vente : le prototype est en essai sur le terrain. Mais
-        nous proposons déjà des formations agricoles. À terme, il sera proposé monté, en kit ou en
-        atelier d'autoconstruction, et ses plans libres permettront à chacun·e de le fabriquer
-        soi-même.
+        Le Cyclo-Terre n'est pas encore en vente : la version commerciale est prévue pour 2028. Le
+        prototype est en essai à La Finca Locale, à Cartigny.
       </p>
-      <p>
-        Les essais ont lieu à La Finca Locale, à Cartigny. Vous voulez suivre le développement,
-        partager votre expérience ou y contribuer ?
-      </p>
+      <p>Envie de suivre le développement ?</p>
       <a class="lien" href={lettre.ancre}>S'abonner à la newsletter →</a>
-      <a class="lien" href="/projet/#calendrier">Le calendrier du projet →</a>
-      <a class="lien" href="/contact/">Nous écrire →</a>
     </div>
   </div>
 </section>
 
 <section class="section" aria-labelledby="plans">
   <div class="colonne deux">
-    <div class="pile">
-      <h2 class="titre-2" id="plans">Des plans libres</h2>
-    </div>
+    <h2 class="titre-2" id="plans">Des plans libres</h2>
     <div class="prose">
       <p>
-        Les plans du Cyclo-Terre et de ses outils seront publiés sous licence libre en 2028, avec
-        la sortie de la version commerciale : CERN-OHL-S v2 pour le matériel (plans, fichiers CAO,
-        nomenclature) et CC BY-SA 4.0 pour la documentation.
+        Les plans du Cyclo-Terre et de ses outils seront publiés en 2028, avec la version
+        commerciale, sous licence CERN-OHL-S v2 pour le matériel et CC BY-SA 4.0 pour la
+        documentation.
       </p>
-      <h3 class="titre-3">Ce qui sera publié</h3>
-      <ul>
-        <li>les plans et les fichiers CAO de la machine et des outils ;</li>
-        <li>la nomenclature, avec des pièces de vélo standard que l'on trouve partout ;</li>
-        <li>les instructions d'assemblage et de réglage.</li>
-      </ul>
       <h3 class="titre-3">Pourquoi</h3>
       <p>
-        Des plans libres permettent de construire, de réparer et de modifier une machine sans
-        dépendre d'un fabricant. Cette idée vient du logiciel libre : dans les années 1980, le
-        projet GNU pose le principe d'un code que chacun·e peut étudier, modifier et redistribuer. À
-        partir des années 2000, le mouvement du matériel libre (open hardware) l'étend aux objets
-        physiques, en publiant leurs plans sous des licences dédiées.
+        Le Cyclo-Terre s'inscrit dans le mouvement du matériel libre, ou open hardware : ses plans
+        sont publiés pour que chacun·e puisse le fabriquer, le réparer et le modifier sans dépendre
+        d'un fabricant. Notre première inspiration est L'Atelier Paysan, une coopérative qui diffuse
+        des plans de machines agricoles et forme à l'autoconstruction.
       </p>
       <p>
-        Dans le monde agricole, L'Atelier Paysan applique cette démarche aux machines de ferme :
-        diffuser librement les plans et former à l'autoconstruction, pour rendre aux paysannes et
-        aux paysans la maîtrise de leur outil de travail. C'est cette démarche qui inspire
-        Cyclo-Terre.
+        Partagées sous la même licence, les contributions de chacun·e font évoluer la machine petit à
+        petit pour l'adapter à tous les terrains. Elles font aussi vivre une communauté qui s'entraide
+        et échange ses savoir-faire.
       </p>
+      <h3 class="titre-3">Un modèle ouvert</h3>
       <p>
-        Chacun·e pourra construire, modifier et partager le Cyclo-Terre, à condition de citer la
-        source et de conserver la même licence. Chaque amélioration profite ainsi à l'ensemble des
-        utilisatrices et des utilisateurs, et le Cyclo-Terre et ses outils s'adaptent peu à peu à
-        des sols et à des cultures que nous ne connaissons pas.
-      </p>
-      <h3 class="titre-3">Plans libres et vente</h3>
-      <p>
-        Les deux sont complémentaires. Acheter un Cyclo-Terre monté, en kit ou en atelier fait
-        gagner du temps et finance le développement du projet ; les plans libres garantissent que
-        chacun·e peut le fabriquer, le réparer et l'améliorer sans dépendre de nous.
+        Plans, fichiers CAO, liste des pièces et instructions d'assemblage : tout est en accès libre,
+        pour que personne ne dépende de nous. Acheter un Cyclo-Terre ou suivre un atelier, c'est
+        soutenir le projet.
       </p>
       <div class="actions">
         <a class="btn btn--contour" href={lettre.ancre}>Être prévenu·e de la publication</a>
@@ -206,12 +160,9 @@
   </div>
 </section>
 
-
 <section class="section" aria-labelledby="titre-construire" id="construire">
   <div class="colonne">
-    <div class="entete-section pile">
-      <h2 class="titre-2" id="titre-construire">Construire et contribuer</h2>
-    </div>
+    <h2 class="titre-2 entete-section" id="titre-construire">Construire et contribuer</h2>
 
     <div class="deux">
       <div class="pile">
@@ -219,7 +170,6 @@
         {#if data.version}
           <p>
             Version <strong>{data.version.tag}</strong>, publiée le {data.version.date.split('-').reverse().join('.')}.
-            Les fichiers sont gratuits et libres.
           </p>
           <ul class="telechargements">
             {#each data.version.fichiers as f}
@@ -228,11 +178,7 @@
           </ul>
           <a class="lien" href={site.depot}>Toutes les sources sur GitHub →</a>
         {:else}
-          <p>
-            Les plans seront publiés ici avec la version commerciale, en 2028 : téléchargement direct,
-            sans compte ni logiciel particulier.
-          </p>
-          <a class="lien" href={lettre.ancre}>Être prévenu·e de la publication →</a>
+          <p>Les plans seront publiés ici en 2028.</p>
         {/if}
 
         <h3 class="titre-3">Les guides</h3>
@@ -249,57 +195,27 @@
           {/each}
         {:else}
           <p>
-            Le manuel d'utilisation et d'entretien, les consignes de sécurité et les instructions
-            d'assemblage seront lisibles ici, au fur et à mesure de leur rédaction.
+            Manuel d'utilisation et d'entretien, consignes de sécurité, instructions d'assemblage : les
+            guides paraîtront ici au fil de leur rédaction.
           </p>
         {/if}
       </div>
 
       <div class="pile">
-        <h3 class="titre-3">Participer, à votre rythme</h3>
+        <h3 class="titre-3">Participer</h3>
         <p>
-          Le Cyclo-Terre s'améliore avec celles et ceux qui l'utilisent. Chaque étape est facultative ;
-          les trois premières ne demandent aucun compte.
+          Une question, une idée, une photo de votre construction, une correction des guides ou une
+          modification des plans : nous serons heureux de vous lire.
         </p>
-        <ol class="echelle">
-          <li>
-            <span class="num">1</span>
-            <div><strong>Suivre</strong> l'avancement : <a href="/actualites/">actualités</a> et <a href={lettre.ancre}>newsletter</a>.</div>
-          </li>
-          <li>
-            <span class="num">2</span>
-            <div><strong>Poser une question</strong> ou partager une idée : <a href="mailto:{site.email}">par e-mail</a>, ou dans les <a href={site.discussions}>discussions</a> ouvertes à tous.</div>
-          </li>
-          <li>
-            <span class="num">3</span>
-            <div><strong>Partager votre construction</strong> ou signaler un problème : envoyez-nous photos et remarques <a href="mailto:{site.email}?subject=Ma%20construction%20du%20Cyclo-Terre">par e-mail</a>.</div>
-          </li>
-          <li>
-            <span class="num">4</span>
-            <div><strong>Corriger un guide</strong> : chaque guide a un bouton « Proposer une correction » qui ouvre l'éditeur en ligne de GitHub (compte gratuit).</div>
-          </li>
-          <li>
-            <span class="num">5</span>
-            <div><strong>Modifier les plans</strong> ou concevoir un outil : suivez le <a href={site.contribuer}>guide de contribution</a>.</div>
-          </li>
-        </ol>
-
-        <details class="lexique">
-          <summary>Les mots de GitHub, en clair</summary>
-          <dl>
-            <dt>Dépôt</dt><dd>Le dossier en ligne qui contient tous les fichiers du projet et leur historique.</dd>
-            <dt>Version (release)</dt><dd>Un état figé des plans, avec des fichiers prêts à télécharger.</dd>
-            <dt>Discussion</dt><dd>Un fil de questions et de réponses, ouvert à tous.</dd>
-            <dt>Signalement (issue)</dt><dd>Une fiche qui décrit un problème ou une idée précise, à traiter.</dd>
-            <dt>Copie (fork)</dt><dd>Votre propre copie du dépôt, où vous pouvez tout modifier.</dd>
-            <dt>Proposition (pull request)</dt><dd>Une demande d'intégrer vos modifications aux plans communs, relue avant d'être acceptée.</dd>
-          </dl>
-        </details>
+        <div class="actions">
+          <a class="btn btn--encre" href="/contact/">Écrivez-nous</a>
+        </div>
+        <a class="lien" href={site.discussions}>Les discussions sur GitHub →</a>
+        <a class="lien" href={site.contribuer}>Guide de contribution →</a>
       </div>
     </div>
   </div>
 </section>
-
 
 <style>
   .telechargements,
@@ -319,48 +235,6 @@
   }
   .guides {
     gap: var(--space-2);
-  }
-  .echelle {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-top: 2px solid var(--ink);
-  }
-  .echelle li {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    gap: var(--space-3);
-    padding: var(--space-3) 0;
-    border-bottom: 1px solid var(--rule-strong);
-  }
-  .echelle .num {
-    display: inline-grid;
-    place-items: center;
-    width: 28px;
-    height: 28px;
-    border: 1.5px solid var(--ink);
-    border-radius: var(--radius-rond);
-    font-family: var(--font-mono);
-    font-size: 13px;
-  }
-  .lexique summary {
-    cursor: pointer;
-    font-family: var(--font-titre);
-    font-weight: 600;
-    font-size: 19px;
-  }
-  .lexique dl {
-    margin: var(--space-3) 0 0;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--space-2) var(--space-4);
-    font-size: 17px;
-  }
-  .lexique dt {
-    font-weight: 600;
-  }
-  .lexique dd {
-    margin: 0;
   }
   .intro {
     display: grid;
