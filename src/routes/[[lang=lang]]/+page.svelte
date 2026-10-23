@@ -130,7 +130,7 @@
     <div class="pile">
       <p>
         Parce que nous croyons aux outils ouverts, les plans et la documentation du Cyclo-Terre
-        seront publiés sous licence libre. Vous pourrez l'acheter ou le construire avec nous en
+        sont publiés sous licence libre. Vous pourrez l'acheter ou le construire avec nous en
         atelier, mais aussi le fabriquer librement de votre côté.
       </p>
       <a class="lien" href="/outils/#plans">Pourquoi des plans libres →</a>

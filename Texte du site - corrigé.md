@@ -70,7 +70,7 @@ Lien : Tout l'agenda →
 
 ### Des plans libres
 
-**Aujourd'hui :** Parce que nous croyons aux outils ouverts, les plans et la documentation du Cyclo-Terre seront publiés sous licence libre. Vous pourrez l'acheter ou le construire avec nous en atelier, mais aussi le fabriquer librement de votre côté.
+**Aujourd'hui :** Parce que nous croyons aux outils ouverts, les plans et la documentation du Cyclo-Terre sont publiés sous licence libre. Vous pourrez l'acheter ou le construire avec nous en atelier, mais aussi le fabriquer librement de votre côté.
 
 **À terme :** Parce que nous croyons aux outils ouverts, les plans et la documentation du Cyclo-Terre sont publiés sous licence libre. Vous pouvez l'acheter ou le construire avec nous en atelier, mais aussi le fabriquer librement de votre côté.
 
@@ -98,7 +98,7 @@ Réalisez plus efficacement toutes les opérations du maraîchage manuel. Le sol
 
 **Transport**
 
-Transportez de lourdes charges en milieu urbain et périurbain avec une machine qui respecte les normes des pistes cyclables. Chargez jusqu'à 250 kg, et jusqu'à deux piles de caisses maraîchères dans la caisse arrière.
+Transportez de lourdes charges en milieu urbain et périurbain avec une machine qui respecte les normes des pistes cyclables. Chargez jusqu'à 250 kg et deux piles de caisses maraîchères dans la caisse arrière.
 
 **Polyvalence**
 
@@ -147,25 +147,17 @@ Lien : L'atelier d'autoconstruction →
 
 ### Des plans libres
 
-**Aujourd'hui :** Les plans du Cyclo-Terre et de ses outils seront publiés en 2028, avec la version commerciale, sous licence CERN-OHL-S v2 pour le matériel et CC BY-SA 4.0 pour la documentation.
-
-**À terme :** Les plans du Cyclo-Terre et de ses outils sont publiés sur GitHub, sous licence CERN-OHL-S v2 pour le matériel et CC BY-SA 4.0 pour la documentation.
-
-**Pourquoi**
-
 Le Cyclo-Terre s'inscrit dans le mouvement du matériel libre, ou open hardware : ses plans sont publiés pour que chacun·e puisse le fabriquer, le réparer et le modifier sans dépendre d'un fabricant. Notre première inspiration est L'Atelier Paysan, une coopérative qui diffuse des plans de machines agricoles et forme à l'autoconstruction.
 
 Partagées sous la même licence, les contributions de chacun·e font évoluer la machine petit à petit pour l'adapter à tous les terrains. Elles font aussi vivre une communauté qui s'entraide et échange ses savoir-faire.
 
-**Un modèle ouvert**
+Les plans du Cyclo-Terre et de ses outils sont publiés sur GitHub, sous licence CERN-OHL-S v2 pour le matériel et CC BY-SA 4.0 pour la documentation.
 
-Plans, fichiers CAO, liste des pièces et instructions d'assemblage : tout est en accès libre, pour que personne ne dépende de nous. Acheter un Cyclo-Terre ou suivre un atelier, c'est soutenir le projet.
-
-**Aujourd'hui :** Bouton : Être prévenu·e de la publication · **À terme :** Bouton : Contribuer au projet
+Bouton : Contribuer au projet
 
 ### Construire et contribuer
 
-**Les plans** — Aujourd'hui : Les plans seront publiés ici en 2028. Quand une version est publiée : Version \[NUMÉRO\], publiée le \[DATE\].
+**Les plans** — Version \[NUMÉRO\], publiée le \[DATE\], avec la liste des fichiers à télécharger (sans version publiée : Aucune version publiée pour l'instant.)
 
 **Les guides** — Aujourd'hui : Manuel d'utilisation et d'entretien, consignes de sécurité, instructions d'assemblage : les guides paraîtront ici au fil de leur rédaction.
 
@@ -247,9 +239,9 @@ Youri et Arnaud se sont rencontrés par hasard en 2025, au concours d'innovation
 | Quand | Quoi |
 | --- | --- |
 | Février 2026 | Premier prototype, issu du travail de master d'Arnaud Jungo. |
-| 2026 | Structuration du projet (communication, plan d'affaires, financements) et candidature au concours IDDEA. |
+| 2026 | Structuration du projet (communication, plan d'affaires, financements), candidature au concours IDDEA et publication des premiers plans libres (v0.1). |
 | 2027 | Essais et mesures sur champ à La Finca Locale, développement de la version commerciale, premières formations agricoles. |
-| 2028 | Sortie de la version commerciale du Cyclo-Terre, publication des plans libres, premières formations mécaniques. |
+| 2028 | Sortie de la version commerciale du Cyclo-Terre, premières formations mécaniques. |
 
 ### Cyclo-Terre se construit avec vous
 

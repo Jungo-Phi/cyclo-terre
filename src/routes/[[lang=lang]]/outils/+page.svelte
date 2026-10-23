@@ -68,7 +68,7 @@
         <h3 class="titre-3">Transport</h3>
         <p>
           Transportez de lourdes charges en milieu urbain et périurbain avec une machine qui respecte
-          les normes des pistes cyclables. Chargez jusqu'à 250 kg, et jusqu'à deux piles de caisses
+          les normes des pistes cyclables. Chargez jusqu'à 250 kg et deux piles de caisses
           maraîchères dans la caisse arrière.
         </p>
       </div>
@@ -127,15 +127,9 @@
 </section>
 
 <section class="section" aria-labelledby="plans">
-  <div class="colonne deux">
-    <h2 class="titre-2" id="plans">Des plans libres</h2>
-    <div class="prose">
-      <p>
-        Les plans du Cyclo-Terre et de ses outils seront publiés en 2028, avec la version
-        commerciale, sous licence CERN-OHL-S v2 pour le matériel et CC BY-SA 4.0 pour la
-        documentation.
-      </p>
-      <h3 class="titre-3">Pourquoi</h3>
+  <div class="colonne">
+    <h2 class="titre-2 entete-section" id="plans">Des plans libres</h2>
+    <div class="deux recit">
       <p>
         Le Cyclo-Terre s'inscrit dans le mouvement du matériel libre, ou open hardware : ses plans
         sont publiés pour que chacun·e puisse le fabriquer, le réparer et le modifier sans dépendre
@@ -147,14 +141,12 @@
         petit pour l'adapter à tous les terrains. Elles font aussi vivre une communauté qui s'entraide
         et échange ses savoir-faire.
       </p>
-      <h3 class="titre-3">Un modèle ouvert</h3>
       <p>
-        Plans, fichiers CAO, liste des pièces et instructions d'assemblage : tout est en accès libre,
-        pour que personne ne dépende de nous. Acheter un Cyclo-Terre ou suivre un atelier, c'est
-        soutenir le projet.
+        Les plans du Cyclo-Terre et de ses outils sont publiés sur GitHub, sous licence CERN-OHL-S v2
+        pour le matériel et CC BY-SA 4.0 pour la documentation.
       </p>
       <div class="actions">
-        <a class="btn btn--contour" href={lettre.ancre}>Être prévenu·e de la publication</a>
+        <a class="btn btn--contour" href={site.contribuer}>Contribuer au projet</a>
       </div>
     </div>
   </div>
@@ -178,7 +170,7 @@
           </ul>
           <a class="lien" href={site.depot}>Toutes les sources sur GitHub →</a>
         {:else}
-          <p>Les plans seront publiés ici en 2028.</p>
+          <p>Aucune version publiée pour l'instant.</p>
         {/if}
 
         <h3 class="titre-3">Les guides</h3>

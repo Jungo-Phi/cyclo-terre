@@ -24,7 +24,7 @@
   <h2 class="titre-3">Contenus</h2>
   <p>
     Textes, photos et schémas : © Cyclo-Terre, sauf mention contraire. Les plans de la machine
-    seront publiés sous licence libre : CERN-OHL-S v2 pour le matériel, CC BY-SA 4.0 pour la
+    sont publiés sous licence libre : CERN-OHL-S v2 pour le matériel, CC BY-SA 4.0 pour la
     documentation.
   </p>
 

@@ -11,9 +11,9 @@
 
   const calendrier = [
     ['Février 2026', "Premier prototype, issu du travail de master d'Arnaud Jungo."],
-    ['2026', "Structuration du projet (communication, plan d'affaires, financements) et candidature au concours IDDEA."],
+    ['2026', "Structuration du projet (communication, plan d'affaires, financements), candidature au concours IDDEA et publication des premiers plans libres (v0.1)."],
     ['2027', 'Essais et mesures sur champ à La Finca Locale, développement de la version commerciale, premières formations agricoles.'],
-    ['2028', 'Sortie de la version commerciale du Cyclo-Terre, publication des plans libres, premières formations mécaniques.']
+    ['2028', 'Sortie de la version commerciale du Cyclo-Terre, premières formations mécaniques.']
   ];
 </script>
 
