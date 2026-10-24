@@ -88,12 +88,13 @@
   <input class="piege" type="text" name="inf_email_check" autocomplete="off" tabindex="-1" aria-hidden="true" />
   <input class="piege" type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" />
 
-  <label class="annotation" for="lettre-courriel">Votre adresse e-mail</label>
   <div class="champ">
     <input
       id="lettre-courriel"
       name={lettre.champEmail}
       type="email"
+      placeholder="Votre adresse e-mail"
+      aria-label="Votre adresse e-mail"
       autocomplete="email"
       required
       aria-describedby="lettre-note{erreur ? ' lettre-erreur' : ''}"
@@ -105,10 +106,6 @@
   </div>
   <altcha-widget hidelogo hidefooter floating challengeurl={lettre.captcha}></altcha-widget>
   {#if erreur}<p class="erreur" id="lettre-erreur" role="alert">Erreur : {erreur}</p>{/if}
-  <p class="annotation" id="lettre-note">
-    Votre adresse sert uniquement à vous envoyer des nouvelles de nos activités. Chaque envoi
-    contient un lien de désabonnement.
-  </p>
 </form>
 
 <style>
@@ -145,6 +142,10 @@
     background: var(--card);
     color: var(--ink);
     font: inherit;
+  }
+  input::placeholder {
+    color: var(--ink-muted);
+    opacity: 1;
   }
   @media (max-width: 720px) {
     .champ {

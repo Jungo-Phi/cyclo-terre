@@ -40,9 +40,9 @@
   <div class="pile">
     <h1 class="titre-1">Le Cyclo-Terre</h1>
     <p class="chapo">
-      Le Cyclo-Terre est une machine agricole légère à propulsion humaine, conçue pour les
-      micro-fermes. Ce porte-outils maraîcher permet un travail du sol superficiel, avec la qualité
-      du travail manuel. Il fait aussi office de vélo-cargo, sur la ferme comme en ville.
+      Une machine agricole légère à propulsion humaine, conçue pour les micro-fermes.
+      Ce porte-outils maraîcher permet un travail du sol superficiel, avec la qualité du travail manuel.
+      Il fait aussi office de vélo-cargo, sur la ferme comme en ville.
     </p>
   </div>
   <Photo
@@ -55,7 +55,6 @@
 
 <section class="section" aria-labelledby="fait">
   <div class="colonne">
-    <h2 class="titre-2 entete-section" id="fait">Fonctions</h2>
     <div class="trois">
       <div class="pile">
         <h3 class="titre-3">Travail du sol</h3>
@@ -73,7 +72,7 @@
         </p>
       </div>
       <div class="pile">
-        <h3 class="titre-3">Polyvalence</h3>
+        <h3 class="titre-3">Adaptable</h3>
         <p>
           Le Cyclo-Terre est un porte-outils : son équipement de base peut être complété par des
           outils spécialisés, adaptés à chaque terrain.
@@ -232,8 +231,8 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--space-7);
-    align-items: center;
-    padding-block: var(--space-7) var(--space-8);
+    align-items: start;
+    padding-block: var(--space-7) 0;
   }
   .trois {
     display: grid;
@@ -280,7 +279,7 @@
   @media (max-width: 720px) {
     .intro {
       grid-template-columns: 1fr;
-      padding-block: var(--space-5) var(--space-7);
+      padding-block: var(--space-5) 0;
     }
   }
 </style>

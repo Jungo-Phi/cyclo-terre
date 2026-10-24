@@ -29,7 +29,7 @@
   <h1 class="titre-1">Outiller les micro-fermes</h1>
   <p class="chapo">
     Nous souhaitons favoriser l'émergence de micro-fermes à taille humaine, en harmonie avec leur
-    environnement, en les équipant de machines qu'elles comprennent et savent réparer elles-mêmes.
+    environnement, en les équipant de machines qu'elles comprennent et réparent elles-mêmes.
   </p>
 </section>
 

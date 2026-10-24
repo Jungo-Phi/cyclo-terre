@@ -16,8 +16,7 @@
 <section class="colonne intro pile">
   <h1 class="titre-1">Actualités</h1>
   <p class="chapo">
-    Suivez l'avancement de la machine, des outils et la publication des plans. Restez informé·es
-    des formations à venir.
+    Suivez l'avancement de la machine et soyez informé·es des formations à venir.
   </p>
 </section>
 
