@@ -5,7 +5,8 @@
   const demandes = [
     {
       titre: 'Une ferme',
-      texte: 'Échangez sur vos pratiques, suivez le développement ou accueillez une formation.'
+      texte: 'Échangez sur vos pratiques, suivez le développement, participez à une formation ou accueillez-en une.',
+      lien: { href: '/formations/#agenda', label: "Voir l'agenda →" }
     },
     {
       titre: 'Une école',
@@ -39,21 +40,14 @@
   <div class="fiche adresse">
     <p class="etiquette">Nous écrire</p>
     <a class="courriel" href="mailto:{site.email}">{site.email}</a>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="titre-coordonnees">
-  <div class="colonne deux">
-    <h2 class="titre-2" id="titre-coordonnees">Adresse et téléphones</h2>
     <div class="coordonnees">
-      <div class="pile">
+      <div class="pile postale">
         <p class="etiquette">Adresse</p>
-        <p>Cyclo-Terre{#each site.adresse as ligne}<br />{ligne}{/each}</p>
+        <p>{site.adresse.join(', ')}</p>
       </div>
       {#each site.telephones as t}
         <div class="pile">
-          <p class="etiquette {t.volet === 'agricole' ? 'agri' : 'meca'}-texte">{t.domaine}</p>
-          <p>{t.nom}<br /><a href="tel:{t.numero.replaceAll(' ', '')}">{t.numero}</a></p>
+          <p><span class="nom {t.volet === 'agricole' ? 'agri' : 'meca'}-texte">{t.nom}</span><br /><a href="tel:{t.numero.replaceAll(' ', '')}">{t.numero}</a></p>
         </div>
       {/each}
     </div>
@@ -72,11 +66,6 @@
           {#if d.lien}<a class="lien" href={d.lien.href}>{d.lien.label}</a>{/if}
         </li>
       {/each}
-      <li class="pile">
-        <h3 class="titre-3">Intéressé·e par une formation</h3>
-        <p>Inscrivez-vous depuis la fiche de chaque formation.</p>
-        <a class="lien" href="/formations/#agenda">Voir l'agenda →</a>
-      </li>
     </ul>
   </div>
 </section>
@@ -86,8 +75,7 @@
     <h2 class="titre-2" id="titre-lettre">La newsletter</h2>
     <div class="pile">
       <p>
-        Suivez l'avancement de la machine, des outils et la publication des plans. Restez informé·es
-        des formations à venir.
+        Suivez l'avancement de la machine et soyez informé·es des formations à venir.
       </p>
       <LettreInfo />
     </div>
@@ -99,8 +87,8 @@
     display: grid;
     grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
     gap: var(--space-7);
-    align-items: end;
-    padding-block: var(--space-7) var(--space-8);
+    align-items: start;
+    padding-block: var(--space-7) 0;
   }
   .intro .pile {
     gap: var(--space-5);
@@ -116,16 +104,25 @@
   }
   .coordonnees {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: var(--space-5);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-4) var(--space-5);
+    margin-top: var(--space-2);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--rule-strong);
   }
   .coordonnees .pile {
     gap: var(--space-2);
-    padding-top: var(--space-4);
-    border-top: 2px solid var(--ink);
   }
   .coordonnees p {
     margin: 0;
+  }
+  .nom {
+    font-family: var(--font-titre);
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .postale {
+    grid-column: 1 / -1;
   }
   .demandes {
     list-style: none;
@@ -146,7 +143,7 @@
   @media (max-width: 720px) {
     .intro {
       grid-template-columns: 1fr;
-      padding-block: var(--space-5) var(--space-7);
+      padding-block: var(--space-5) 0;
     }
   }
 </style>

@@ -74,8 +74,8 @@
         <h3 class="titre-3 meca-texte">Maîtriser ses outils</h3>
         <p>
           En atelier d'autoconstruction, Arnaud Jungo vous accompagnera dans la fabrication de votre
-          Cyclo-Terre, de la découpe du métal au réglage, puis dans son entretien et sa réparation.
-          Ces ateliers débuteront avec la version commerciale.
+          Cyclo-Terre, du travail du métal au montage, puis dans son entretien et sa réparation.
+          Ces ateliers devraient débuter en 2028.
         </p>
         <a class="lien lien--meca" href="/formations/#mecanique">Les formations mécaniques →</a>
       </article>

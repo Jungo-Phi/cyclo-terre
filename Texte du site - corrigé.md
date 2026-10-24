@@ -48,9 +48,9 @@ Lien : Les formations agricoles →
 
 Maîtriser ses outils
 
-**Aujourd'hui :** En atelier d'autoconstruction, Arnaud Jungo vous accompagnera dans la fabrication de votre Cyclo-Terre, de la découpe du métal au réglage, puis dans son entretien et sa réparation. Ces ateliers débuteront avec la version commerciale.
+**Aujourd'hui :** En atelier d'autoconstruction, Arnaud Jungo vous accompagnera dans la fabrication de votre Cyclo-Terre, du travail du métal au montage, puis dans son entretien et sa réparation. Ces ateliers devraient débuter en 2028.
 
-**À terme :** En atelier d'autoconstruction, Arnaud Jungo vous accompagne dans la fabrication de votre Cyclo-Terre : couper, percer, souder, assembler, puis régler, entretenir et réparer en toute autonomie. De quoi esquisser, peut-être, vos propres outils.
+**À terme :** En atelier d'autoconstruction, Arnaud Jungo vous accompagne dans la fabrication de votre Cyclo-Terre : couper, percer, souder, puis assembler, entretenir et réparer en toute autonomie. De quoi esquisser, peut-être, vos propres outils.
 
 Lien : Les formations mécaniques →
 
@@ -88,9 +88,9 @@ Le Cyclo-Terre, porte-outils maraîcher léger et vélo-cargo pour les micro-fer
 
 ### Le Cyclo-Terre
 
-Le Cyclo-Terre est une machine agricole légère à propulsion humaine, conçue pour les micro-fermes. Ce porte-outils maraîcher permet un travail du sol superficiel, avec la qualité du travail manuel. Il fait aussi office de vélo-cargo, sur la ferme comme en ville.
+Une machine agricole légère à propulsion humaine, conçue pour les micro-fermes. Ce porte-outils maraîcher permet un travail du sol superficiel, avec la qualité du travail manuel. Il fait aussi office de vélo-cargo, sur la ferme comme en ville.
 
-### Fonctions
+### (Fonctions)
 
 **Travail du sol**
 
@@ -100,7 +100,7 @@ Réalisez plus efficacement toutes les opérations du maraîchage manuel. Le sol
 
 Transportez de lourdes charges en milieu urbain et périurbain avec une machine qui respecte les normes des pistes cyclables. Chargez jusqu'à 250 kg et deux piles de caisses maraîchères dans la caisse arrière.
 
-**Polyvalence**
+**Adaptable**
 
 Le Cyclo-Terre est un porte-outils : son équipement de base peut être complété par des outils spécialisés, adaptés à chaque terrain.
 
@@ -199,7 +199,7 @@ Bouton : Écrivez-nous (page Contact)
 
 ## Actualités
 
-Suivez l'avancement de la machine, des outils et la publication des plans. Restez informé·es des formations à venir.
+Suivez l'avancement de la machine et soyez informé·es des formations à venir.
 
 Aujourd'hui : Premières nouvelles bientôt. Abonnez-vous pour les recevoir.
 
@@ -211,7 +211,7 @@ Suivez nos actualités avec la newsletter.
 
 ### Outiller les micro-fermes
 
-Nous souhaitons favoriser l'émergence de micro-fermes à taille humaine, en harmonie avec leur environnement, en les équipant de machines qu'elles comprennent et savent réparer elles-mêmes.
+Nous souhaitons favoriser l'émergence de micro-fermes à taille humaine, en harmonie avec leur environnement, en les équipant de machines qu'elles comprennent et réparent elles-mêmes.
 
 ### Cultiver sans épuiser
 
@@ -255,13 +255,15 @@ Bouton : Écrivez-nous (page Contact)
 
 Une idée, une question, une envie de contribuer ? Cyclo-Terre avance avec celles et ceux qui cultivent, enseignent, construisent ou soutiennent l'agroécologie.
 
-### Adresse et téléphones
+### (Adresse et téléphones)
 
-**Adresse** : Cyclo-Terre · 6 A chemin de Drize · 1256 Troinex
+**Nous écrire** : contact@cyclo-terre.ch
 
-**Agronomie** (en vert) : Youri Vezza · +41 79 575 36 07
+**Adresse** : 6 A chemin de Drize · 1256 Troinex
 
-**Mécanique** (en rose) : Arnaud Jungo · +41 79 348 55 09
+**Youri Vezza (en vert)** : +41 79 575 36 07
+
+**Arnaud Jungo (en rose)** : +41 79 348 55 09
 
 ### Vous êtes…
 
@@ -277,6 +279,6 @@ Une idée, une question, une envie de contribuer ? Cyclo-Terre avance avec celle
 
 ### La newsletter
 
-Suivez l'avancement de la machine, des outils et la publication des plans. Restez informé·es des formations à venir.
+Suivez l'avancement de la machine et soyez informé·es des formations à venir.
 
 *Ordre de la page Contact : Discutons (encadré e-mail), Adresse et téléphones, Vous êtes…, puis la newsletter en dernier.*
